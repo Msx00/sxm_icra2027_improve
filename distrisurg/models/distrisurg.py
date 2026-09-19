@@ -60,6 +60,7 @@ class DistriSurg(nn.Module):
             output_channels=5,
             base_channels=config.model.base_channels,
             condition_channels=self.CONDITION_CHANNELS,
+            bottleneck_blocks=config.model.synthesis_bottleneck_blocks,
         )
         self.router = VisibilityRouter(
             config.model, condition_channels=self.CONDITION_CHANNELS

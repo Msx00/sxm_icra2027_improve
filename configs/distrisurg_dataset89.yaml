@@ -22,7 +22,8 @@ dss:
   min_support: 0.03
 
 model:
-  base_channels: 32
+  base_channels: 48
+  synthesis_bottleneck_blocks: 6
   source_feature_channels: 16
   reliability_channels: 24
   max_depth_residual_ratio: 0.10
@@ -40,6 +41,10 @@ loss:
   visible: 1.0
   seam: 2.0
   gradient: 0.2
+  low_frequency: 0.2
+  perceptual: 0.1
+  # Local official torchvision checkpoint. Training never downloads weights.
+  perceptual_weights_path: /home/data/mashixing/.cache/torch/hub/checkpoints/vgg16-397923af.pth
   depth_nll: 0.2
   cycle: 0.2
   router: 0.1

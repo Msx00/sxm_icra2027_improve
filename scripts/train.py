@@ -228,7 +228,7 @@ def main() -> None:
     model = DistriSurg(config).to(device)
     if distributed:
         model = DistributedDataParallel(model, device_ids=[local_rank], output_device=local_rank)
-    criterion = DistriSurgLoss(config)
+    criterion = DistriSurgLoss(config).to(device)
     optimizer = torch.optim.AdamW(
         model.parameters(),
         lr=config.train.learning_rate,
@@ -350,7 +350,9 @@ def main() -> None:
                 print(
                     f"step={global_step:07d} total={values['total']:.5f} "
                     f"hole={values['hole']:.5f} cycle={values['cycle']:.5f} "
-                    f"depth={values['depth_nll']:.5f}",
+                    f"depth={values['depth_nll']:.5f} "
+                    f"low_frequency={values['low_frequency']:.5f} "
+                    f"perceptual={values['perceptual']:.5f}",
                     flush=True,
                 )
             if is_main and global_step % config.train.save_every == 0:

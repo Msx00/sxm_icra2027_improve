@@ -45,6 +45,7 @@ class DSSConfig:
 @dataclass
 class ModelConfig:
     base_channels: int = 32
+    synthesis_bottleneck_blocks: int = 6
     source_feature_channels: int = 16
     reliability_channels: int = 24
     max_depth_residual_ratio: float = 0.10
@@ -64,6 +65,9 @@ class LossConfig:
     visible: float = 1.0
     seam: float = 2.0
     gradient: float = 0.2
+    low_frequency: float = 0.0
+    perceptual: float = 0.0
+    perceptual_weights_path: str = ""
     depth_nll: float = 0.2
     cycle: float = 0.2
     router: float = 0.1
@@ -126,6 +130,8 @@ class ExperimentConfig:
             raise ValueError("visibility temperature must be positive")
         if self.model.base_channels < 8:
             raise ValueError("base_channels is too small")
+        if not 1 <= self.model.synthesis_bottleneck_blocks <= 18:
+            raise ValueError("synthesis_bottleneck_blocks must be between 1 and 18")
         if (
             self.model.trust_cleanup_kernel < 1
             or self.model.trust_cleanup_kernel > 15
@@ -136,6 +142,17 @@ class ExperimentConfig:
             raise ValueError("depth_dropout must be in [0, 1)")
         if self.train.amp_dtype not in {"float16", "bfloat16"}:
             raise ValueError("amp_dtype must be 'float16' or 'bfloat16'")
+        for name in (
+            "hole", "visible", "seam", "gradient", "low_frequency",
+            "perceptual", "depth_nll", "cycle", "router", "uncertainty",
+        ):
+            if getattr(self.loss, name) < 0:
+                raise ValueError(f"loss.{name} must be non-negative")
+        if self.loss.perceptual > 0 and not self.loss.perceptual_weights_path:
+            raise ValueError(
+                "loss.perceptual_weights_path must name a local VGG16 checkpoint "
+                "when loss.perceptual > 0"
+            )
         return self
 
     def to_dict(self) -> dict[str, Any]:

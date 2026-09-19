@@ -4,14 +4,21 @@ import unittest
 from pathlib import Path
 
 import torch
+from torch import nn
+import torch.nn.functional as F
 
 from distrisurg.config import ExperimentConfig, load_config
 from distrisurg.data import StereoEndoscopyDataset, read_scene_list
 from distrisurg.geometry import DistributionalSurfaceSplat, invert_rigid_transform
 from distrisurg.geometry import projection_defect_taxonomy
-from distrisurg.losses import DistriSurgLoss
+from distrisurg.losses import (
+    DistriSurgLoss,
+    MaskedPerceptualLoss,
+    multi_scale_low_frequency_loss,
+)
 from distrisurg.models import DistriSurg
 from distrisurg.models.distrisurg import spatially_consistent_trusted_mask
+from distrisurg.models.uffc import UncertaintyConditionedUFFC
 from distrisurg.postprocess import repair_small_synthesis_regions
 
 
@@ -28,6 +35,7 @@ def tiny_config() -> ExperimentConfig:
     config.data.height = 32
     config.data.width = 40
     config.model.base_channels = 8
+    config.model.synthesis_bottleneck_blocks = 1
     config.model.source_feature_channels = 4
     config.model.reliability_channels = 8
     config.dss.radius = 1
@@ -43,6 +51,32 @@ class ConfigAndDataTests(unittest.TestCase):
         self.assertEqual(value.data.height, 512)
         self.assertEqual(len(value.dss.sigma_samples), 3)
         self.assertEqual(value.train.amp_dtype, "bfloat16")
+        self.assertEqual(value.model.synthesis_bottleneck_blocks, 6)
+        self.assertEqual(value.loss.low_frequency, 0.2)
+        self.assertEqual(value.loss.perceptual, 0.1)
+
+    def test_new_options_load_from_override(self) -> None:
+        value = load_config(
+            overrides=[
+                "model.synthesis_bottleneck_blocks=3",
+                "loss.low_frequency=0.4",
+                "loss.perceptual=0",
+            ]
+        )
+        self.assertEqual(value.model.synthesis_bottleneck_blocks, 3)
+        self.assertEqual(value.loss.low_frequency, 0.4)
+        self.assertEqual(value.loss.perceptual, 0.0)
+
+    def test_invalid_bottleneck_is_rejected(self) -> None:
+        with self.assertRaises(ValueError):
+            load_config(overrides=["model.synthesis_bottleneck_blocks=0"])
+
+    def test_a6_overlay_disables_hard_composition(self) -> None:
+        value = load_config(
+            PROJECT / "configs/distrisurg_dataset89.yaml",
+            extra_paths=[PROJECT / "configs/ablations/a6_no_hard_composition.yaml"],
+        )
+        self.assertFalse(value.ablation.hard_composition)
 
     def test_partial_ablation_config_merges(self) -> None:
         value = load_config(
@@ -186,6 +220,19 @@ class GeometryTests(unittest.TestCase):
 
 
 class ModelTests(unittest.TestCase):
+    def test_configurable_synthesis_bottleneck_depth(self) -> None:
+        for blocks in (1, 3):
+            model = UncertaintyConditionedUFFC(
+                10, 5, base_channels=8, condition_channels=6,
+                bottleneck_blocks=blocks,
+            )
+            value = torch.rand(1, 10, 16, 16, requires_grad=True)
+            condition = torch.rand(1, 6, 16, 16)
+            output = model(value, condition)
+            self.assertEqual(tuple(output.shape), (1, 5, 16, 16))
+            output.mean().backward()
+            self.assertTrue(torch.isfinite(value.grad).all())
+
     def test_small_region_repair_preserves_large_holes(self) -> None:
         prediction = torch.zeros((1, 3, 20, 20))
         warp = torch.full_like(prediction, 0.5)
@@ -290,6 +337,48 @@ class ModelTests(unittest.TestCase):
         losses["total"].backward()
         self.assertTrue(torch.isfinite(losses["router"]))
         self.assertTrue(torch.isfinite(logits.grad).all())
+
+
+class AppearanceLossTests(unittest.TestCase):
+    def test_low_frequency_identity_difference_empty_and_backward(self) -> None:
+        target = torch.rand(1, 3, 16, 20)
+        mask = torch.zeros(1, 1, 16, 20, dtype=torch.bool)
+        mask[..., 4:12, 5:15] = True
+        identical = target.clone().requires_grad_(True)
+        identity_loss = multi_scale_low_frequency_loss(
+            identical, target, mask, sigmas=(1.0, 2.0)
+        )
+        self.assertLess(identity_loss.item(), 1.1e-3)
+        prediction = (target + 0.2).requires_grad_(True)
+        different_loss = multi_scale_low_frequency_loss(
+            prediction, target, mask, sigmas=(1.0, 2.0)
+        )
+        self.assertGreater(different_loss.item(), 0.0)
+        different_loss.backward()
+        self.assertTrue(torch.isfinite(prediction.grad).all())
+        empty_loss = multi_scale_low_frequency_loss(
+            prediction, target, torch.zeros_like(mask), sigmas=(1.0,)
+        )
+        self.assertTrue(torch.isfinite(empty_loss))
+        self.assertEqual(empty_loss.item(), 0.0)
+
+    def test_masked_perceptual_loss_without_external_weights(self) -> None:
+        class TinyFeatures(nn.Module):
+            def forward(self, value: torch.Tensor) -> list[torch.Tensor]:
+                return [value, F.avg_pool2d(value, 2)]
+
+        criterion = MaskedPerceptualLoss(TinyFeatures())
+        target = torch.rand(1, 3, 16, 20)
+        prediction = (target + 0.1).requires_grad_(True)
+        mask = torch.zeros(1, 1, 16, 20, dtype=torch.bool)
+        mask[..., 3:13, 4:16] = True
+        loss = criterion(prediction, target, mask)
+        self.assertGreater(loss.item(), 0.0)
+        loss.backward()
+        self.assertTrue(torch.isfinite(prediction.grad).all())
+        empty = criterion(prediction, target, torch.zeros_like(mask))
+        self.assertTrue(torch.isfinite(empty))
+        self.assertEqual(empty.item(), 0.0)
 
 
 if __name__ == "__main__":

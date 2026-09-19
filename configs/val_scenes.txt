@@ -1,0 +1,8 @@
+# Frozen copy of task2-icra/val_scenes.txt used for checkpoint selection.
+session_004_scene_2_tool_3
+session_004_scene_6_tool_3
+session_005_scene_7_tool_3
+session_006_scene_7_tool_3
+session_007_scene_11_tool_3
+session_007_scene_5_tool_2
+session_007_scene_10_tool_2

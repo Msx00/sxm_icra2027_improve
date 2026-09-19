@@ -126,6 +126,7 @@ class UncertaintyConditionedUFFC(nn.Module):
         output_channels: int,
         base_channels: int = 32,
         condition_channels: int = 6,
+        bottleneck_blocks: int = 2,
     ) -> None:
         super().__init__()
         base = base_channels
@@ -137,7 +138,7 @@ class UncertaintyConditionedUFFC(nn.Module):
         self.enc2 = UFFCBlock(base * 4, condition_channels)
         self.down3 = nn.Conv2d(base * 4, base * 8, 3, stride=2, padding=1)
         self.bottleneck = nn.ModuleList(
-            [UFFCBlock(base * 8, condition_channels) for _ in range(2)]
+            [UFFCBlock(base * 8, condition_channels) for _ in range(bottleneck_blocks)]
         )
         self.dec2 = DecoderStage(base * 8, base * 4, base * 4, condition_channels)
         self.dec1 = DecoderStage(base * 4, base * 2, base * 2, condition_channels)
