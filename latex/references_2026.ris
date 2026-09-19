@@ -1,0 +1,66 @@
+TY  - JOUR
+AU  - Wei, Ruofeng
+AU  - Chen, Kai
+AU  - Ng, Yui Lun
+AU  - Ma, Yiyao
+AU  - Ho, Justin Di-Lang
+AU  - Tong, Hon Sing
+AU  - Wang, Xiaomei
+AU  - Dai, Jing
+AU  - Kwok, Ka-Wai
+AU  - Dou, Qi
+TI  - Real-Time Monocular 2-D and 3-D Perception of Endoluminal Scenes for Controlling Flexible Robotic Endoscopic Instruments
+JO  - IEEE Transactions on Robotics
+VL  - 42
+SP  - 1535
+EP  - 1555
+PY  - 2026
+DO  - 10.1109/TRO.2026.3672482
+ER  -
+
+TY  - CONF
+AU  - Sunmola, Idris O.
+AU  - Zhao, Zhenjun
+AU  - Schmidgall, Samuel
+AU  - Wang, Yumeng
+AU  - Scheikl, Paul Maria
+AU  - Pham, Viet
+AU  - Krieger, Axel
+TI  - Surgical Gaussian Surfels: Highly Accurate Real-Time Surgical Scene Rendering Using Gaussian Surfels
+T2  - Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)
+SP  - 4515
+EP  - 4524
+PY  - 2026
+DO  - 10.1109/WACV61042.2026.00439
+ER  -
+
+TY  - JOUR
+AU  - Wang, Xiongzhi
+AU  - Yang, Boyu
+AU  - Wei, Min
+AU  - Chen, Yu
+AU  - Zhang, Jingang
+AU  - Nie, Yunfeng
+TI  - Endo-E2E-GS: End-to-End 3D Reconstruction of Endoscopic Scenes Using Gaussian Splatting
+JO  - Displays
+VL  - 92
+SP  - 103353
+PY  - 2026
+DO  - 10.1016/j.displa.2026.103353
+ER  -
+
+TY  - JOUR
+AU  - Hsieh, Cheng-Tai
+AU  - Shan, Jiwei
+AU  - Fang, Han
+AU  - Hu, Jianshu
+AU  - Ni, Tao
+AU  - Han, Lijun
+AU  - Ban, Yutong
+AU  - Cheng, Shing Shin
+AU  - Wang, Hesheng
+TI  - ExtraGS: Enhancing Endoscopic View Extrapolation via Diffusion-Guided 3D Gaussian Splatting
+JO  - arXiv
+PY  - 2026
+UR  - https://arxiv.org/abs/2607.12785
+ER  -

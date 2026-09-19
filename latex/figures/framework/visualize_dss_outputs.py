@@ -261,17 +261,15 @@ def main() -> None:
     from distrisurg.models import DistriSurg
     from distrisurg.utils.io import load_checkpoint
 
-    config_path = root / "configs/distrisurg_dataset89.yaml"
-    ablation_path = root / "configs/ablations/a6_no_hard_composition.yaml"
+    config_path = root / "configs/train.yaml"
     checkpoint = root / "checkpoints/ablations/no_hard_composition/seed_6666/step_0010000.pt"
-    for path in (config_path, ablation_path, checkpoint):
+    for path in (config_path, checkpoint):
         if not path.is_file():
             raise FileNotFoundError(path)
 
     config = load_config(
         config_path,
         overrides=[f"data.eval_root={data_root}", "data.min_overlap=0.0"],
-        extra_paths=[ablation_path],
     )
     if config.ablation.hard_composition:
         raise RuntimeError("expected the no-hard-composition configuration")

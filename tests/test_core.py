@@ -47,7 +47,7 @@ def tiny_config() -> ExperimentConfig:
 
 class ConfigAndDataTests(unittest.TestCase):
     def test_config_loads(self) -> None:
-        value = load_config(PROJECT / "configs/distrisurg_dataset89.yaml")
+        value = load_config(PROJECT / "configs/train.yaml")
         self.assertEqual(value.data.height, 512)
         self.assertEqual(len(value.dss.sigma_samples), 3)
         self.assertEqual(value.train.amp_dtype, "bfloat16")
@@ -71,20 +71,9 @@ class ConfigAndDataTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             load_config(overrides=["model.synthesis_bottleneck_blocks=0"])
 
-    def test_a6_overlay_disables_hard_composition(self) -> None:
-        value = load_config(
-            PROJECT / "configs/distrisurg_dataset89.yaml",
-            extra_paths=[PROJECT / "configs/ablations/a6_no_hard_composition.yaml"],
-        )
+    def test_main_train_config_uses_soft_composition(self) -> None:
+        value = load_config(PROJECT / "configs/train.yaml")
         self.assertFalse(value.ablation.hard_composition)
-
-    def test_partial_ablation_config_merges(self) -> None:
-        value = load_config(
-            PROJECT / "configs/distrisurg_dataset89.yaml",
-            extra_paths=[PROJECT / "configs/ablations/a4_soft_splat.yaml"],
-        )
-        self.assertEqual(value.dss.sigma_samples, (0.0,))
-        self.assertFalse(value.ablation.distributional_depth)
 
     @unittest.skipUnless(TRAIN_ROOT.is_dir(), "local iMED training data unavailable")
     def test_training_split_and_fixed_pose(self) -> None:

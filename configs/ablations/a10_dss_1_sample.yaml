@@ -1,4 +1,0 @@
-# Focused DSS ablation: one deterministic mean-depth sample.
-dss:
-  sigma_samples: [0.0]
-  sigma_weights: [1.0]

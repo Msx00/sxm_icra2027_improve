@@ -33,7 +33,7 @@ from distrisurg.utils.io import load_checkpoint, write_json_atomic
 
 def arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", default=str(ROOT / "configs/distrisurg_dataset89.yaml"))
+    parser.add_argument("--config", default=str(ROOT / "configs/train.yaml"))
     parser.add_argument("--ablation-config", action="append", default=[])
     parser.add_argument("--set", action="append", default=[], metavar="KEY=VALUE")
     parser.add_argument("--output", default=str(ROOT / "checkpoints/distrisurg"))

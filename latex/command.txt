@@ -1,0 +1,3 @@
+conda activate latex
+cd /home/data/mashixing/dataset_18tb/icra-2027/latex
+latexmk -g -pdf 'main copy 2.tex'

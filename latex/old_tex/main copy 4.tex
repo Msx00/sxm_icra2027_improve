@@ -1,0 +1,915 @@
+\documentclass[letterpaper,10pt,conference]{ieeeconf}
+\IEEEoverridecommandlockouts
+\overrideIEEEmargins
+
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit}
+
+% Citation/link blue sampled from the CoSAM manuscript (#367DBD).
+\definecolor{cosamLinkBlue}{HTML}{367DBD}
+
+% ieeeconf defines an obsolete Natbib compatibility hook.  Removing it before
+% loading hyperref restores clickable numerical citations.
+\makeatletter
+\let\NAT@parse\undefined
+\makeatother
+\usepackage[
+  colorlinks=true,
+  linkcolor=cosamLinkBlue,
+  citecolor=cosamLinkBlue,
+  urlcolor=black
+]{hyperref}
+
+\definecolor{todoRed}{RGB}{176,36,36}
+\definecolor{inputBlue}{RGB}{225,238,250}
+\definecolor{geometryGreen}{RGB}{224,243,231}
+\definecolor{routeOrange}{RGB}{253,237,214}
+\definecolor{outputPurple}{RGB}{238,229,247}
+\definecolor{transportTeal}{HTML}{12857D}
+\definecolor{unsupportedPurple}{HTML}{7455A4}
+\newcommand{\todo}[1]{\textcolor{todoRed}{\textbf{[TODO: #1]}}}
+\newcommand{\tbd}{\textcolor{todoRed}{--}}
+\newcommand{\captioncolorchip}[2]{%
+  \mbox{(\raisebox{0.05ex}{\textcolor{#1}{\rule{0.9ex}{0.9ex}}}%
+  \hspace{0.35em}\textcolor{#1}{#2})}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\I}{\mathbf{I}}
+\newcommand{\D}{\mathbf{D}}
+\newcommand{\K}{\mathbf{K}}
+\newcommand{\T}{\mathbf{T}}
+\newcommand{\M}{\mathbf{M}}
+\newcommand{\F}{\mathbf{F}}
+\newcommand{\U}{\mathbf{U}}
+\newcommand{\n}{\mathbf{n}}
+\newcommand{\od}{\mathbin{\odot}}
+\newsavebox{\roboticplatformbox}
+
+\title{\LARGE \bf
+DistriNVS: Distributional Geometry Transport and Visibility-Constrained Completion for Cross-Endoscope Novel-View Synthesis}
+
+\author{Anonymous Authors}
+
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\begin{abstract}
+
+Cross-endoscope novel-view synthesis must transport anatomy observed by the
+source camera while synthesizing tissue revealed only from the target
+viewpoint. These regimes become difficult to separate when sparse or erroneous
+depth is projected as deterministic points, because sampling gaps, depth
+failures, surface collisions, and true disocclusions can produce
+indistinguishable holes. We present DistriNVS, a reliability-aware framework
+that represents source depth as a distribution and propagates it through
+calibrated geometry. Distributional surface splatting estimates target support,
+depth variance, and collision ambiguity, which guide a soft mixture between a
+bounded transport expert and an uncertainty-conditioned Fourier synthesis
+expert.
+DistriNVS is trained on 13 iMED scenes, evaluated on 1,392 iMED test frames,
+and evaluated zero-shot on 275 EndoVis test pairs. On the iMED test set,
+DistriNVS achieves a PSNR of 22.95~dB, an SSIM of 0.59, and an H-PSNR of
+27.95~dB. In zero-shot evaluation on EndoVis, DistriNVS achieves the best
+PSNR of 23.47~dB, SSIM of 0.66, and LPIPS of 0.23 among the compared
+feed-forward methods, together with an H-PSNR of 21.11~dB and an inference
+time of 0.08~s per frame. These results demonstrate the effectiveness of
+reliability-guided transport--synthesis fusion for cross-endoscope novel-view
+synthesis and its generalization to an unseen dataset without target-domain
+adaptation.
+\textit{\textcolor{cosamLinkBlue}{The code will be made publicly available upon publication.}}
+
+\end{abstract}
+
+\section{Introduction}
+\label{sec:introduction}
+
+Robot-assisted minimally invasive surgery depends on endoscopic vision for
+scene perception and instrument guidance
+~\cite{wei2026roboticperception,sunmola2026surgicalgaussiansurfels}.
+Cross-endoscope novel-view synthesis can broaden this visual context by
+predicting a target-endoscope view from synchronized appearance and geometry
+acquired by a spatially displaced source endoscope~\cite{wang2026endoe2egs}.
+Unlike left-to-right synthesis within one stereo endoscope, the target may
+observe anatomy absent from both source cameras. The task therefore combines
+two distinct regimes: co-visible anatomy has measured appearance
+that should be transported through calibrated geometry, whereas target-only
+anatomy lacks source evidence and must be synthesized. A reliable system should
+retain source evidence, identify inferred content, and thereby support
+wider-field robotic perception, retrospective visualization, and surgical
+simulation~\cite{hsieh2026extrags}.
+Such uncertainty-aware cross-view completion may also support visual-state
+construction for surgical robot world models~\cite{he2025surgworld}.
+
+Achieving this separation is difficult because endoscopic depth and calibration
+are unreliable around specularities, weak texture, depth discontinuities,
+instruments, and deforming tissue~\cite{allan2021scared}. Conventional forward
+warping represents each valid source pixel by one 3-D point; discretized
+projection leaves sampling gaps, while multiple points may compete for the same
+target pixel. A binary validity mask then conflates missing depth, rasterization
+holes, depth-ordering conflicts, and genuine cross-endoscope disocclusions.
+Treating these cases uniformly either degrades observed structure or permits
+hallucination where geometric evidence remains trustworthy.
+
+\begin{figure}[t]
+\centering
+\vspace*{2mm}
+\sbox{\roboticplatformbox}{%
+  \includegraphics[width=\columnwidth]{figures/distrinvs_teaser/distrinvs_teaser_editable.pdf}%
+}
+\begin{tikzpicture}
+  \clip[rounded corners=0mm]
+    (0,0) rectangle
+    (\wd\roboticplatformbox,\ht\roboticplatformbox);
+  \node[anchor=south west,inner sep=0pt] at (0,0)
+    {\usebox{\roboticplatformbox}};
+\end{tikzpicture}
+\caption{Cross-endoscope novel-view synthesis under partial field-of-view
+overlap. Given the source-to-target pose, co-visible anatomy is
+source-supported and can be transported geometrically
+\captioncolorchip{transportTeal}{teal}, whereas target-only anatomy lacks source
+evidence and needs to be synthesized \captioncolorchip{unsupportedPurple}{purple}.
+}
+\label{fig:conditional_refinement}
+\vspace{-0.4cm}
+\end{figure}
+
+Existing methods address complementary parts of this problem but do not expose
+the required evidence boundary. Differentiable point rendering and softmax
+splatting improve feature transport and collision handling
+~\cite{wiles2020synsin,niklaus2020softmax}, while reference-guided inpainting
+combines depth-based alignment with learned completion~\cite{zhao2023geofill}.
+Large-mask inpainting networks provide strong global image priors
+~\cite{suvorov2022lama,chu2023uffc}, and endoscopic video completion adds
+depth, temporal, or stereo cues
+~\cite{daher2023temporal,zhang2024daevi,zou2025ssifnet}. Endoscopic neural
+rendering has likewise advanced sparse-view reconstruction and uncertainty
+modeling~\cite{li2024endosparse,guo2025ucnerf}. However, deterministic
+projection assigns equal reliability to all valid depths, while image-space
+uncertainty does not describe how source geometry
+supports a spatially offset target view. Neither approach propagates per-pixel
+depth uncertainty through the cross-endoscope transform and uses the resulting
+visibility statistics to constrain where appearance may be synthesized.
+
+Our central premise is to \emph{transport reliable geometric evidence and
+synthesize only unsupported or geometrically unreliable regions}. We introduce
+DistriNVS, a reliability-aware framework
+for direct cross-endoscope novel-view synthesis. Its distributional surface
+splatting (DSS) represents each source depth as a distribution whose bounded
+mean and scale, surface normal, and confidence are predicted by a depth
+reliability encoder. DSS projects deterministic sigma samples through the
+calibrated cross-endoscope transform and aggregates source features using
+Jacobian- and normal-aware footprints with soft nearest-surface visibility,
+yielding target support, depth variance, and collision entropy. These statistics
+constrain a soft mixture between bounded residual transport for co-visible
+regions and uncertainty-conditioned Fourier completion for unsupported or
+ambiguous regions. Target-depth and risk prediction plus backward RGB-D
+reprojection constrain this mixture during training.
+
+The paper makes three contributions:
+\begin{itemize}
+    \item We propose a reliability-aware framework for cross-endoscope novel-view 
+    synthesis that separates the transport of source-observed anatomy from the 
+    synthesis of source-unobserved content.
+    \item We introduce DSS, a differentiable renderer that propagates depth
+    distributions through calibrated cross-endoscope geometry and exposes
+    target support, depth variance, and collision entropy beyond binary validity.
+    \item We design a two-expert decoder that forms a soft mixture of bounded
+    residual transport and uncertainty-conditioned Fourier completion under a
+    renderer-derived reliability constraint.
+\end{itemize}
+
+\section{Related Work}
+\label{sec:related}
+
+We review image completion, geometry-guided view transport, and
+endoscopic neural rendering, with particular attention to how existing
+approaches represent missing content, exploit calibrated geometry, and quantify
+uncertainty.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/distrinvs_framework/distrinvs_framework.pdf}
+\caption{DistriNVS framework. A reliability encoder predicts source geometry
+and features. DSS transports deterministic depth hypotheses through the
+calibrated cross-endoscope transform and jointly produces warped evidence and
+target-plane visibility statistics. These statistics condition a
+reliability-constrained soft mixture of a residual transport expert and a
+Fourier synthesis expert. Solid arrows denote inference; the dashed lower lane is used only
+during training.}
+\label{fig:overview}
+\vspace{-0.4cm}
+\end{figure*}
+
+\subsection{Image and Endoscopic Video Inpainting}
+
+Generic image inpainting combines mask-aware feature extraction with
+broad appearance priors. Partial and gated convolutions prevent
+invalid activations from contaminating local features
+~\cite{liu2018partial,yu2019gated}, whereas LaMa and UFFC use Fourier operations
+for global context and MAT restricts attention to valid tokens
+~\cite{suvorov2022lama,chu2023uffc,li2022mat}. Recent diffusion models such as
+BrushNet and TurboFill incorporate masked-image features into pretrained
+generators or adapt few-step sampling for efficient completion
+~\cite{ju2024brushnet,xie2025turbofill}. Despite strong appearance priors, these
+methods define holes in a fixed image coordinate system and do not describe
+geometric provenance. Endoscopic completion adds domain cues: temporal learning
+removes specularities, DAEVI combines spatio-temporal RGB and depth, and SSIFNet
+fuses flow and stereo-temporal information for instrument occlusions
+~\cite{daher2023temporal,zhang2024daevi,zou2025ssifnet}. Such methods exploit
+neighboring frames or views but still restore defects defined in the original
+camera coordinates. Cross-endoscope synthesis instead creates holes through
+viewpoint transfer: target-only anatomy is unobserved, while rasterization gaps
+or depth conflicts may retain source support. DistriNVS therefore uses
+calibrated projection statistics to distinguish true disocclusions from
+rasterization gaps and depth conflicts.
+
+\subsection{Geometry-Guided Transport and Completion}
+
+Geometry-guided view synthesis preserves correspondence by transporting source
+evidence before generating missing content. SynSin predicts and projects a
+feature point cloud, softmax splatting resolves many-to-one mappings with
+learned importance, and GeoFill refines depth and pose before reprojection and
+inpainting~\cite{wiles2020synsin,niklaus2020softmax,zhao2023geofill}. Recent
+feed-forward Gaussian renderers use stronger explicit representations: MVSplat
+localizes Gaussians with plane-sweep cost volumes, whereas DepthSplat combines
+multi-view correspondence with monocular depth priors
+~\cite{chen2024mvsplat,xu2025depthsplat}. They reduce per-scene optimization but
+infer a radiance representation from multiple calibrated observations, without
+an explicit per-pixel boundary between measured and synthesized appearance.
+Generative methods target wider gaps. LeftRefill frames reference-conditioned
+synthesis as paired-canvas completion, MultiDiff conditions video diffusion on
+depth-warped reference views, and point-guided latent diffusion uses
+stereo-derived clouds for laparoscopic view synthesis
+~\cite{cao2024leftrefill,muller2024multidiff,tang2025pointguided}. These models can
+generate plausible structures in large disocclusions, yet plausibility alone
+does not reveal which pixels remain geometrically supported. DistriNVS instead
+transports a calibrated source observation with distributional splatting,
+derives support, variance, and collision statistics during rasterization, and
+uses them to constrain soft fusion between transported and synthesized content.
+
+\subsection{Endoscopic Novel-View Synthesis and Uncertainty}
+
+Endoscopic neural rendering must handle non-rigid tissue, view-dependent
+illumination, tool occlusions, and sparse camera coverage. EndoNeRF represents
+deformation with a neural radiance field, while EndoSurf combines dynamic
+modeling with a neural surface~\cite{wang2022endonerf,zha2023endosurf}.
+EndoSparse introduces geometric and appearance priors into Gaussian splatting,
+and Endo-GSMT uses depth, dense-displacement, and motion priors for dynamic
+reconstruction~\cite{li2024endosparse,gou2025endogsmt}. GastroNVS further shows
+that large viewpoint changes in real gastroscopy amplify geometric artifacts
+and inter-view illumination mismatch~\cite{minai2026gastronvs}. These systems
+build persistent scene representations from multiple frames and address
+reconstruction fidelity within a captured scene. Uncertainty-aware
+approaches address sparse evidence from another direction: UC-NeRF conditions a
+radiance field on multi-view uncertainty, whereas ExtraGS uses uncertainty to
+sample virtual cameras and weight diffusion-refined pseudo-observations for
+extrapolation~\cite{guo2025ucnerf,hsieh2026extrags}. Thus, neither uncertainty nor
+generative priors are new to endoscopic rendering. The distinction is
+operational: DSS propagates a distribution for each input depth through the
+calibrated cross-endoscope transform and derives target support, depth variance,
+and collision entropy from the same rasterization that transports appearance.
+DistriNVS uses these quantities to route completion during unseen-sequence
+inference without target-scene optimization.
+
+\section{Method}
+\label{sec:method}
+
+% \subsection{Problem Formulation}
+
+% After resizing, both endoscope views have spatial size $H\times W$; we omit the
+% batch dimension throughout. 
+DistriNVS receives source RGB
+$\I_s\in[0,1]^{3\times H\times W}$, metric depth
+$\D_s\in\R_+^{1\times H\times W}$, and validity mask
+$\M_s\in\{0,1\}^{1\times H\times W}$. Calibration comprises intrinsics
+$\K_s,\K_t\in\R^{3\times3}$ and a rigid transform
+$\T_{s\rightarrow t}\in\mathrm{SE}(3)\subset\R^{4\times4}$. The model predicts
+target RGB $\widehat\I_t\in[0,1]^{3\times H\times W}$, depth
+$\widehat\D_t\in\R_+^{1\times H\times W}$, and risk
+$\U_t\in[0,1]^{1\times H\times W}$. 
+% Target RGB-D and the target instrument mask
+% are used only for training or evaluation.
+
+\subsection{Reliability Encoder}
+
+Fig.~\ref{fig:overview} summarizes the inference pipeline. A
+reliability encoder estimates source geometry and uncertainty. DSS then transports source evidence and measures target-view
+support and ambiguity. These measurements route complementary transport and
+synthesis experts, whose RGB-D predictions are combined by a
+reliability-constrained soft gate. The backward photometric cycle and risk objective
+are used only during training.
+We first construct the source-side geometric representation on which DSS
+operates. Rather than treating measured and inferred depths as equally
+reliable, the reliability encoder processes source RGB, normalized sparse
+depth, and its validity mask. A full-resolution branch preserves local
+boundaries through residual convolutional blocks, while a quarter-resolution
+branch captures broader context using strided convolution. The context features
+are bilinearly upsampled, concatenated with the full-resolution features, and
+residually fused. A shared prediction head produces a feature map
+$\F_s\in\R^{C_f\times H\times W}$ and raw depth, scale, confidence, and
+orientation parameters. These parameters yield depth fields
+$\mu,\sigma\in\R_+^{1\times H\times W}$, confidence
+$c\in[0,1]^{1\times H\times W}$, and a unit-length orientation proxy
+$\n\in\R^{3\times H\times W}$.
+
+Measured depths receive bounded residual corrections, whereas missing depths
+are inferred through a \emph{depth-completion (DC)} parameterization of the
+shared prediction head. When DC is enabled, both measured and completed depths
+participate in DSS, with reduced confidence assigned to completed estimates.
+The orientation proxy is learned through downstream objectives and is used
+to adapt the splat footprint. During training, random depth dropout exposes the
+encoder to both measured and missing geometry while the original valid samples
+retain depth supervision.
+
+\subsection{Distributional Surface Splatting}
+
+Given these source-side estimates, DSS transports the source attributes
+$\mathbf A_s=[\I_s,\F_s]\in\R^{(3+C_f)\times H\times W}$ to
+$\mathbf A_t^w\in\R^{(3+C_f)\times H\times W}$ and estimates expected target
+depth $\bar D_t\in\R_+^{1\times H\times W}$. The same rasterization produces
+support and depth variance $S,V\in\R_+^{1\times H\times W}$; coverage,
+collision entropy, and confidence
+$C,\mathcal H,\kappa\in[0,1]^{1\times H\times W}$; and render validity
+$M^{\rm dss}\in\{0,1\}^{1\times H\times W}$.
+These maps indicate which target pixels are 
+supported by source geometry and how reliable that support is. We define
+$\Omega_s=\Omega_t=\{1,\ldots,W\}\times\{1,\ldots,H\}
+\subset\mathbb Z^2$ as the source and target pixel grids. 
+
+\textbf{Distributional depth (DD).}
+A source pixel
+$q\in\Omega_s$ and index $k\in\mathcal K=\{1,2,3\}$ identify a depth
+hypothesis. We place these hypotheses
+at the predicted mean and one standard deviation on either side, with
+normalized Gaussian weights $a_k\in[0,1]$ satisfying
+$\sum_{k\in\mathcal K}a_k=1$. The calibrated pinhole operator projects each
+hypothesis $z_{qk}\in\R_+$ to a target coordinate
+$\mathbf x_{qk}\in\R^2$ and target depth $z^t_{qk}\in\R_+$. It comprises source
+back-projection, rigid transformation, and target projection
+~\cite{wiles2020synsin,niklaus2020softmax}.
+
+\textbf{Orientation-aware footprints (OF).}
+Depth uncertainty is converted into a hypothesis-dependent, axis-aligned
+target footprint. The projection derivative $J^\alpha_{qk}$ measures the
+sensitivity of image coordinate $\alpha\in\{u,v\}$ to source depth, where
+$J^\alpha_{qk}\in\R$ has units of pixels per millimetre. The footprint radius
+$r^\alpha_{qk}\in\R_+$, measured in pixels, is
+\begin{equation}
+ r^\alpha_{qk}
+ =b+|J^\alpha_{qk}|\sigma_q+b_n(1-|n_q^z|).
+\label{eq:dss-footprint}
+\end{equation}
+
+Here, $b,b_n\in\R_+$ are pixel-valued radii controlling the base footprint and
+orientation-aware expansion, respectively. The scalar
+$n_q^z\in[-1,1]$ is the optical-axis component of the orientation proxy. For
+target pixel $p\in\Omega_t\subset\mathbb Z^2$, the dimensionless scalar
+$\rho_{qkp}\in\R_+$ denotes its elliptical distance from the projected
+hypothesis, normalized by both radii. The corresponding dimensionless
+contribution $w_{qk\rightarrow p}\in\R_+$ is
+\begin{equation}
+ w_{qk\rightarrow p}=c_q a_k\exp\!\left[
+ -\frac{\rho_{qkp}^2}{2}
+ -\frac{[z^t_{qk}-z_{\min}(p)]_+}{\tau_z}\right].
+\label{eq:dss-weight}
+\end{equation}
+
+Source confidence and quadrature mass scale this contribution, while spatial
+distance and soft nearest-surface visibility form the exponential penalties.
+Here, $z_{\min}(p)\in\R_+$ is the detached nearest arrival, $[\,\cdot\,]_+$ is
+the positive part, and $\tau_z\in\R_+$ is a depth scale controlling
+depth-order attenuation. Nearest-depth
+selection and integer assignment are discrete; all remaining operations are
+differentiable.
+
+% \begin{figure}[t]
+% \centering
+% \includegraphics[width=\columnwidth]{figures/distrinvs_dss_evidence/distrinvs_dss_evidence.pdf}
+% \caption{DSS evidence and reliability-guided expert routing for a held-out iMED
+% validation target frame with substantial source-view disocclusion. (a) The
+% completed-geometry DSS warp $\I_t^w$; unsupported pixels are black. (b)
+% Support $S$, normalized only for display; the cyan contour marks the validity
+% boundary. (c) The render-validity mask $M^{\rm dss}$ obtained from raw support.
+% (d) The effective synthesis gate $g$ from
+% Eq.~\eqref{eq:effective-gate}. It is zero on reliable support, selecting the
+% bounded transport expert, and assigns greater weight to the
+% synthesis expert as reliability decreases. The gate uses the full reliability
+% condition rather than the complement of $M^{\rm dss}$.}
+% \label{fig:dss-evidence}
+% \vspace{-0.4cm}
+% \end{figure}
+
+
+\textbf{Reliability aggregation (RA).}
+Let $\Omega_p\subseteq\Omega_s\times\mathcal K$ collect the retained
+source--hypothesis contributions to target pixel $p$. Their total weight
+defines raw support $S_p$. At render-valid pixels,
+DSS normalizes these weights over $\Omega_p$. Their weighted moments yield the
+transported tensor, expected depth, and conditional depth variance. Coverage
+is a bounded saturation of raw support.
+DSS couples normalized weight entropy to depth dispersion. Let
+$H_N(p)\in[0,1]$ denote the normalized Shannon entropy of the retained weights
+at pixel $p$. Collision
+ambiguity is
+\begin{equation}
+ \mathcal H_p
+ =H_N(p)\left[1-\exp(-V_p/\tau_z^2)\right].
+\label{eq:collision-entropy}
+\end{equation}
+
+This coupling discounts entropy caused only by benign subpixel overlap. We
+derive target confidence $\kappa_p$ by penalizing coverage with depth variance
+and collision ambiguity. A pixel is render-valid when its raw support reaches
+the dimensionless threshold $S_{\min}\in\R_+$.
+% , as shown in
+% Fig.~\ref{fig:dss-evidence}(c). Invalid pixels retain
+% support and coverage but zero the transported outputs and ambiguity maps. The
+% continuous evidence therefore distinguishes weak support from conflicting depth
+% order rather than reducing reliability to a binary mask.
+
+\subsection{Reliability-Guided Expert Fusion}
+
+\textbf{Physics-guided routing (PGR).}
+Both experts receive a condition tensor
+$\mathbf h\in\R^{6\times H\times W}$, formed by concatenating coverage,
+confidence, normalized variance, collision entropy, normalized depth, and DSS
+validity. A fixed monotonic combination of these cues defines a synthesis prior
+$g^0\in[0,1]^{1\times H\times W}$: low geometric reliability increases its
+value, and pixels outside DSS
+support are assigned entirely to synthesis. A residual router makes only a
+bounded correction to the detached prior logit,
+\begin{equation}
+ \widetilde g_p=\operatorname{sigmoid}\!\left[
+ \ell_p^0+\Delta_\theta(\mathbf h)_p\right],
+ \qquad \ell^0=\operatorname{sg}[\operatorname{logit}(g^0)].
+\label{eq:router}
+\end{equation}
+Here, $\widetilde g\in[0,1]^{1\times H\times W}$ is the learned gate,
+$\ell^0\in\R^{1\times H\times W}$ is the detached prior logit, and
+$\operatorname{sg}$ stops gradients. The bounded residual correction
+$\Delta_\theta(\mathbf h)\in\R^{1\times H\times W}$ is predicted by the
+router. A binary reliable-support mask
+$M^{\rm rel}\in\{0,1\}^{1\times H\times W}$ accepts DSS evidence only when
+the render is valid, sufficiently supported, and depth-consistent. The
+effective synthesis gate $g\in[0,1]^{1\times H\times W}$ is
+\begin{equation}
+ g=(1-M^{\rm rel})\odot\widetilde g.
+ \label{eq:effective-gate}
+\end{equation}
+Routing therefore retains a geometric initialization, suppresses synthesis on
+reliable DSS support, and adapts elsewhere.
+Fig.~\ref{fig:dss-evidence}(d) visualizes the resulting gate. It is not the
+complement of $M^{\rm dss}$ because the continuous evidence and learned
+residual also affect its value.
+
+\textbf{Complementary experts.}
+The transport expert predicts a bounded RGB correction to the DSS warp and
+retains the DSS expected depth. The synthesis expert is an
+uncertainty-conditioned Fourier U-Net~\cite{ronneberger2015unet} that combines
+local convolution with real-FFT processing. The expert predictions satisfy
+$\I_t^{\rm trans},\I_t^{\rm syn}\in[0,1]^{3\times H\times W}$,
+$\D_t^{\rm syn}\in\R_+^{1\times H\times W}$, and
+$\U_t^{\rm syn}\in[0,1]^{1\times H\times W}$.
+This local--global design follows Fourier inpainting networks
+~\cite{suvorov2022lama,chu2023uffc}, but all weights are trained within
+DistriNVS. Risk is trained as an error-scale proxy on unreliable
+regions, not as a calibrated failure probability over the full image.
+
+\textbf{Reliability-constrained output.}
+The transport branch retains source evidence while allowing bounded appearance
+correction; the synthesis branch supplies content where geometric evidence is
+weak. Their final predictions are
+\begin{align}
+ \widehat\I_t&=(1-g)\odot\I_t^{\rm trans}+g\odot\I_t^{\rm syn},\\
+ \widehat\D_t&=(1-g)\odot\bar D_t+g\odot\D_t^{\rm syn},
+ \qquad \U_t=\U_t^{\rm syn}.
+ \label{eq:expert-fusion}
+\end{align}
+The gate is broadcast across RGB channels. We refer to this output rule as
+\emph{soft fusion (SF)}. On $M^{\rm rel}$, $g=0$ and the output follows the
+bounded transport expert; elsewhere the two experts form a soft mixture.
+For comparison, \emph{hard composition (HC)} overrides the SF result on
+$M^{\rm rel}$ by copying the unmodified DSS RGB $\I_t^w$ and depth $\bar D_t$.
+Outside $M^{\rm rel}$, it retains the SF result rather than selecting the
+synthesis expert alone. HC is evaluated only in the ablation study.
+
+\subsection{Learning Objectives}
+
+All loss terms defined below are nonnegative scalars in $\R_+$.
+The training target is accompanied by a tissue-valid mask that excludes
+annotated instruments when available. A regional reconstruction objective
+$\mathcal L_{\rm rec}$ combines robust RGB and gradient agreement across trusted,
+unreliable, and transition regions. These regions are determined by the
+reliability masks. A depth objective
+$\mathcal L_{\rm depth}$ combines a Laplace likelihood for the predicted source
+depth distribution with relative target-depth supervision when target depth is
+available.
+
+For \emph{RGB-D-guided reprojection cycle consistency (RCC)}, the predicted
+RGB-D is splatted back through the inverse calibrated transform and the
+backward-rendered RGB is compared with the valid source image. Risk modulates
+the backward splat, but no depth-cycle loss is imposed. The routing loss
+$\mathcal L_{\rm router}$ uses binary cross-entropy against a detached
+reliability target derived from DSS support, variance, and collision ambiguity.
+
+The \emph{uncertainty loss (UL)} trains risk as an error scale on the
+unreliable tissue mask $M_u\in\{0,1\}^{1\times H\times W}$. For pixel
+$p\in\Omega_t$, let $e_p\in\R_+$ be the channel-mean absolute RGB error and
+$s_p\in\R_+$ the positive scale predicted from risk. We use
+\begin{equation}
+ \mathcal L_{\rm UL}
+ =\left\langle e_p/s_p+\log s_p\right\rangle_{M_u}.
+\label{eq:risk-loss}
+\end{equation}
+The complete objective groups these terms as
+\begin{equation}
+ \mathcal L=\mathcal L_{\rm rec}+\lambda_d\mathcal L_{\rm depth}
+ +\lambda_c\mathcal L_{\rm RCC}+\lambda_r\mathcal L_{\rm router}
+ +\lambda_u\mathcal L_{\rm UL},
+\label{eq:total-loss}
+\end{equation}
+where $\lambda_d,\lambda_c,\lambda_r,\lambda_u\in\R_+$ are scalar weights that
+balance geometry, cycle, routing, and uncertainty supervision, respectively.
+
+At inference, the predictor consumes only source RGB-D, camera calibration,
+and relative pose, and ends at the fused prediction in
+Eq.~\eqref{eq:expert-fusion}. Target RGB-D and instrument masks are used only
+for supervision or evaluation; the backward-cycle branch and deterministic
+image repair are disabled. The method assumes known
+zero-skew pinhole intrinsics, a rigid inter-endoscope transform, and an
+axis-aligned approximation to projected uncertainty; these assumptions delimit
+its present scope.
+
+\section{Experiments}
+\label{sec:experiments}
+
+\subsection{Experimental Setup}
+\label{sec:implementation}
+
+DistriNVS training uses the frozen list of 13 iMED Task~2 scenes supplied in
+the project configuration~\cite{imed2026}. Splits are made at scene level, not
+at frame level. Online depth dropout creates both isolated and contiguous
+missing regions.
+
+EndoVis/SCARED Datasets~8 and 9 are reserved for final zero-shot evaluation;
+neither their images nor metrics are used for model selection. Pair inclusion
+is determined by a renderer-only pass using the \emph{raw} valid source depth.
+We retain 275 pairs whose raw DSS support exceeds 70\% of the image. Learned
+depth completion, target RGB, and target tool masks cannot influence this
+decision. Every method receives the same scene--frame identifiers, without
+method-side or evaluator-side frame rejection.
+
+We compare against seven endoscopic Gaussian reconstruction systems and four
+feed-forward completion systems: LDM, LaMa, LCM-LoRA, and Hunyuan-DiT
+~\cite{rombach2022ldm,suvorov2022lama,luo2023lcmlora,li2024hunyuandit}. Every
+prediction is evaluated at the same resolution on the same target frames. 
+We use the step-5,000 fine-tuned Hunyuan-DiT with the fixed
+100-step DDPM protocol.
+
+
+We report PSNR~\cite{huynhthu2008psnr}, SSIM~\cite{wang2004ssim}, and LPIPS~\cite{zhang2018lpips}.
+H-prefixed metrics are evaluated
+on the canonical raw-DSS hole intersected with non-tool tissue support on iMED.
+All EndoVis pixels are evaluated because target tool masks are unavailable.
+Scores are recomputed with a common evaluator, and degenerate predictions are
+retained. The tables report frame-wise means and sample standard deviations,
+rounded to two decimal places. Latency is measured at batch size one on an
+RTX~4090 after warm-up, excluding loading, decoding, evaluation, and disk I/O.
+The Hunyuan-DiT input mask controls synthesis but not the common H region.
+
+\noindent\textbf{Implementation.}
+Images are processed at $640\times512$. DSS uses the three Gaussian-weighted
+hypotheses described in Sec.~\ref{sec:method}, and the reliability encoder
+transports 16 feature channels. The synthesis expert has four resolutions and
+base width 32, and the complete network contains $5.79$\,M trainable
+parameters. We train for 10,000 AdamW steps with learning rate
+$2\times10^{-4}$, weight decay $10^{-4}$, and effective batch size 12. Training
+uses BF16 mixed precision and seed 6666. Renderer, routing, mask, and loss
+constants are fixed across corresponding configurations and recorded in the
+released configuration; none is tuned on EndoVis.
+
+\subsection{In-Domain Comparison}
+
+Tabs.~\ref{tab:validation-comparison} and
+\ref{tab:validation-comparison-hole} compare all methods on the same 1,392
+iMED frames using shared tissue and hole masks.
+The Gaussian systems use dataset depth and serve as reconstruction references,
+whereas DistriNVS is evaluated by its direct SF output without post-processing.
+Bold and underlining mark the best and second-best means. 
+On the iMED test set, DistriNVS achieved the highest PSNR, SSIM, and
+H-PSNR while remaining competitive in LPIPS. Fig.~\ref{fig:imed-qualitative}
+presents the corresponding qualitative evidence. Its examples are the 100th
+retained pairs from the lexicographically first and last validation scenes, a
+rule fixed before prediction inspection.
+
+\begin{table}[t]
+\centering
+\caption{Full-image comparison on the seven-scene iMED test set
+($N=1{,}392$).}
+\label{tab:validation-comparison}
+\scriptsize
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\columnwidth}{@{}l@{\extracolsep{\fill}}ccc@{}}
+\toprule
+Method & PSNR $\uparrow$ & SSIM $\uparrow$ & LPIPS $\downarrow$ \\
+\midrule
+Deform3DGS~\cite{yang2024deform3dgs} & $15.83\pm1.87$ & $0.33\pm0.06$ & $0.48\pm0.10$ \\
+Endo-4DGS~\cite{huang2024endo4dgs} & $16.78\pm1.65$ & $0.36\pm0.04$ & $0.46\pm0.08$ \\
+Free-SurGS~\cite{guo2024freesurgs} & $17.09\pm2.14$ & $\underline{0.43\pm0.07}$ & $0.51\pm0.07$ \\
+SurgicalGS~\cite{chen2025surgicalgs} & $17.79\pm1.95$ & $0.38\pm0.07$ & $0.46\pm0.07$ \\
+PR-ENDO~\cite{kaleta2025prendo} & $15.79\pm1.27$ & $0.31\pm0.07$ & $0.55\pm0.07$ \\
+EndoGS~\cite{zhu2024endogs} & $12.52\pm6.22$ & $0.38\pm0.06$ & $0.66\pm0.20$ \\
+EndoGaussian~\cite{liu2025endogaussian} & $14.38\pm4.26$ & $0.37\pm0.24$ & $0.77\pm0.12$ \\
+LDM~\cite{rombach2022ldm} & $17.18\pm2.83$ & $0.34\pm0.06$ & $0.44\pm0.08$ \\
+LaMa~\cite{suvorov2022lama} & $19.48\pm1.44$ & $0.43\pm0.11$ & $\mathbf{0.35\pm0.06}$ \\
+LCM-LoRA~\cite{luo2023lcmlora} & $19.47\pm1.73$ & $0.42\pm0.12$ & $0.39\pm0.04$ \\
+Hunyuan-DiT~\cite{li2024hunyuandit} & $\underline{19.52\pm1.51}$ & $0.42\pm0.12$ & $\underline{0.38\pm0.04}$ \\
+\midrule
+DistriNVS (SF) & $\mathbf{22.95\pm2.33}$ & $\mathbf{0.59\pm0.11}$ & $0.40\pm0.05$ \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+\begin{table}[t]
+\centering
+\caption{Hole-region comparison on the seven-scene iMED test set
+($N=1{,}392$).}
+\label{tab:validation-comparison-hole}
+\scriptsize
+\setlength{\tabcolsep}{0pt}
+\begin{tabular*}{\columnwidth}{@{}l@{\extracolsep{\fill}}ccc@{}}
+\toprule
+Method & H-PSNR $\uparrow$ & H-SSIM $\uparrow$ & H-LPIPS $\downarrow$ \\
+\midrule
+Deform3DGS~\cite{yang2024deform3dgs} & $14.01\pm1.81$ & $0.31\pm0.07$ & $0.63\pm0.06$ \\
+Endo-4DGS~\cite{huang2024endo4dgs} & $15.79\pm1.85$ & $0.42\pm0.14$ & $0.60\pm0.06$ \\
+Free-SurGS~\cite{guo2024freesurgs} & $17.86\pm2.88$ & $0.56\pm0.05$ & $0.56\pm0.06$ \\
+SurgicalGS~\cite{chen2025surgicalgs} & $17.63\pm2.87$ & $0.47\pm0.16$ & $0.59\pm0.06$ \\
+PR-ENDO~\cite{kaleta2025prendo} & $11.92\pm1.71$ & $0.10\pm0.06$ & $0.74\pm0.08$ \\
+EndoGS~\cite{zhu2024endogs} & $12.52\pm6.68$ & $0.49\pm0.12$ & $0.74\pm0.17$ \\
+EndoGaussian~\cite{liu2025endogaussian} & $15.86\pm3.60$ & $0.48\pm0.31$ & $0.69\pm0.09$ \\
+LDM~\cite{rombach2022ldm} & $14.90\pm3.48$ & $0.37\pm0.11$ & $0.64\pm0.13$ \\
+LaMa~\cite{suvorov2022lama} & $21.40\pm2.32$ & $0.63\pm0.05$ & $0.42\pm0.08$ \\
+LCM-LoRA~\cite{luo2023lcmlora} & $\underline{22.53\pm2.23}$ & $\underline{0.70\pm0.06}$ & $\underline{0.42\pm0.04}$ \\
+Hunyuan-DiT~\cite{li2024hunyuandit} & $20.87\pm2.07$ & $0.64\pm0.08$ & $0.49\pm0.03$ \\
+\midrule
+DistriNVS (SF) & $\mathbf{27.95\pm2.91}$ & $\mathbf{0.80\pm0.07}$ & $\mathbf{0.41\pm0.05}$ \\
+\bottomrule
+\end{tabular*}
+\end{table}
+
+Fig.~\ref{fig:hole-ratio} stratifies reconstruction quality by the fraction of
+target tissue unsupported by the source view.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/hole_ratio/hole_ratio_source_unobserved.pdf}
+\caption{Performance stratified by source-unobserved ratio on the iMED test
+set. Curves and shaded regions show the frame-wise mean and sample standard
+deviation, respectively, for (a) PSNR and (b) LPIPS.}
+\label{fig:hole-ratio}
+\end{figure}
+
+
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/table_comparisons/table1_qualitative_comparison.pdf}
+\caption{Qualitative in-domain comparison on iMED. (a) Gaussian reconstruction
+from source RGB. (b) Image completion from the DSS warp. White labels report
+full-image PSNR (dB); teal borders denote DistriNVS.}
+\label{fig:imed-qualitative}
+\vspace{-0.4cm}
+\end{figure*}
+
+\subsection{Zero-Shot Comparison}
+
+We compare the five feed-forward methods on the EndoVis
+dataset, without EndoVis adaptation, or frame rejection.
+Bold and underlining in Tab.~\ref{tab:zeroshot-breakdown} mark the best and
+second-best unrounded means.
+On EndoVis, DistriNVS achieved the highest PSNR and SSIM, the lowest LPIPS, and the
+second-highest H-PSNR. It also had the second-lowest latency, while
+LaMa achieved the highest H-PSNR and the lowest latency. The reported
+DistriNVS latency includes depth reliability estimation, DSS, routing, both
+experts, and output composition.
+The slower inference of DistriNVS is partly due to the computational cost of DSS, 
+whose distributional projection and aggregation operations add 
+overhead beyond the synthesis network itself.
+Fig.~\ref{fig:endovis-qualitative} shows the qualitative results of the zero-shot comparison on the EndoVis datasets.
+
+\begin{table}[t]
+\centering
+\caption{Zero-shot comparison on EndoVis Datasets~8 and 9 ($N=275$).}
+\label{tab:zeroshot-breakdown}
+\scriptsize
+\setlength{\tabcolsep}{0pt}
+
+\begin{tabular*}{\columnwidth}{@{}l@{\extracolsep{\fill}}ccccc@{}}
+\toprule
+Method
+& PSNR $\uparrow$
+& SSIM $\uparrow$
+& LPIPS $\downarrow$
+& H-PSNR $\uparrow$
+& Time (s) $\downarrow$ \\
+\midrule
+
+LDM
+& $17.44{\pm}1.86$
+& $0.33{\pm}0.14$
+& $0.81{\pm}0.17$
+& $12.54{\pm}2.44$
+& $2.57{\pm}0.15$ \\
+
+LaMa
+& $\underline{22.72{\pm}2.10}$
+& $\underline{0.63{\pm}0.14}$
+& $\underline{0.32{\pm}0.07}$
+& $\mathbf{21.43{\pm}2.71}$
+& $\mathbf{0.04{\pm}0.00}$ \\
+
+LCM-LoRA
+& $14.26{\pm}0.94$
+& $0.22{\pm}0.04$
+& $1.00{\pm}0.08$
+& $14.23{\pm}2.61$
+& $0.40{\pm}0.04$ \\
+
+Hunyuan-DiT
+& $15.79{\pm}2.43$
+& $0.31{\pm}0.12$
+& $0.85{\pm}0.15$
+& $13.24{\pm}3.21$
+& $13.04{\pm}0.07$ \\
+
+\midrule
+DistriNVS
+& $\mathbf{23.47{\pm}2.01}$
+& $\mathbf{0.66{\pm}0.12}$
+& $\mathbf{0.23{\pm}0.04}$
+& $\underline{21.11{\pm}2.93}$
+& $\underline{0.08{\pm}0.01}$ \\
+
+\bottomrule
+\end{tabular*}
+
+\end{table}
+
+
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/table_comparisons/table2_zeroshot_qualitative_comparison.pdf}
+\caption{Qualitative zero-shot comparison on EndoVis Datasets~8 and 9 without
+target-domain adaptation. Completion methods use the same DSS warp and mask.
+White labels report full-image PSNR (dB); teal borders denote DistriNVS.}
+\label{fig:endovis-qualitative}
+\vspace{-0.4cm}
+\end{figure*}
+
+\subsection{Ablation Study}
+
+Tab.~\ref{tab:ablation} reports eight single-seed configurations on the iMED test set.
+The primary model uses SF, whereas the six component
+variants retain legacy HC and are therefore interpreted only relative to the
+HC reference. Bold and underlining mark the best and second-best means.
+SF achieved the strongest overall reconstruction in Tab.~\ref{tab:ablation}.
+Within the HC family, removing DD causes the clearest joint degradation,
+whereas DC, OF, PGR, RCC, and UL show smaller or region-dependent changes.
+Because SF and HC are trained separately, the HC variants should not be read
+as direct removals from the primary SF model.
+
+\begin{table}[t]
+\centering
+\caption{Ablation study on the seven-scene iMED test set ($N=1{,}392$).}
+\label{tab:ablation}
+\scriptsize
+\setlength{\tabcolsep}{0pt}
+
+\begin{tabular*}{\columnwidth}{@{}l@{\extracolsep{\fill}}rrrr@{}}
+\toprule
+Variant
+& PSNR $\uparrow$
+& SSIM $\uparrow$
+& H-PSNR $\uparrow$
+& H-SSIM $\uparrow$ \\
+\midrule
+
+\multicolumn{5}{@{}l}{\textit{Primary output rule and legacy reference}} \\
+DistriNVS (SF)
+& $\mathbf{22.95\pm2.33}$
+& $\mathbf{0.59\pm0.11}$
+& $\mathbf{27.95\pm2.91}$
+& $\mathbf{0.80\pm0.07}$ \\
+
+DistriNVS (HC)
+& $\underline{20.77\pm1.91}$
+& $\underline{0.49\pm0.13}$
+& $27.56\pm2.73$
+& $0.78\pm0.07$ \\
+
+\addlinespace
+\multicolumn{5}{@{}l}{\textit{Component variants under legacy hard composition}} \\
+
+w/o DC
+& $20.68\pm1.89$
+& $0.49\pm0.13$
+& $\underline{27.76\pm2.48}$
+& $\underline{0.79\pm0.06}$ \\
+
+w/o DD
+& $20.67\pm1.91$
+& $0.48\pm0.13$
+& $27.19\pm2.74$
+& $0.77\pm0.07$ \\
+
+w/o OF
+& $20.65\pm1.92$
+& $0.48\pm0.13$
+& $27.73\pm2.71$
+& $0.78\pm0.06$ \\
+
+w/o PGR
+& $20.75\pm1.89$
+& $0.49\pm0.13$
+& $27.41\pm2.72$
+& $0.77\pm0.07$ \\
+
+w/o RCC
+& $20.72\pm1.91$
+& $0.49\pm0.13$
+& $27.41\pm2.73$
+& $0.78\pm0.07$ \\
+
+w/o UL
+& $20.70\pm1.89$
+& $0.48\pm0.13$
+& $27.02\pm2.60$
+& $0.77\pm0.07$ \\
+
+\bottomrule
+\end{tabular*}
+
+\end{table}
+
+
+
+\section{Discussion}
+\label{sec:discussion}
+
+Our ablation indicates that the output rule has the largest effect, while DD
+provides the most consistent component-level benefit within the HC family.
+We observe smaller or region-dependent effects from the remaining components.
+This pattern is consistent with HC preserving residual transport error, whereas
+SF permits bounded appearance correction. Because SF and HC differ during both
+training and inference, their comparison does not isolate the output operation
+alone. Our ablation also uses a single seed, and the component variants are
+trained under HC; their interactions with the primary SF model therefore remain
+untested. We further note that the fixed EndoVis benchmark is frame-weighted
+with an uneven sequence distribution, although all methods use the same pairs
+without evaluator-side repair.
+
+We observe a remaining gap to LaMa on several specific metrics, which may stem
+from differences in model capacity and training objectives. LaMa uses
+approximately 51M parameters and combines global Fourier processing with
+adversarial, feature-matching, and perceptual objectives that favor
+appearance-oriented completion. By contrast, our model uses only 5.79M
+parameters while allocating capacity to geometry transport, reliability
+estimation, routing, RGB-D prediction, and uncertainty modeling. Endoscopic
+tissue often exhibits smooth color variation and low-frequency texture, which
+may favor LaMa's larger appearance-completion network. This difference may
+explain its lower LPIPS on iMED and its small H-PSNR advantage on EndoVis.
+Our results nevertheless show that DistriNVS achieves better zero-shot PSNR,
+SSIM, and LPIPS on EndoVis while using about 1/9 of the parameters.
+Future work will explore increasing the capacity of our synthesis expert and 
+introducing perceptual or adversarial supervision
+while retaining the geometry-derived
+reliability constraints that distinguish transported evidence from synthesized
+content.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+This paper introduces a reliability-aware formulation of cross-endoscope
+novel-view synthesis through distributional surface splatting and constrained
+transport--synthesis fusion. Projection support, depth variance, and collision
+ambiguity determine where synthesis is permitted, while joint RGB-D prediction
+provides content where transport is unreliable. The iMED and zero-shot EndoVis
+results support SF as the primary output formulation and identify DD as the
+most consistent component within the HC ablation family. Multi-seed studies,
+matched SF component variants, and broader external datasets are needed for
+stronger causal and generalization claims.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

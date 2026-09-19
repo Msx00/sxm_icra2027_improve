@@ -18,7 +18,7 @@ from distrisurg.utils.parameters import distrisurg_parameter_report
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", default=str(ROOT / "configs/distrisurg_dataset89.yaml"))
+    parser.add_argument("--config", default=str(ROOT / "configs/train.yaml"))
     parser.add_argument("--ablation-config", action="append", default=[])
     parser.add_argument("--set", action="append", default=[], metavar="KEY=VALUE")
     args = parser.parse_args()

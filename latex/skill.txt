@@ -1,0 +1,415 @@
+# DistriNVS Method 公式精简与 LaTeX 排版 Skill
+
+## 用途
+
+用于修改机器人、计算机视觉和医学影像论文的 Method 部分，尤其适用于以下问题：
+
+- 编号公式过多、单个公式包含多组定义；
+- 正文被行内公式切得零碎，读者难以抓住方法主线；
+- 符号定义不完整、同一符号承担多种含义；
+- 论文公式与代码实现不一致；
+- 公式引导句、公式本身或解释文字在双栏页面中被拆开；
+- 希望形成类似成熟会议论文的“少而关键、短而完整”的公式结构。
+
+本 Skill 的目标不是机械地减少公式数量，而是让每个编号公式只表达一个值得读者记住、引用或复现的核心关系。
+
+
+## 核心原则
+
+### 1. 一个编号只表达一个核心关系
+
+每个 `equation` 环境原则上只能包含一个主等式或一个主映射关系。
+
+- 优先排成一行；
+- 最多允许两行；
+- 两行必须是同一个等式的自然换行，不能借两行并列定义多个变量；
+- 不要在同一个编号内连续定义采样、投影、权重、统计量和输出；
+- 不要为了“显得严谨”给标准操作单独编号。
+
+允许保留编号的关系通常至少满足一项：
+
+1. 它是论文的核心创新机制；
+2. 后文会通过 `Eq.~(...)` 再次引用；
+3. 删除后会使方法无法复现或核心因果链断裂；
+4. 它概括一个完整模块的输入输出或训练目标。
+
+
+### 2. 辅助定义移到正文，但不能形成新的“行内公式墙”
+
+下列内容通常不单独编号：
+
+- 索引集合和固定取值；
+- Jacobian、归一化偏移等局部辅助量；
+- support、coverage、归一化权重等中间统计量；
+- gate prior、mask 前后的变量转换；
+- error、scale 和 loss group 等为主公式服务的定义；
+- `clip`、`clamp`、epsilon 防零和有效范围截断等实现型数值保护；
+- 标准相机投影、Charbonnier loss、Shannon entropy、FFT 模块等已有成熟定义的操作。
+
+若裁剪只用于保证物理范围或数值稳定，Method 直接写核心数学关系，实际裁剪的对象、阶段和范围统一放到 Implementation。无需在 Method 中把相应变量称为 “pre-clipped” 或 “unclipped”。只有裁剪本身构成方法机制时，才将其保留在核心公式中。
+
+处理方式按优先级选择：
+
+1. 能用准确文字定义时，优先写成文字；
+2. 必须给出精确定义时，使用一个短行内公式；
+3. 一个句子尽量只承担一个辅助数学关系；
+4. 长行内公式拆成两个完整句子，不把多个等号串在同一句中；
+5. 除非用户明确要求，不再用无编号显示公式承载被移出的辅助定义。
+
+示例：
+
+```latex
+Let $J^\alpha_{qk}=|\partial\alpha_{qk}/\partial z|$, with
+$\alpha\in\{u,v\}$, denote projection sensitivity to source depth.
+```
+
+这里的 Jacobian 是 footprint 公式的辅助量，因此放在正文中，不占用一个编号。
+
+对 support-normalized weights 采用集合级定义，不逐项展开标准归一化。例如可写
+“the retained contributions are normalized over $\Omega_p$”，而不再写
+`$\pi_i=w_i/\max(S_p,\epsilon)$`。如果归一化权重只用于 entropy，可直接定义
+“normalized weight entropy at pixel $p$”，从而完全省略 `$\pi_i$`。数值稳定常数
+仍应在 Implementation 中报告。
+
+
+### 3. 编号公式组成清晰的因果链
+
+读者只看公式编号，也应能还原方法主线。当前 DistriNVS 候选稿采用以下七步结构作为基准：
+
+1. 不确定性感知 footprint；
+2. DSS contribution 与 soft visibility；
+3. collision ambiguity；
+4. physics-guided residual router；
+5. trusted hard composition；
+6. uncertainty/risk objective；
+7. total training objective。
+
+深度 sigma 采样、标准相机投影、support-normalized moments 和 coverage
+转换均作为上述核心关系的输入或辅助统计，不再单独编号。若公式数量再次增加，
+应先证明新编号会在后文被引用，或删除它会损害复现性。
+
+不要为中间实现量增加新的编号，除非方法逻辑发生实质变化。
+
+
+### 4. 段落围绕公式组织，而不是围绕符号罗列
+
+每个公式附近的段落按以下逻辑组织：
+
+1. 一句话说明为什么需要该机制；
+2. 给出唯一的核心编号公式；
+3. 用自然语言解释公式中的变量和物理意义；
+4. 说明该公式为后续模块提供什么；
+5. 将具体阈值、裁剪范围和网络尺寸放到 Implementation。
+
+避免以下写法：
+
+- 先连续列出五六个行内定义，再告诉读者它们用于什么；
+- 逐项复述公式表面运算，却不说明设计目的；
+- 在 Method 中混入大量训练超参数和工程阈值；
+- 同一段同时讨论动机、网络结构、损失函数和实验设置。
+
+
+## 公式取舍判据
+
+对每个现有显示公式依次询问：
+
+1. 这是核心机制，还是仅为下一公式服务的临时变量？
+2. 后文是否需要引用这个编号？
+3. 用一句文字或短行内式能否同样清楚地表达？
+4. 公式中是否出现两个以上独立等号？
+5. 读者能否用一句话说出这个编号公式的作用？
+
+若第 1、2、5 项均是否，通常应取消编号并改写为正文。
+
+若一个公式含多个独立等号：
+
+- 选择最能代表该模块贡献的主等式保留；
+- 其余定义移到公式前后的正文；
+- 不通过 `aligned` 环境把多个定义继续藏在同一编号下。
+
+
+## 符号完整性与一致性
+
+### 1. 邻近定义原则
+
+编号公式中的每个非标准符号，都必须满足以下至少一项：
+
+- 在公式前一段定义；
+- 在公式后一段立即定义；
+- 已在当前小节入口明确列入模块输入；
+- 属于此前已定义且含义未改变的全局符号。
+
+邻近定义原则只约束实际出现在 Method 公式中的符号。仅用于数值保护的
+`$\epsilon_g$` 等实现符号，应在 Implementation 首次出现时就近定义，无需放回
+Method 的核心公式。
+
+
+### 2. 一个符号只承担一种语义
+
+对容易混淆的阶段变量使用不同记号。例如：
+
+- `$g^0$`：解析的 physics prior；
+- `$g^\star$`：应用 trust mask 前的 learned synthesis probability；
+- `$g$`：真正用于 expert mixing 的 gate；
+- `$M^{\rm trust,0}$`：阈值得到的 raw trusted mask；
+- `$M^{\rm trust}$`：空间清理后的最终 trusted mask。
+
+不要用同一个 `$g$` 或 `$M$` 同时指代上述多个阶段。
+
+
+### 3. 核心语义一致，实施细节可追溯
+
+一致不表示 Method 必须逐算子抄写代码。Method 表达核心数学关系；
+Implementation 精确报告实验实际采用的数值保护。两部分合起来必须能够对应
+真实代码和配置。
+
+修改前必须核对真实实现，重点检查：
+
+- clip 是否只是实现保护；若是，记录其对象、阶段和上下界并移到 Implementation；
+- stop-gradient 作用在哪个量上；
+- mask 在 routing 前还是 routing 后应用；
+- transport expert 是否真的预测 depth；
+- normalization 是否还有除法、缩放或二次裁剪；
+- hard composition 使用 raw mask 还是 cleaned mask；
+- risk 是概率、归一化分数，还是误差尺度代理；
+- 后处理是否属于训练路径或仅用于报告时推理。
+
+若论文与代码冲突，以实际实验所用代码和配置为准，同时避免夸大未实现的机制。
+Method 与 Implementation 合起来应与代码一致，但不要求 Method 公式逐项包含
+clip 等数值保护操作。
+
+
+### 4. 张量尺寸与物理单位
+
+Method 必须让读者能够判断每个模块的输入输出是否可连接，但尺寸标注也不能演变
+成新的行内公式墙。采用以下规则：
+
+1. 在 Problem Formulation 中声明 channel-first 或 channel-last 约定，并说明是否
+   省略 batch 维；若代码统一 resize，还要声明 source/target 的共同空间尺寸。
+2. 每个变量只在首次出现时标注一次尺寸，后文不重复；同形状变量使用 grouped
+   declaration，例如 RGB 为三通道，depth、mask、gate 和统计图为单通道。
+3. 在各模块入口集中标注四组尺寸：输入 RGB-D/标定、reliability 输出、DSS
+   输出、router/expert 输出。不要在每条公式后逐变量补 shape。
+4. 特征宽度使用独立符号 `$d_f$`，不得复用 coverage `$C$`、confidence `$c$`
+   或其他已有符号。
+5. 相机内参写为 `$3\times3$`，齐次刚体变换写为 `$4\times4$`；若数学上写
+   `$T\in\mathrm{SE}(3)$`，可同时说明实现使用齐次矩阵。
+6. 除 tensor shape 外，还要标注会影响物理意义的单位：depth、uncertainty scale
+   和 visibility temperature 使用 mm，variance 使用 mm$^2$，footprint 使用 px，
+   projection Jacobian 使用 px/mm。
+7. 对 scalar map 与 scalar parameter 作明确区分。前者应写成 `$1\times H\times W$`
+   target-grid map，后者只说明为 scalar；所有 loss 和 loss weights 统一说明为
+   scalar 即可。
+8. 维度以真实 forward interface 为准。若实现只支持 source/target 同分辨率，
+   论文不得暗示任意 `$H_s\times W_s$` 到 `$H_t\times W_t$` 输出。
+
+交付前建立内部 dimension ledger，至少检查 RGB、depth、mask、feature、normal、
+DSS evidence、condition tensor、gate、expert outputs、composition tensor 和 training
+masks。正文只呈现首次出现所需的信息，不附完整 ledger。
+
+
+## Method 与 Implementation 的边界
+
+Method 保留：
+
+- 模块动机；
+- 核心数据流；
+- 不含实现型 clip 的创新公式；
+- 公式变量的语义；
+- 保真、路由和风险建模的关键保证。
+
+Implementation 集中报告：
+
+- 固定采样点和权重；
+- 每项 clip 的变量、应用阶段、范围，以及其他阈值和温度；
+- epsilon、残差上界和 loss weights；
+- 网络宽度、尺度、卷积核和输出通道；
+- morphology kernel、连通域和 Telea 参数；
+- optimizer、训练 steps、batch size、GPU 和精度。
+
+Implementation 无需重复完整的核心公式。只要裁剪不是方法机制，Method 中就不
+保留其算子或参数；在 Implementation 中完整报告即可。
+
+
+### 数值常量的分层
+
+Method 原则上只使用符号常量，不直接写可配置的具体数值。固定采样集合、quadrature
+权重、阈值、温度、裁剪范围、网络宽度、核大小、显示百分位和 loss weights 均先在
+Method 中以符号表示，再在 Implementation 中集中实例化。例如，标准化深度偏移写为
+集合 `$\Xi=\{\xi_k\}$`，图像显示截断写为 `$q_{\rm vis}$`，具体取值只在
+Implementation 报告。
+
+以下数字属于必要例外，不应为消除数字而额外引入符号：
+
+- RGB、depth、mask、feature、condition、gate、expert input 和输出等模块接口
+  张量所需的通道维度；
+- `$3\times3$` intrinsics、`$4\times4$` homogeneous transform 和 `$\R^2$`
+  image coordinate 等几何维度；
+- `$[0,1]$`、binary mask 等变量定义域；
+- complement、Gaussian kernel、平方项和归一化中不可替换的数学常数；
+- figure、equation、section、dataset 和 panel 的标识编号。
+
+审计时应区分“结构定义”与“实验取值”。前者留在 Method 以维持类型闭合和可读性，
+后者必须能在 Implementation 中由同一符号准确查到。
+
+
+## 双栏 LaTeX 排版规则
+
+### 1. 公式及引导句不得分离
+
+- 粗体小标题、完整引导句和对应公式必须在同一栏；
+- 不允许页面底部只留下 “is defined as:” 而公式出现在下一页；
+- 公式后的解释可以跨页，但不能从半个句子开始；
+- 必要时优先缩短前文，再使用 `samepage` 或合适的分页控制；
+- 不使用负 `\vspace` 强行挤压页面。
+
+
+### 2. 视觉长度控制
+
+- 单行公式不得超出 IEEE 双栏栏宽；
+- 两行公式只在一个主关系过长时使用 `split`；
+- 换行应发生在自然的加号或运算分组处；
+- 编号只出现一次并垂直居中；
+- 不为了填满页面扩大公式间距；
+- 不用过度的 `\left`、`\right` 和多层括号制造视觉噪声。
+
+
+### 3. 行内数学可读性
+
+- 避免一行连续出现三个以上独立行内公式；
+- 若长公式造成异常字距，缩短公式或重写句序；
+- 可以将常见运算改为文字，例如“normalized Shannon entropy”；
+- 不牺牲精确定义来换取表面简洁。
+
+
+## 推荐执行流程
+
+### 步骤 1：保护基准稿
+
+- 明确用户要求修改的候选 `.tex`；
+- 未经授权不覆盖主 `main.tex`；
+- 保留现有标签、引用、结果表和用户其他改动。
+
+
+### 步骤 2：建立公式清单
+
+对每个编号记录：
+
+- 它回答的唯一问题；
+- 是否属于核心贡献；
+- 是否被后文引用；
+- 哪些子定义可以移到正文；
+- 预计排版为一行还是两行。
+
+
+### 步骤 3：先改公式，再改文字
+
+- 每个编号只留下主关系；
+- 将辅助定义移到相邻正文；
+- 重写段落，使公式前有动机、公式后有解释；
+- 删除因公式精简而产生的重复说明。
+
+
+### 步骤 4：做符号闭合审计
+
+逐式检查：
+
+- 所有上下标和集合是否有定义；
+- 每个模块首次出现的输入输出是否标注 tensor shape；
+- batch/channel/spatial 约定是否与真实 forward interface 一致；
+- 单位、范围和 mask 语义是否明确；
+- 同一变量在 Method、Implementation 和图中是否一致；
+- 核心关系是否与训练和推理代码的语义一致；
+- Method 省略的数值保护是否已在 Implementation 完整记录。
+
+
+### 步骤 5：编译并视觉检查
+
+每次形成稳定修改后：
+
+1. 用项目原有 LaTeX 环境完整编译；
+2. 检查 `Overfull`、未定义引用和未定义文献；
+3. 将 Method 所在 PDF 页面渲染为图片；
+4. 逐页检查公式是否越界、跨页或与引导句分离；
+5. 检查行内公式是否造成字距异常；
+6. 修改后重新编译和复查，直到稳定。
+
+不能只以“编译成功”作为完成标准；最终 PDF 的视觉结果才是排版依据。
+
+
+## 验收清单
+
+交付前必须同时满足：
+
+- [ ] 每个编号公式只有一个主等式或主关系；
+- [ ] 每个编号公式最多两行；
+- [ ] 两行公式仍属于同一个逻辑关系；
+- [ ] 辅助定义已改为文字或短行内式；
+- [ ] 正文没有形成新的行内公式墙；
+- [ ] Method 中没有实现型 clip，也没有 “pre-clipped” 解释；
+- [ ] Method 中的可配置数值已符号化，并在 Implementation 中用同一符号实例化；
+- [ ] 未将张量/几何维度、变量定义域或公式固有常数误移到 Implementation；
+- [ ] 每项被省略的 clip 均可在 Implementation 查到对象、阶段和范围；
+- [ ] 编号公式中的所有符号均已定义；
+- [ ] 已声明 batch、channel 和空间尺寸约定；
+- [ ] 每个模块首次出现的张量均有尺寸，且后文没有重复堆叠 shape；
+- [ ] depth、variance、footprint 和 Jacobian 的物理单位正确；
+- [ ] router、mask、risk 和 loss 的阶段语义无混用；
+- [ ] Method 与 Implementation 合起来对应实际代码、配置和推理后处理；
+- [ ] 公式引导句与公式位于同一栏；
+- [ ] 没有公式越界、`Overfull` 或未定义引用；
+- [ ] 已人工检查 Method 的最终 PDF 页面；
+- [ ] 只修改用户指定的候选稿和对应 PDF。
+
+
+## 当前 DistriNVS 候选稿的合格基准
+
+`main copy 2.tex/.pdf` 当前采用以下视觉标准：
+
+- Eq. (1)–(7) 均为单行；总目标只有在后续增加必要损失项并确认无法适配栏宽时，
+  才允许恢复为自然两行；
+- 七个编号分别对应 footprint、DSS contribution、collision ambiguity、router、
+  hard composition、risk objective 和 total objective；
+- depth hypotheses、标准投影和通用加权矩不再单独编号；归一化只写成
+  “normalize over the retained contributions”，全文不展开 `$\pi_i$`；
+- Method 以 `$\Xi$` 表示标准化 depth offsets；图注只说明 support 经过显示截断，
+  `$\Xi$` 与显示 percentile `$q_{\rm vis}$` 的具体取值仅在 Implementation 中出现；
+- 核心公式不显示实现型 clip；深度假设、footprint、router prior 和 logit margin
+  的实际裁剪统一在 Implementation 说明；
+- `$J^\alpha_{qk}$`、projection、`$\rho_{qkp}$`、`$S_p$`、normalized entropy、
+  `$C_p$`、`$\kappa_p$`、`$g_p^0$`、mixture、`$e_p$`、`$s_p$` 和 loss groups
+  均在相邻正文中以文字或短行内式定义；
+- Problem Formulation 声明 channel-first、共同空间尺寸及省略 batch；reliability、
+  DSS 和 router/expert 在模块入口成组标注首次出现的 tensor shape；
+- depth、uncertainty scale 和 visibility temperature 使用 mm，variance 使用
+  mm$^2$，footprint 使用 px，projection Jacobian 使用 px/mm；
+- Method 页没有公式跨页、越栏或引导句悬空；
+- 编译日志没有公式区域的 Overfull、未定义引用或未定义文献。
+
+后续修改若破坏上述结构，必须说明其必要性并重新完成编译与视觉审计。
+
+
+## 可直接使用的调用语句
+
+```text
+请按照 latex/skill.txt 的原则审计并修改论文 Method：每个编号公式只保留一个核心关系，优先一行、最多两行；辅助定义改为自然文字或短行内式，support-normalized weights 不展开为逐项 `$\pi_i$` 公式；Method 中的采样、阈值、温度、裁剪、网络和可视化取值全部改为符号常量，并在 Implementation 用同一符号给出具体值，但保留必要的张量/几何维度、定义域和公式固有常数；在各模块入口成组标注变量首次出现时的 tensor shape，并核对 depth、variance、footprint 与 Jacobian 的单位；确保符号定义完整、核心语义与代码一致，并在编译后逐页检查最终 PDF。只修改我指定的候选稿，不覆盖 main.tex。
+```
+
+
+
+已按参考论文的组织方式调整 Method：
+- 所有公式前先在正文定义输入变量和符号含义。
+- 公式作为对应段落的结尾。
+- 必须放在公式后的变量解释使用 where 引出。
+- 每条数学关系单独编号，不再使用一个编号容纳多个公式。
+具体调整包括：
+- DD：深度假设与目标投影分别成段、分别编号。
+- OF：footprint 与 contribution weight 分别成段、分别编号。
+- PGR：prior logit 与 learned gate 拆为两个独立公式。
+- 输出融合：RGB 与 depth 分别编号。
+- 更新后文对两个融合公式的交叉引用。
+修改位置：[main copy 2.tex (line 348)](/home/data/mashixing/dataset_18tb/icra-2027/latex/main copy 2.tex:348)。已成功编译生成 [PDF](/home/data/mashixing/dataset_18tb/icra-2027/latex/main copy 2.pdf)，保持 8 页，没有公式越界、未定义引用或编号冲突。
+Revision notes:
+- Method 当前共有 12 个独立公式编号。
+- 已消除所有 align/aligned 多公式共用编号的情况。
+- 公式与解释的阅读顺序已统一为“定义变量 → 解释操作 → 公式”。

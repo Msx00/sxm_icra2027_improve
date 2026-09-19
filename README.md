@@ -30,7 +30,7 @@ distrisurg/
   metrics.py              mask-aware 指标和 scene bootstrap
 scripts/train.py
 scripts/infer_dataset89.py
-configs/ablations/
+configs/train.yaml         主训练与推理的唯一配置
 tests/test_core.py
 ```
 
@@ -150,30 +150,6 @@ GPU_ID=0 bash run_benchmark_inference.sh
 选择子集和执行冒烟测试。MAT 仅在权重安装后通过 `METHODS=...,mat` 启用。
 
 输出包括 renders、warps、targets、raw/trusted/hole masks、support、variance、collision entropy、risk、synthesis gate、projection taxonomy、逐帧 CSV、bootstrap JSON 和完整运行 manifest。
-
-## 消融
-
-推荐使用统一脚本运行消融，完整设计见
-`docs/ABLATION_EXPERIMENTS_ZH.md`：
-
-```bash
-bash run_ablation.sh --list
-SUITE=core DRY_RUN=1 bash run_ablation.sh
-SUITE=core GPU_IDS=0,1,3 PHASE=train bash run_ablation.sh
-```
-
-例如 deterministic soft splat：
-
-```bash
-ABLATION_CONFIG=configs/ablations/a4_soft_splat.yaml \
-TRAIN_OUTPUT=checkpoints/a4_soft_splat GPU_ID=0 bash run_train.sh
-
-ABLATION_CONFIG=configs/ablations/a4_soft_splat.yaml \
-CHECKPOINT=checkpoints/a4_soft_splat/latest.pt \
-OUTPUT=outputs/a4_soft_splat OVERWRITE=1 GPU_ID=0 bash run_dataset89.sh
-```
-
-训练和推理必须加载相同 ablation config，否则 checkpoint 的方法定义与评测 manifest 不一致。
 
 ## 关键实验注意事项
 

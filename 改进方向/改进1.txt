@@ -1,0 +1,12 @@
+Fourier Convolution 提供接近全图范围的感受野，
+能够从洞周围整体传播组织颜色、亮度和低频纹理，尤其适合大面积、连续形状的缺失区域。
+
+Big-LaMa 使用 18 个残差块，主要特征通道采用全局 Fourier 分支。
+
+它的训练目标强烈偏向视觉真实性：包含 adversarial loss、feature matching 和 ResNet perceptual loss，
+而缺失区域的直接 L1 权重实际上为 0。[模型配置 (line 7)](/home/data/mashixing/dataset_18tb/
+icra2027-diffusion-comparison-methods/weights/big-lama/config.yaml:7)
+
+内窥镜组织往往具有平滑、重复和低频纹理。LaMa 即使不知道真实目标解剖，也很容易生成“看上去像组织”的内容。
+
+iMED 输入 mask 平均只占约 25.84%，其余约四分之三图像都是原始投影结果，因此整体观感会非常真实。

@@ -40,7 +40,7 @@ DEFAULT_OUTPUT = ROOT / (
 
 def arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--config", default=str(ROOT / "configs/distrisurg_dataset89.yaml"))
+    parser.add_argument("--config", default=str(ROOT / "configs/train.yaml"))
     parser.add_argument("--checkpoint", default=str(DEFAULT_CHECKPOINT))
     parser.add_argument("--selection-manifest", default=str(DEFAULT_MANIFEST))
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT))

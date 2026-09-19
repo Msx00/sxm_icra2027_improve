@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd -P)"
 PYTHON="${DISTRISURG_PYTHON:-/home/data/mashixing/miniconda3/envs/foundation_stereo/bin/python3.11}"
 GPU_ID="${GPU_ID:-0}"
-CONFIG="${CONFIG:-$ROOT/configs/distrisurg_dataset89.yaml}"
+CONFIG="${CONFIG:-$ROOT/configs/train.yaml}"
 CHECKPOINT="${CHECKPOINT:-$ROOT/checkpoints/distrisurg_main/latest.pt}"
 VAL_ROOT="${VAL_ROOT:-/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs}"
 VAL_SCENES="${VAL_SCENES:-$ROOT/configs/val_scenes.txt}"
