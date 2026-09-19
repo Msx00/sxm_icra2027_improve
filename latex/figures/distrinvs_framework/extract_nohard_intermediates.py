@@ -146,12 +146,11 @@ def main() -> None:
     from distrisurg.utils.io import load_checkpoint
 
     config = load_config(
-        root / "configs/distrisurg_dataset89.yaml",
+        root / "configs/train.yaml",
         overrides=[
             f"data.eval_root={args.data_root.expanduser().resolve()}",
             "data.min_overlap=0.0",
         ],
-        extra_paths=[root / "configs/ablations/a6_no_hard_composition.yaml"],
     )
     if config.ablation.hard_composition:
         raise RuntimeError("the requested checkpoint must have hard_composition=false")

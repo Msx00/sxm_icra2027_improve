@@ -1,4 +1,0 @@
-# Focused DSS ablation: five normalized Gaussian samples.
-dss:
-  sigma_samples: [-2.0, -1.0, 0.0, 1.0, 2.0]
-  sigma_weights: [0.0545, 0.2442, 0.4026, 0.2442, 0.0545]

@@ -1,4 +1,0 @@
-ablation:
-  rgbd_cycle: false
-loss:
-  cycle: 0.0

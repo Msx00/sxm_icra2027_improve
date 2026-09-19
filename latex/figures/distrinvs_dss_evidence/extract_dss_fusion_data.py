@@ -54,8 +54,7 @@ def main() -> None:
     from distrisurg.models import DistriSurg
     from distrisurg.utils.io import load_checkpoint
 
-    config_path = root / "configs" / "distrisurg_dataset89.yaml"
-    ablation_path = root / "configs" / "ablations" / "a6_no_hard_composition.yaml"
+    config_path = root / "configs" / "train.yaml"
     checkpoint_path = (
         root
         / "checkpoints"
@@ -70,7 +69,6 @@ def main() -> None:
     config = load_config(
         config_path,
         overrides=[f"data.eval_root={data_root}", "data.min_overlap=0.0"],
-        extra_paths=[ablation_path],
     )
     if config.ablation.hard_composition:
         raise ValueError("Figure 3 must use the no-hard/soft-fusion configuration")

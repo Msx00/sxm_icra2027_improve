@@ -1,3 +1,0 @@
-# Single-factor ablation: retain the risk head but remove its calibration loss.
-loss:
-  uncertainty: 0.0

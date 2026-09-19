@@ -1,3 +1,0 @@
-# Single-factor ablation: remove the normal-dependent footprint expansion.
-ablation:
-  anisotropic_footprint: false

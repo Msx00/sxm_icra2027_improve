@@ -1,3 +1,5 @@
+# Canonical training configuration for the main DistriSurg experiment.
+# This file is self-contained: no ablation overlay is required.
 data:
   train_root: /home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs
   train_scenes_file: /home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/train_scenes.txt
@@ -32,8 +34,6 @@ model:
   trusted_variance_mm2: 9.0
   trusted_entropy: 1.0
   router_residual_scale: 0.25
-  # 2*ceil(max_footprint_px)+1: remove sub-footprint routing islands while
-  # keeping every pixel without completed DSS support untrusted.
   trust_cleanup_kernel: 7
 
 loss:
@@ -43,7 +43,7 @@ loss:
   gradient: 0.2
   low_frequency: 0.2
   perceptual: 0.1
-  # Local official torchvision checkpoint. Training never downloads weights.
+  # Only local weights are accepted; the training code never downloads them.
   perceptual_weights_path: /home/data/mashixing/.cache/torch/hub/checkpoints/vgg16-397923af.pth
   depth_nll: 0.2
   cycle: 0.2
@@ -61,17 +61,16 @@ train:
   save_every: 500
   log_every: 20
   mixed_precision: true
-  # RTX 4090 supports BF16. Its FP32-like exponent range avoids the recurrent
-  # FP16 overflow observed near optimizer step 210.
   amp_dtype: bfloat16
   depth_dropout: 0.15
   grad_clip: 1.0
   forbid_eval_scene_training: true
 
+# Main training behavior is declared directly instead of supplied by A6.
 ablation:
   depth_completion: true
   distributional_depth: true
   anisotropic_footprint: true
   physics_router: true
-  hard_composition: true
+  hard_composition: false
   rgbd_cycle: true
