@@ -1,0 +1,15 @@
+{
+  "datasets": [
+    8,
+    9
+  ],
+  "keyframes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gap": 50,
+  "stride": 1,
+  "total_pairs": 5507
+}

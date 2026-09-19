@@ -1,0 +1,3 @@
+# Single-factor ablation: use only observed source depth.
+ablation:
+  depth_completion: false

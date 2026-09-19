@@ -1,0 +1,103 @@
+{
+  "protocol": {
+    "canonical_sample_manifest": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/distrinvs_soft/run_manifest.json",
+    "variant_run_manifest": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/distrinvs_soft_train_hard_guard/run_manifest.json",
+    "count": 275,
+    "full_mask": "all pixels",
+    "hole_mask": "canonical raw-DSS hole mask from original fixed 275-pair protocol",
+    "aggregation": "frame-wise mean and sample SD (ddof=1)",
+    "lpips": "AlexNet LPIPS, identical Table-II implementation",
+    "note": "checkpoint trained with hard_composition=false; inference uses hard_composition=true; no small-hole repair; explicit train/inference composition mismatch diagnostic"
+  },
+  "methods": {
+    "distrinvs": {
+      "method_key": "distrinvs",
+      "method": "DistriNVS (soft-trained; hard guard)",
+      "count": 275,
+      "scene_count": 10,
+      "scene_counts": {
+        "endovis_dataset_8_keyframe_0": 95,
+        "endovis_dataset_8_keyframe_1": 50,
+        "endovis_dataset_8_keyframe_2": 9,
+        "endovis_dataset_8_keyframe_3": 6,
+        "endovis_dataset_8_keyframe_4": 1,
+        "endovis_dataset_9_keyframe_0": 91,
+        "endovis_dataset_9_keyframe_1": 14,
+        "endovis_dataset_9_keyframe_2": 4,
+        "endovis_dataset_9_keyframe_3": 4,
+        "endovis_dataset_9_keyframe_4": 1
+      },
+      "degenerate_count": 0,
+      "metrics": {
+        "psnr": {
+          "mean": 23.47263464494185,
+          "sample_sd": 2.013397644703674
+        },
+        "ssim": {
+          "mean": 0.6580077215758237,
+          "sample_sd": 0.11608669185225755
+        },
+        "lpips": {
+          "mean": 0.2326986079866236,
+          "sample_sd": 0.04350431769482891
+        },
+        "hole_psnr": {
+          "mean": 21.10794798070734,
+          "sample_sd": 2.928149750756955
+        },
+        "hole_ssim": {
+          "mean": 0.5885115535692735,
+          "sample_sd": 0.12913621751980023
+        },
+        "hole_lpips": {
+          "mean": 0.27521478338675065,
+          "sample_sd": 0.06231190282394224
+        }
+      }
+    }
+  },
+  "best": {
+    "psnr": {
+      "direction": "higher",
+      "best_mean": 23.47263464494185,
+      "method_keys": [
+        "distrinvs"
+      ]
+    },
+    "ssim": {
+      "direction": "higher",
+      "best_mean": 0.6580077215758237,
+      "method_keys": [
+        "distrinvs"
+      ]
+    },
+    "lpips": {
+      "direction": "lower",
+      "best_mean": 0.2326986079866236,
+      "method_keys": [
+        "distrinvs"
+      ]
+    },
+    "hole_psnr": {
+      "direction": "higher",
+      "best_mean": 21.10794798070734,
+      "method_keys": [
+        "distrinvs"
+      ]
+    },
+    "hole_ssim": {
+      "direction": "higher",
+      "best_mean": 0.5885115535692735,
+      "method_keys": [
+        "distrinvs"
+      ]
+    },
+    "hole_lpips": {
+      "direction": "lower",
+      "best_mean": 0.27521478338675065,
+      "method_keys": [
+        "distrinvs"
+      ]
+    }
+  }
+}

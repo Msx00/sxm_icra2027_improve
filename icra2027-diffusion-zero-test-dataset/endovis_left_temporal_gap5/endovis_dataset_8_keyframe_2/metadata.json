@@ -1,0 +1,17 @@
+{
+  "source": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_2",
+  "pairing": "left(t) -> left(t+5)",
+  "gap_in_valid_frame_indices": 5,
+  "stride": 1,
+  "count": 688,
+  "pose_convention": "world_to_camera",
+  "relative_transform": "P_target @ inverse(P_source)",
+  "depth": "source-left Z channel from upper half of stacked scene_points TIFF",
+  "rgb_materialization": "absolute symlink",
+  "translation_norm_min": 0.0567653386356277,
+  "translation_norm_median": 1.3480976443745734,
+  "translation_norm_max": 3.190484853665849,
+  "rotation_deg_min": 0.11940501949187014,
+  "rotation_deg_median": 1.0076195008921494,
+  "rotation_deg_max": 2.500683866656631
+}

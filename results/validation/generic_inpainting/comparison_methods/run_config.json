@@ -1,0 +1,25 @@
+{
+  "protocol": "zero-shot; no training or checkpoint selection on EndoVis/Hamlyn",
+  "data_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+  "scenes_file": "/home/data20tb/shixingma/icra-2027/configs/val_scenes.txt",
+  "scenes": [
+    "session_004_scene_2_tool_3",
+    "session_004_scene_6_tool_3",
+    "session_005_scene_7_tool_3",
+    "session_006_scene_7_tool_3",
+    "session_007_scene_11_tool_3",
+    "session_007_scene_5_tool_2",
+    "session_007_scene_10_tool_2"
+  ],
+  "methods": [
+    "sd15",
+    "lama"
+  ],
+  "gpu_id": "1",
+  "frames": 1392,
+  "height": 512,
+  "width": 640,
+  "min_valid_ratio": 0.0,
+  "small_hole_max_area": 0,
+  "seam_kernel": 1
+}

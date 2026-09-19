@@ -1,0 +1,66 @@
+{
+  "sample_id": "session_004_scene_2_tool_3/frame_000428",
+  "checkpoint": "/home/data20tb/shixingma/icra-2027/checkpoints/ablations/no_hard_composition/seed_6666/step_0010000.pt",
+  "checkpoint_sha256": "f2755d3ba666c23d856b2eb84ac64c20f8c30aeabd158e599d80a9fe016d1041",
+  "checkpoint_step": 10000,
+  "configuration": "no_hard_composition",
+  "hard_composition": false,
+  "source_path": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_3/endoscope2/L/frame_000428.png",
+  "target_path": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_3/endoscope1/L/frame_000428.png",
+  "image_size_hw": [
+    512,
+    640
+  ],
+  "raw_hole_ratio": 0.6020477294921875,
+  "valid_ratio": 0.3979522705078125,
+  "min_support": 0.03,
+  "display_ranges": {
+    "expected_depth_mm": [
+      48.37770462036133,
+      178.0474853515625
+    ],
+    "support": [
+      0.0,
+      18.675777435302734
+    ],
+    "coverage": [
+      0.0,
+      1.0
+    ],
+    "depth_variance_mm2": [
+      0.0,
+      3.064453125
+    ],
+    "collision_entropy": [
+      0.0,
+      1.0
+    ],
+    "geometry_confidence": [
+      0.0,
+      1.0
+    ]
+  },
+  "feature_pca": {
+    "component_ranges": [
+      [
+        -1.8891834012082995,
+        1.5297343013750084
+      ],
+      [
+        -1.8730841062636228,
+        0.7090554362343616
+      ],
+      [
+        -0.8689135570779264,
+        1.0329804423488365
+      ]
+    ]
+  },
+  "font_file": "/home/data/mashixing/.local/share/fonts/msttcorefonts/Times.TTF",
+  "image_integrity": {
+    "crop": "none",
+    "brightness_contrast_gamma": "none",
+    "pseudo_color": "scalar maps only; mappings and ranges recorded above",
+    "raw_arrays": "dss_outputs_raw.npz"
+  }
+}

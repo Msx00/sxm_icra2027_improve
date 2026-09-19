@@ -1,0 +1,34 @@
+[
+  {
+    "scene": "session_004_scene_2_tool_3",
+    "stem": "frame_000002",
+    "metrics": {
+      "before": {
+        "psnr_full": 13.362812995910645,
+        "ssim_full": 0.21649688482284546,
+        "psnr_missing": 11.488754272460938,
+        "ssim_missing": 0.0033823014236986637,
+        "psnr_known": 19.7302303314209,
+        "ssim_known": 0.5532154440879822,
+        "missing_ratio": 0.5877135992050171,
+        "known_ratio": 0.4122863709926605
+      },
+      "after": {
+        "psnr_full": 20.29086685180664,
+        "ssim_full": 0.6614112257957458,
+        "psnr_missing": 20.73236846923828,
+        "ssim_missing": 0.788357138633728,
+        "psnr_known": 19.7302303314209,
+        "ssim_known": 0.5708235502243042,
+        "missing_ratio": 0.5877135992050171,
+        "known_ratio": 0.4122863709926605
+      },
+      "delta_psnr": 6.928053855895996,
+      "delta_ssim": 0.4449143409729004
+    },
+    "render": "/home/data20tb/shixingma/icra-2027/results/validation/generic_inpainting/session_004_scene_2_tool_3/warps/warped_rgb/frame_000002.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/validation/generic_inpainting/session_004_scene_2_tool_3/warps/inpaint_mask/frame_000002.png",
+    "target": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_3/endoscope1/L/frame_000002.png",
+    "skipped_empty_mask": false
+  }
+]

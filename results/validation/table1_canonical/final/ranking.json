@@ -1,0 +1,1105 @@
+{
+  "excluded_from_held_out_ranking": [
+    "Hunyuan-DiT (in-domain adapted)"
+  ],
+  "metrics": {
+    "psnr": {
+      "direction": "higher",
+      "best_held_out": "DistriNVS (soft fusion; primary)",
+      "held_out_ranking": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 22.95060948667855,
+          "sample_sd": 2.3271653295035795,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 2,
+          "mean": 19.478364562851258,
+          "sample_sd": 1.44370243342661,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 3,
+          "mean": 19.46599844406391,
+          "sample_sd": 1.7342792516512004,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 4,
+          "mean": 17.794228977855596,
+          "sample_sd": 1.9454332499643958,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 5,
+          "mean": 17.181681937184827,
+          "sample_sd": 2.832328844359595,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 6,
+          "mean": 17.08945026342896,
+          "sample_sd": 2.144760153094696,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 7,
+          "mean": 16.778894717665924,
+          "sample_sd": 1.6483187678330964,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 8,
+          "mean": 16.57353176330698,
+          "sample_sd": 1.317928689527173,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 9,
+          "mean": 15.828718552644226,
+          "sample_sd": 1.8708373768508377,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 10,
+          "mean": 15.785551453458853,
+          "sample_sd": 1.270978154868945,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 11,
+          "mean": 14.380666667359998,
+          "sample_sd": 4.259501721477523,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 12,
+          "mean": 12.520501824117256,
+          "sample_sd": 6.2201789897521875,
+          "held_out": true
+        }
+      ],
+      "all_methods_order": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 22.95060948667855,
+          "sample_sd": 2.3271653295035795,
+          "held_out": true
+        },
+        {
+          "method": "Hunyuan-DiT (in-domain adapted)",
+          "rank": null,
+          "mean": 19.51863997215512,
+          "sample_sd": 1.511333711573316,
+          "held_out": false
+        },
+        {
+          "method": "LaMa",
+          "rank": 2,
+          "mean": 19.478364562851258,
+          "sample_sd": 1.44370243342661,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 3,
+          "mean": 19.46599844406391,
+          "sample_sd": 1.7342792516512004,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 4,
+          "mean": 17.794228977855596,
+          "sample_sd": 1.9454332499643958,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 5,
+          "mean": 17.181681937184827,
+          "sample_sd": 2.832328844359595,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 6,
+          "mean": 17.08945026342896,
+          "sample_sd": 2.144760153094696,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 7,
+          "mean": 16.778894717665924,
+          "sample_sd": 1.6483187678330964,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 8,
+          "mean": 16.57353176330698,
+          "sample_sd": 1.317928689527173,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 9,
+          "mean": 15.828718552644226,
+          "sample_sd": 1.8708373768508377,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 10,
+          "mean": 15.785551453458853,
+          "sample_sd": 1.270978154868945,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 11,
+          "mean": 14.380666667359998,
+          "sample_sd": 4.259501721477523,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 12,
+          "mean": 12.520501824117256,
+          "sample_sd": 6.2201789897521875,
+          "held_out": true
+        }
+      ]
+    },
+    "ssim": {
+      "direction": "higher",
+      "best_held_out": "DistriNVS (soft fusion; primary)",
+      "held_out_ranking": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 0.588982869175145,
+          "sample_sd": 0.10555617869543103,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 2,
+          "mean": 0.43081192074921626,
+          "sample_sd": 0.07440755075765959,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 0.4263351246200759,
+          "sample_sd": 0.10651105917679804,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 4,
+          "mean": 0.4247330964125436,
+          "sample_sd": 0.11889203613825203,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 5,
+          "mean": 0.377057744554062,
+          "sample_sd": 0.06008540741497941,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 6,
+          "mean": 0.3759353369388772,
+          "sample_sd": 0.06847382149232992,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 7,
+          "mean": 0.36609764706861764,
+          "sample_sd": 0.24058749837808674,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 8,
+          "mean": 0.3634444087015829,
+          "sample_sd": 0.043589151918851377,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 9,
+          "mean": 0.3437041449199977,
+          "sample_sd": 0.0613091462054257,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 10,
+          "mean": 0.33225437000008495,
+          "sample_sd": 0.05884334369078575,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 11,
+          "mean": 0.31540923820401745,
+          "sample_sd": 0.04882509046978484,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 12,
+          "mean": 0.30958565167183505,
+          "sample_sd": 0.0748947039893337,
+          "held_out": true
+        }
+      ],
+      "all_methods_order": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 0.588982869175145,
+          "sample_sd": 0.10555617869543103,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 2,
+          "mean": 0.43081192074921626,
+          "sample_sd": 0.07440755075765959,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 0.4263351246200759,
+          "sample_sd": 0.10651105917679804,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 4,
+          "mean": 0.4247330964125436,
+          "sample_sd": 0.11889203613825203,
+          "held_out": true
+        },
+        {
+          "method": "Hunyuan-DiT (in-domain adapted)",
+          "rank": null,
+          "mean": 0.4213282377298536,
+          "sample_sd": 0.1179139468923386,
+          "held_out": false
+        },
+        {
+          "method": "EndoGS",
+          "rank": 5,
+          "mean": 0.377057744554062,
+          "sample_sd": 0.06008540741497941,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 6,
+          "mean": 0.3759353369388772,
+          "sample_sd": 0.06847382149232992,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 7,
+          "mean": 0.36609764706861764,
+          "sample_sd": 0.24058749837808674,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 8,
+          "mean": 0.3634444087015829,
+          "sample_sd": 0.043589151918851377,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 9,
+          "mean": 0.3437041449199977,
+          "sample_sd": 0.0613091462054257,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 10,
+          "mean": 0.33225437000008495,
+          "sample_sd": 0.05884334369078575,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 11,
+          "mean": 0.31540923820401745,
+          "sample_sd": 0.04882509046978484,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 12,
+          "mean": 0.30958565167183505,
+          "sample_sd": 0.0748947039893337,
+          "held_out": true
+        }
+      ]
+    },
+    "lpips": {
+      "direction": "lower",
+      "best_held_out": "LaMa",
+      "held_out_ranking": [
+        {
+          "method": "LaMa",
+          "rank": 1,
+          "mean": 0.35167680475218543,
+          "sample_sd": 0.056024854641786435,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 0.38947507807578163,
+          "sample_sd": 0.04461885653227173,
+          "held_out": true
+        },
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 3,
+          "mean": 0.4014960336873586,
+          "sample_sd": 0.04825740431521574,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 4,
+          "mean": 0.4416026934638791,
+          "sample_sd": 0.08439144035043503,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 5,
+          "mean": 0.4522386907931717,
+          "sample_sd": 0.0804746112563884,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 6,
+          "mean": 0.458373322098077,
+          "sample_sd": 0.08052908248137954,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 7,
+          "mean": 0.4602774170965984,
+          "sample_sd": 0.07202402021577714,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 8,
+          "mean": 0.4809293593226493,
+          "sample_sd": 0.09926302881685925,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 9,
+          "mean": 0.5124297087862232,
+          "sample_sd": 0.0664657995437441,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 10,
+          "mean": 0.5545219367948072,
+          "sample_sd": 0.07284678621101197,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 11,
+          "mean": 0.6613139222836357,
+          "sample_sd": 0.20397459591958572,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 12,
+          "mean": 0.7729931350840235,
+          "sample_sd": 0.12358414681016085,
+          "held_out": true
+        }
+      ],
+      "all_methods_order": [
+        {
+          "method": "LaMa",
+          "rank": 1,
+          "mean": 0.35167680475218543,
+          "sample_sd": 0.056024854641786435,
+          "held_out": true
+        },
+        {
+          "method": "Hunyuan-DiT (in-domain adapted)",
+          "rank": null,
+          "mean": 0.3830702303769602,
+          "sample_sd": 0.04488435602980145,
+          "held_out": false
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 0.38947507807578163,
+          "sample_sd": 0.04461885653227173,
+          "held_out": true
+        },
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 3,
+          "mean": 0.4014960336873586,
+          "sample_sd": 0.04825740431521574,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 4,
+          "mean": 0.4416026934638791,
+          "sample_sd": 0.08439144035043503,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 5,
+          "mean": 0.4522386907931717,
+          "sample_sd": 0.0804746112563884,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 6,
+          "mean": 0.458373322098077,
+          "sample_sd": 0.08052908248137954,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 7,
+          "mean": 0.4602774170965984,
+          "sample_sd": 0.07202402021577714,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 8,
+          "mean": 0.4809293593226493,
+          "sample_sd": 0.09926302881685925,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 9,
+          "mean": 0.5124297087862232,
+          "sample_sd": 0.0664657995437441,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 10,
+          "mean": 0.5545219367948072,
+          "sample_sd": 0.07284678621101197,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 11,
+          "mean": 0.6613139222836357,
+          "sample_sd": 0.20397459591958572,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 12,
+          "mean": 0.7729931350840235,
+          "sample_sd": 0.12358414681016085,
+          "held_out": true
+        }
+      ]
+    },
+    "hole_psnr": {
+      "direction": "higher",
+      "best_held_out": "DistriNVS (soft fusion; primary)",
+      "held_out_ranking": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 27.949613453327924,
+          "sample_sd": 2.9099511985935393,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 22.525198103367597,
+          "sample_sd": 2.2321731577909687,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 21.40405320436105,
+          "sample_sd": 2.318197432102423,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 4,
+          "mean": 17.86151232253546,
+          "sample_sd": 2.8780376341506617,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 5,
+          "mean": 17.625814928405585,
+          "sample_sd": 2.8708328453293426,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 6,
+          "mean": 15.860121840033038,
+          "sample_sd": 3.600142471656356,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 7,
+          "mean": 15.791845848505524,
+          "sample_sd": 1.8533901224913936,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 8,
+          "mean": 14.901782172849808,
+          "sample_sd": 3.48024145150879,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 9,
+          "mean": 14.01248056176065,
+          "sample_sd": 1.8126629168343258,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 10,
+          "mean": 13.31570044399678,
+          "sample_sd": 1.4133183197858237,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 11,
+          "mean": 12.519954467641897,
+          "sample_sd": 6.67532444495162,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 12,
+          "mean": 11.919416444054965,
+          "sample_sd": 1.7124886009709803,
+          "held_out": true
+        }
+      ],
+      "all_methods_order": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 27.949613453327924,
+          "sample_sd": 2.9099511985935393,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 22.525198103367597,
+          "sample_sd": 2.2321731577909687,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 21.40405320436105,
+          "sample_sd": 2.318197432102423,
+          "held_out": true
+        },
+        {
+          "method": "Hunyuan-DiT (in-domain adapted)",
+          "rank": null,
+          "mean": 20.870260958013862,
+          "sample_sd": 2.071649051595264,
+          "held_out": false
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 4,
+          "mean": 17.86151232253546,
+          "sample_sd": 2.8780376341506617,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 5,
+          "mean": 17.625814928405585,
+          "sample_sd": 2.8708328453293426,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 6,
+          "mean": 15.860121840033038,
+          "sample_sd": 3.600142471656356,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 7,
+          "mean": 15.791845848505524,
+          "sample_sd": 1.8533901224913936,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 8,
+          "mean": 14.901782172849808,
+          "sample_sd": 3.48024145150879,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 9,
+          "mean": 14.01248056176065,
+          "sample_sd": 1.8126629168343258,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 10,
+          "mean": 13.31570044399678,
+          "sample_sd": 1.4133183197858237,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 11,
+          "mean": 12.519954467641897,
+          "sample_sd": 6.67532444495162,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 12,
+          "mean": 11.919416444054965,
+          "sample_sd": 1.7124886009709803,
+          "held_out": true
+        }
+      ]
+    },
+    "hole_ssim": {
+      "direction": "higher",
+      "best_held_out": "DistriNVS (soft fusion; primary)",
+      "held_out_ranking": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 0.8031209505580622,
+          "sample_sd": 0.06666068999411694,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 0.6977244656019169,
+          "sample_sd": 0.058884757893608766,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 0.6316335119906513,
+          "sample_sd": 0.04792919563442236,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 4,
+          "mean": 0.5609919258832247,
+          "sample_sd": 0.051259497966735915,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 5,
+          "mean": 0.4878625965666497,
+          "sample_sd": 0.11720659279136296,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 6,
+          "mean": 0.4802279793394759,
+          "sample_sd": 0.31032760404532606,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 7,
+          "mean": 0.4733202624744896,
+          "sample_sd": 0.16082261893028832,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 8,
+          "mean": 0.41893126257834423,
+          "sample_sd": 0.1350061070876406,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 9,
+          "mean": 0.3678792492732748,
+          "sample_sd": 0.10805428407634997,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 10,
+          "mean": 0.31421326530091037,
+          "sample_sd": 0.07441347813553432,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 11,
+          "mean": 0.2566083732339414,
+          "sample_sd": 0.09178891086688631,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 12,
+          "mean": 0.0970302629338085,
+          "sample_sd": 0.060270537584306984,
+          "held_out": true
+        }
+      ],
+      "all_methods_order": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 0.8031209505580622,
+          "sample_sd": 0.06666068999411694,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 0.6977244656019169,
+          "sample_sd": 0.058884757893608766,
+          "held_out": true
+        },
+        {
+          "method": "Hunyuan-DiT (in-domain adapted)",
+          "rank": null,
+          "mean": 0.6371367185151783,
+          "sample_sd": 0.0756334950478171,
+          "held_out": false
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 0.6316335119906513,
+          "sample_sd": 0.04792919563442236,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 4,
+          "mean": 0.5609919258832247,
+          "sample_sd": 0.051259497966735915,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 5,
+          "mean": 0.4878625965666497,
+          "sample_sd": 0.11720659279136296,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 6,
+          "mean": 0.4802279793394759,
+          "sample_sd": 0.31032760404532606,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 7,
+          "mean": 0.4733202624744896,
+          "sample_sd": 0.16082261893028832,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 8,
+          "mean": 0.41893126257834423,
+          "sample_sd": 0.1350061070876406,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 9,
+          "mean": 0.3678792492732748,
+          "sample_sd": 0.10805428407634997,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 10,
+          "mean": 0.31421326530091037,
+          "sample_sd": 0.07441347813553432,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 11,
+          "mean": 0.2566083732339414,
+          "sample_sd": 0.09178891086688631,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 12,
+          "mean": 0.0970302629338085,
+          "sample_sd": 0.060270537584306984,
+          "held_out": true
+        }
+      ]
+    },
+    "hole_lpips": {
+      "direction": "lower",
+      "best_held_out": "DistriNVS (soft fusion; primary)",
+      "held_out_ranking": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 0.4119904746312177,
+          "sample_sd": 0.05370324230975251,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 0.41998011321257583,
+          "sample_sd": 0.03992638967501037,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 0.42163301808438425,
+          "sample_sd": 0.07511751398471521,
+          "held_out": true
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 4,
+          "mean": 0.557926636660236,
+          "sample_sd": 0.05979506692578435,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 5,
+          "mean": 0.58844719313342,
+          "sample_sd": 0.06081524947121285,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 6,
+          "mean": 0.6005248291011172,
+          "sample_sd": 0.06464658385229628,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 7,
+          "mean": 0.6331579626548565,
+          "sample_sd": 0.05545573757494954,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 8,
+          "mean": 0.6375523587881491,
+          "sample_sd": 0.1280637099975226,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 9,
+          "mean": 0.6458056442568014,
+          "sample_sd": 0.0705392348038234,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 10,
+          "mean": 0.6940322080305938,
+          "sample_sd": 0.08789562160485453,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 11,
+          "mean": 0.7362031613358822,
+          "sample_sd": 0.08053023882991263,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 12,
+          "mean": 0.7439546098440201,
+          "sample_sd": 0.16937373814790369,
+          "held_out": true
+        }
+      ],
+      "all_methods_order": [
+        {
+          "method": "DistriNVS (soft fusion; primary)",
+          "rank": 1,
+          "mean": 0.4119904746312177,
+          "sample_sd": 0.05370324230975251,
+          "held_out": true
+        },
+        {
+          "method": "LCM-LoRA",
+          "rank": 2,
+          "mean": 0.41998011321257583,
+          "sample_sd": 0.03992638967501037,
+          "held_out": true
+        },
+        {
+          "method": "LaMa",
+          "rank": 3,
+          "mean": 0.42163301808438425,
+          "sample_sd": 0.07511751398471521,
+          "held_out": true
+        },
+        {
+          "method": "Hunyuan-DiT (in-domain adapted)",
+          "rank": null,
+          "mean": 0.4866474951435437,
+          "sample_sd": 0.03295110407866473,
+          "held_out": false
+        },
+        {
+          "method": "Free-SurGS",
+          "rank": 4,
+          "mean": 0.557926636660236,
+          "sample_sd": 0.05979506692578435,
+          "held_out": true
+        },
+        {
+          "method": "SurgicalGS",
+          "rank": 5,
+          "mean": 0.58844719313342,
+          "sample_sd": 0.06081524947121285,
+          "held_out": true
+        },
+        {
+          "method": "Endo-4DGS",
+          "rank": 6,
+          "mean": 0.6005248291011172,
+          "sample_sd": 0.06464658385229628,
+          "held_out": true
+        },
+        {
+          "method": "Deform3DGS",
+          "rank": 7,
+          "mean": 0.6331579626548565,
+          "sample_sd": 0.05545573757494954,
+          "held_out": true
+        },
+        {
+          "method": "LDM",
+          "rank": 8,
+          "mean": 0.6375523587881491,
+          "sample_sd": 0.1280637099975226,
+          "held_out": true
+        },
+        {
+          "method": "StereoSurGS (FS)",
+          "rank": 9,
+          "mean": 0.6458056442568014,
+          "sample_sd": 0.0705392348038234,
+          "held_out": true
+        },
+        {
+          "method": "EndoGaussian",
+          "rank": 10,
+          "mean": 0.6940322080305938,
+          "sample_sd": 0.08789562160485453,
+          "held_out": true
+        },
+        {
+          "method": "PR-ENDO",
+          "rank": 11,
+          "mean": 0.7362031613358822,
+          "sample_sd": 0.08053023882991263,
+          "held_out": true
+        },
+        {
+          "method": "EndoGS",
+          "rank": 12,
+          "mean": 0.7439546098440201,
+          "sample_sd": 0.16937373814790369,
+          "held_out": true
+        }
+      ]
+    }
+  }
+}

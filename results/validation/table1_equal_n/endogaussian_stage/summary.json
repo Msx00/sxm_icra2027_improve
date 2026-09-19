@@ -1,0 +1,56 @@
+{
+  "protocol": {
+    "name": "Table I equal-N reconstruction-baseline evaluation",
+    "primary_run": "/home/data20tb/shixingma/icra-2027/results/validation/distrisurg",
+    "data_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+    "scenes": {
+      "session_004_scene_2_tool_3": 199,
+      "session_004_scene_6_tool_3": 199,
+      "session_005_scene_7_tool_3": 198,
+      "session_006_scene_7_tool_3": 199,
+      "session_007_scene_10_tool_2": 199,
+      "session_007_scene_11_tool_3": 199,
+      "session_007_scene_5_tool_2": 199
+    },
+    "count_per_method": 1392,
+    "aggregation": "frame-wise mean and sample standard deviation",
+    "inclusion": "all frames retained, including degenerate predictions",
+    "full_mask": "non-tool tissue mask",
+    "hole_mask": "non-tool tissue intersected with saved raw-DSS hole mask",
+    "lpips": "AlexNet LPIPS; normalize=False; spatial map averaged for H-LPIPS"
+  },
+  "methods": {
+    "EndoGaussian": {
+      "method": "EndoGaussian",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 387,
+      "metrics": {
+        "psnr": {
+          "mean": 14.380667022932535,
+          "sample_sd": 4.259501798815971
+        },
+        "ssim": {
+          "mean": 0.3660976480480702,
+          "sample_sd": 0.24058749926931067
+        },
+        "lpips": {
+          "mean": 0.5819433175198648,
+          "sample_sd": 0.0812436156110542
+        },
+        "hole_psnr": {
+          "mean": 15.860122242878223,
+          "sample_sd": 3.600142530481475
+        },
+        "hole_ssim": {
+          "mean": 0.48022797735983,
+          "sample_sd": 0.31032760267741843
+        },
+        "hole_lpips": {
+          "mean": 0.4365832178864157,
+          "sample_sd": 0.08014089413259233
+        }
+      }
+    }
+  }
+}

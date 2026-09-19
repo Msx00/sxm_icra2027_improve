@@ -1,0 +1,120 @@
+{
+  "protocol": {
+    "name": "Table I equal-N reconstruction-baseline evaluation",
+    "primary_run": "/home/data20tb/shixingma/icra-2027/results/validation/distrisurg",
+    "data_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+    "scenes": {
+      "session_004_scene_2_tool_3": 199,
+      "session_004_scene_6_tool_3": 199,
+      "session_005_scene_7_tool_3": 198,
+      "session_006_scene_7_tool_3": 199,
+      "session_007_scene_10_tool_2": 199,
+      "session_007_scene_11_tool_3": 199,
+      "session_007_scene_5_tool_2": 199
+    },
+    "count_per_method": 1392,
+    "aggregation": "frame-wise mean and sample standard deviation",
+    "inclusion": "all frames retained, including degenerate predictions",
+    "full_mask": "non-tool tissue mask",
+    "hole_mask": "non-tool tissue intersected with saved raw-DSS hole mask",
+    "lpips": "AlexNet LPIPS; normalize=False; spatial map averaged for H-LPIPS"
+  },
+  "methods": {
+    "PR-ENDO": {
+      "method": "PR-ENDO",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 0,
+      "metrics": {
+        "psnr": {
+          "mean": 15.785551813142053,
+          "sample_sd": 1.270978179846625
+        },
+        "ssim": {
+          "mean": 0.3095856507405125,
+          "sample_sd": 0.07489470405693335
+        },
+        "lpips": {
+          "mean": 0.44322478139623145,
+          "sample_sd": 0.05648797973141576
+        },
+        "hole_psnr": {
+          "mean": 11.919416789350839,
+          "sample_sd": 1.71248865462231
+        },
+        "hole_ssim": {
+          "mean": 0.09703026327368772,
+          "sample_sd": 0.060270537890732515
+        },
+        "hole_lpips": {
+          "mean": 0.4896177524251157,
+          "sample_sd": 0.05445816470159394
+        }
+      }
+    },
+    "EndoGS": {
+      "method": "EndoGS",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 398,
+      "metrics": {
+        "psnr": {
+          "mean": 12.520502164103519,
+          "sample_sd": 6.220179158051217
+        },
+        "ssim": {
+          "mean": 0.37705774446842316,
+          "sample_sd": 0.06008540755759679
+        },
+        "lpips": {
+          "mean": 0.5155857188263159,
+          "sample_sd": 0.1351543420930294
+        },
+        "hole_psnr": {
+          "mean": 12.519954778682227,
+          "sample_sd": 6.675324600166244
+        },
+        "hole_ssim": {
+          "mean": 0.48786259712330227,
+          "sample_sd": 0.11720659258244036
+        },
+        "hole_lpips": {
+          "mean": 0.509633346353711,
+          "sample_sd": 0.1317694979343771
+        }
+      }
+    },
+    "EndoGaussian": {
+      "method": "EndoGaussian",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 387,
+      "metrics": {
+        "psnr": {
+          "mean": 14.380667022932535,
+          "sample_sd": 4.259501798815971
+        },
+        "ssim": {
+          "mean": 0.3660976480480702,
+          "sample_sd": 0.24058749926931067
+        },
+        "lpips": {
+          "mean": 0.5819433174128162,
+          "sample_sd": 0.0812436144112604
+        },
+        "hole_psnr": {
+          "mean": 15.860122242878223,
+          "sample_sd": 3.600142530481475
+        },
+        "hole_ssim": {
+          "mean": 0.48022797735983,
+          "sample_sd": 0.31032760267741843
+        },
+        "hole_lpips": {
+          "mean": 0.43658321797205457,
+          "sample_sd": 0.08014089350060903
+        }
+      }
+    }
+  }
+}

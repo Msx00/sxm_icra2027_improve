@@ -1,0 +1,504 @@
+{
+  "method": "DistriSurg",
+  "split": "endovis89-combined-overlap-gt-0.70",
+  "protocol": "endovis89-combined-overlap-gt-0.70; right-to-left inference; raw DSS valid ratio strictly greater than threshold",
+  "data_root": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data",
+  "checkpoint": "/home/data20tb/shixingma/icra-2027/checkpoints/ablations/full/seed_6666/step_0010000.pt",
+  "checkpoint_train_scenes": [
+    "session_004_scene_2_tool_1",
+    "session_004_scene_2_tool_2",
+    "session_004_scene_2_tool_4",
+    "session_004_scene_6_tool_1",
+    "session_004_scene_6_tool_2",
+    "session_005_scene_7_tool_1",
+    "session_005_scene_7_tool_2",
+    "session_006_scene_7_tool_1",
+    "session_006_scene_7_tool_2",
+    "session_007_scene_10_tool_1",
+    "session_007_scene_5_tool_1",
+    "session_007_scene_11_tool_1",
+    "session_007_scene_11_tool_2"
+  ],
+  "scenes": [
+    "endovis_dataset_8_keyframe_4",
+    "endovis_dataset_9_keyframe_0",
+    "endovis_dataset_9_keyframe_4"
+  ],
+  "min_overlap": 0.7,
+  "small_hole_repair": {
+    "method": "telea_from_warped_rgb",
+    "max_area_ratio": 0.0,
+    "radius": 3.0
+  },
+  "config": {
+    "data": {
+      "train_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+      "train_scenes_file": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/train_scenes.txt",
+      "eval_root": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data",
+      "height": 512,
+      "width": 640,
+      "min_overlap": 0.7,
+      "num_workers": 4
+    },
+    "dss": {
+      "sigma_samples": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "sigma_weights": [
+        0.2741,
+        0.4518,
+        0.2741
+      ],
+      "min_depth_mm": 1.0,
+      "max_depth_mm": 500.0,
+      "min_sigma_mm": 0.25,
+      "max_sigma_mm": 20.0,
+      "base_footprint_px": 0.75,
+      "normal_footprint_px": 0.75,
+      "max_footprint_px": 2.5,
+      "radius": 1,
+      "visibility_temperature_mm": 2.0,
+      "min_support": 0.03
+    },
+    "model": {
+      "base_channels": 32,
+      "source_feature_channels": 16,
+      "reliability_channels": 24,
+      "max_depth_residual_ratio": 0.1,
+      "invalid_depth_confidence_scale": 0.35,
+      "trusted_support": 0.35,
+      "trusted_variance_mm2": 9.0,
+      "trusted_entropy": 1.0,
+      "router_residual_scale": 0.25,
+      "trust_cleanup_kernel": 7
+    },
+    "loss": {
+      "hole": 3.0,
+      "visible": 1.0,
+      "seam": 2.0,
+      "gradient": 0.2,
+      "depth_nll": 0.2,
+      "cycle": 0.2,
+      "router": 0.1,
+      "uncertainty": 0.1,
+      "seam_width": 7
+    },
+    "train": {
+      "seed": 6666,
+      "steps": 10000,
+      "batch_size": 1,
+      "accumulation_steps": 4,
+      "learning_rate": 0.0002,
+      "weight_decay": 0.0001,
+      "save_every": 500,
+      "log_every": 20,
+      "mixed_precision": true,
+      "amp_dtype": "bfloat16",
+      "depth_dropout": 0.15,
+      "grad_clip": 1.0,
+      "forbid_eval_scene_training": true
+    },
+    "ablation": {
+      "depth_completion": true,
+      "distributional_depth": true,
+      "anisotropic_footprint": true,
+      "physics_router": true,
+      "hard_composition": true,
+      "rgbd_cycle": true
+    }
+  },
+  "selected_frames": [
+    {
+      "sample_id": "endovis_dataset_8_keyframe_4/frame_000000",
+      "raw_overlap": 0.9329620599746704
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000000",
+      "raw_overlap": 0.9071136713027954
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000001",
+      "raw_overlap": 0.8985382318496704
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000002",
+      "raw_overlap": 0.8952087759971619
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000003",
+      "raw_overlap": 0.89788818359375
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000004",
+      "raw_overlap": 0.8878875970840454
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000005",
+      "raw_overlap": 0.8769806027412415
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000006",
+      "raw_overlap": 0.8676544427871704
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000007",
+      "raw_overlap": 0.8666595816612244
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000008",
+      "raw_overlap": 0.873730480670929
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000009",
+      "raw_overlap": 0.8774139285087585
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000010",
+      "raw_overlap": 0.880139172077179
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000011",
+      "raw_overlap": 0.8577820062637329
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000012",
+      "raw_overlap": 0.81597900390625
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000013",
+      "raw_overlap": 0.7516937255859375
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000014",
+      "raw_overlap": 0.725140392780304
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000015",
+      "raw_overlap": 0.741589367389679
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000016",
+      "raw_overlap": 0.7495574951171875
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000017",
+      "raw_overlap": 0.7603058218955994
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000018",
+      "raw_overlap": 0.7714813351631165
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000019",
+      "raw_overlap": 0.7880645990371704
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000020",
+      "raw_overlap": 0.797344982624054
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000021",
+      "raw_overlap": 0.8002044558525085
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000022",
+      "raw_overlap": 0.8052093386650085
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000023",
+      "raw_overlap": 0.8044098019599915
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000024",
+      "raw_overlap": 0.802655041217804
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000025",
+      "raw_overlap": 0.8045806884765625
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000026",
+      "raw_overlap": 0.8048645257949829
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000027",
+      "raw_overlap": 0.8084473013877869
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000028",
+      "raw_overlap": 0.8126983642578125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000029",
+      "raw_overlap": 0.8154968619346619
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000030",
+      "raw_overlap": 0.8142547607421875
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000031",
+      "raw_overlap": 0.8120086789131165
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000032",
+      "raw_overlap": 0.802508533000946
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000033",
+      "raw_overlap": 0.7891449332237244
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000034",
+      "raw_overlap": 0.7767486572265625
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000035",
+      "raw_overlap": 0.7810730338096619
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000036",
+      "raw_overlap": 0.7893005609512329
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000037",
+      "raw_overlap": 0.787097156047821
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000038",
+      "raw_overlap": 0.8079925775527954
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000039",
+      "raw_overlap": 0.8378570675849915
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000040",
+      "raw_overlap": 0.847430408000946
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000041",
+      "raw_overlap": 0.84539794921875
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000042",
+      "raw_overlap": 0.824505627155304
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000043",
+      "raw_overlap": 0.8143157958984375
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000044",
+      "raw_overlap": 0.8113342523574829
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000045",
+      "raw_overlap": 0.8110931515693665
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000046",
+      "raw_overlap": 0.798785388469696
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000047",
+      "raw_overlap": 0.779980480670929
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000048",
+      "raw_overlap": 0.7606872916221619
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000049",
+      "raw_overlap": 0.748992919921875
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000050",
+      "raw_overlap": 0.7607025504112244
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000051",
+      "raw_overlap": 0.7692810297012329
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000052",
+      "raw_overlap": 0.783032238483429
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000053",
+      "raw_overlap": 0.7875732779502869
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000054",
+      "raw_overlap": 0.7937347292900085
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000055",
+      "raw_overlap": 0.7961334586143494
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000056",
+      "raw_overlap": 0.7943878173828125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000057",
+      "raw_overlap": 0.799847424030304
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000058",
+      "raw_overlap": 0.811755359172821
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000059",
+      "raw_overlap": 0.8208832144737244
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000060",
+      "raw_overlap": 0.8117645382881165
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000061",
+      "raw_overlap": 0.8023956418037415
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000062",
+      "raw_overlap": 0.7812469601631165
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000063",
+      "raw_overlap": 0.7832916378974915
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000064",
+      "raw_overlap": 0.79034423828125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000065",
+      "raw_overlap": 0.800677478313446
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000066",
+      "raw_overlap": 0.8082641959190369
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000067",
+      "raw_overlap": 0.810546875
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000068",
+      "raw_overlap": 0.8115814328193665
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000069",
+      "raw_overlap": 0.811962902545929
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000070",
+      "raw_overlap": 0.8111236691474915
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000071",
+      "raw_overlap": 0.8123840689659119
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000072",
+      "raw_overlap": 0.8087524771690369
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000073",
+      "raw_overlap": 0.812603771686554
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000074",
+      "raw_overlap": 0.8084259033203125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000075",
+      "raw_overlap": 0.8058105707168579
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000076",
+      "raw_overlap": 0.7965545654296875
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000077",
+      "raw_overlap": 0.8000030517578125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000078",
+      "raw_overlap": 0.806182861328125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000079",
+      "raw_overlap": 0.7875305414199829
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000080",
+      "raw_overlap": 0.8028320670127869
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000081",
+      "raw_overlap": 0.8159881830215454
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000082",
+      "raw_overlap": 0.809552013874054
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000083",
+      "raw_overlap": 0.7988037467002869
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000084",
+      "raw_overlap": 0.7923126220703125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000085",
+      "raw_overlap": 0.7823883295059204
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000086",
+      "raw_overlap": 0.7736877799034119
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000087",
+      "raw_overlap": 0.7730194330215454
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000088",
+      "raw_overlap": 0.7755646109580994
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000089",
+      "raw_overlap": 0.7744049429893494
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000090",
+      "raw_overlap": 0.7691925168037415
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_4/frame_000000",
+      "raw_overlap": 0.9280762076377869
+    }
+  ],
+  "skipped_frames": [],
+  "completed": true,
+  "started_at_unix": 1789239117.5398736,
+  "completed_at_unix": 1789239208.1290026,
+  "selected_count": 93,
+  "skipped_count": 0,
+  "checkpoint_step": 10000,
+  "checkpoint_training_ablation": {
+    "depth_completion": true,
+    "distributional_depth": true,
+    "anisotropic_footprint": true,
+    "physics_router": true,
+    "hard_composition": true,
+    "rgbd_cycle": true
+  },
+  "checkpoint_inference_ablation_mismatches": {},
+  "output_rule": "hard-trained; hard trusted-region composition at inference",
+  "variant_status": "consistent hard-composition model"
+}

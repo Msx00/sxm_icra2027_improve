@@ -1,0 +1,6 @@
+# Single-factor ablation: replace the learned physics router with a binary
+# rendered-validity gate. The unused router objective is disabled.
+ablation:
+  physics_router: false
+loss:
+  router: 0.0

@@ -1,0 +1,8 @@
+ablation:
+  depth_completion: true
+  distributional_depth: true
+  anisotropic_footprint: true
+  physics_router: false
+  hard_composition: true
+  rgbd_cycle: false
+

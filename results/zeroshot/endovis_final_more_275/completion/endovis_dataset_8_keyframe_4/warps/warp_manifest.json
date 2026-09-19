@@ -1,0 +1,42 @@
+{
+  "scene": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data/endovis_dataset_8_keyframe_4",
+  "height": 512,
+  "width": 640,
+  "mask_strategy": "valid_mask->fill_small_enclosed_holes->invert->small_dilation",
+  "close_kernel": 3,
+  "small_hole_max_area": 0,
+  "seam_kernel": 1,
+  "confidence_threshold": 0.2,
+  "confidence_used_for_hard_mask": false,
+  "min_valid_ratio": 0.0,
+  "depth_source": "endoscope2/depthL ground truth",
+  "depth_unit": "millimetres",
+  "E1_RGB_READ": false,
+  "pose_mode": "per_frame_source_to_target",
+  "completed": true,
+  "frames": [
+    {
+      "frame_id": 0,
+      "source_rgb": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data/endovis_dataset_8_keyframe_4/endoscope2/L/frame_000000.png",
+      "source_depth": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data/endovis_dataset_8_keyframe_4/endoscope2/depthL/frame_000000.npy",
+      "warped_rgb": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/warped_rgb/frame_000000.png",
+      "valid_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/valid_mask/frame_000000.png",
+      "known_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/known_mask/frame_000000.png",
+      "missing_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/missing_mask/frame_000000.png",
+      "confidence": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/confidence/frame_000000.png",
+      "low_confidence_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/low_confidence_mask/frame_000000.png",
+      "inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/inpaint_mask/frame_000000.png",
+      "depth_mm": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/depth_mm/frame_000000.npy",
+      "depth_vis": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_4/warps/depth_vis/frame_000000.png",
+      "valid_ratio": 0.8227813720703125,
+      "known_ratio": 0.8227813720703125,
+      "missing_ratio": 0.1772186279296875,
+      "inpaint_ratio": 0.1772186279296875,
+      "low_confidence_ratio": 0.0626129150390625,
+      "small_hole_pixels_filled": 0,
+      "projected_points": 255168,
+      "source_depth_valid_ratio": 0.7787109375
+    }
+  ],
+  "skipped_frames": []
+}

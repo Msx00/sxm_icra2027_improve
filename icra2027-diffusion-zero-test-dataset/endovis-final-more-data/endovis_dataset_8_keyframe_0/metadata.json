@@ -1,0 +1,2556 @@
+{
+  "dataset": "EndoVis/SCARED 2019 test dataset 8",
+  "depth": "right-camera XYZ Z channel in millimetres",
+  "frame_count": 95,
+  "frames": [
+    {
+      "output_frame_id": 0,
+      "raw_overlap": 0.8990478515625,
+      "source_depth_valid_ratio": 0.644030749797821,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000004.tiff bottom half",
+      "source_frame_id": 4,
+      "source_frame_index": 4,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 4",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 4"
+    },
+    {
+      "output_frame_id": 1,
+      "raw_overlap": 0.8632171750068665,
+      "source_depth_valid_ratio": 0.5774017572402954,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000014.tiff bottom half",
+      "source_frame_id": 14,
+      "source_frame_index": 14,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 14",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 14"
+    },
+    {
+      "output_frame_id": 2,
+      "raw_overlap": 0.8732086420059204,
+      "source_depth_valid_ratio": 0.5572174191474915,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000024.tiff bottom half",
+      "source_frame_id": 24,
+      "source_frame_index": 24,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 24",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 24"
+    },
+    {
+      "output_frame_id": 3,
+      "raw_overlap": 0.8681122064590454,
+      "source_depth_valid_ratio": 0.525585949420929,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000034.tiff bottom half",
+      "source_frame_id": 34,
+      "source_frame_index": 34,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 34",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 34"
+    },
+    {
+      "output_frame_id": 4,
+      "raw_overlap": 0.885211169719696,
+      "source_depth_valid_ratio": 0.514068603515625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000044.tiff bottom half",
+      "source_frame_id": 44,
+      "source_frame_index": 44,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 44",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 44"
+    },
+    {
+      "output_frame_id": 5,
+      "raw_overlap": 0.9200378656387329,
+      "source_depth_valid_ratio": 0.5093780755996704,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000054.tiff bottom half",
+      "source_frame_id": 54,
+      "source_frame_index": 54,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 54",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 54"
+    },
+    {
+      "output_frame_id": 6,
+      "raw_overlap": 0.917376697063446,
+      "source_depth_valid_ratio": 0.4977569580078125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000064.tiff bottom half",
+      "source_frame_id": 64,
+      "source_frame_index": 64,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 64",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 64"
+    },
+    {
+      "output_frame_id": 7,
+      "raw_overlap": 0.914868175983429,
+      "source_depth_valid_ratio": 0.48747560381889343,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000074.tiff bottom half",
+      "source_frame_id": 74,
+      "source_frame_index": 74,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 74",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 74"
+    },
+    {
+      "output_frame_id": 8,
+      "raw_overlap": 0.9093994498252869,
+      "source_depth_valid_ratio": 0.4743896424770355,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000084.tiff bottom half",
+      "source_frame_id": 84,
+      "source_frame_index": 84,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 84",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 84"
+    },
+    {
+      "output_frame_id": 9,
+      "raw_overlap": 0.8849121332168579,
+      "source_depth_valid_ratio": 0.4657135009765625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000094.tiff bottom half",
+      "source_frame_id": 94,
+      "source_frame_index": 94,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 94",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 94"
+    },
+    {
+      "output_frame_id": 10,
+      "raw_overlap": 0.864733874797821,
+      "source_depth_valid_ratio": 0.4537200927734375,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000104.tiff bottom half",
+      "source_frame_id": 104,
+      "source_frame_index": 104,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 104",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 104"
+    },
+    {
+      "output_frame_id": 11,
+      "raw_overlap": 0.8511993288993835,
+      "source_depth_valid_ratio": 0.44273683428764343,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000114.tiff bottom half",
+      "source_frame_id": 114,
+      "source_frame_index": 114,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 114",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 114"
+    },
+    {
+      "output_frame_id": 12,
+      "raw_overlap": 0.843859851360321,
+      "source_depth_valid_ratio": 0.438241571187973,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000124.tiff bottom half",
+      "source_frame_id": 124,
+      "source_frame_index": 124,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 124",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 124"
+    },
+    {
+      "output_frame_id": 13,
+      "raw_overlap": 0.8447327017784119,
+      "source_depth_valid_ratio": 0.4340667724609375,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000134.tiff bottom half",
+      "source_frame_id": 134,
+      "source_frame_index": 134,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 134",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 134"
+    },
+    {
+      "output_frame_id": 14,
+      "raw_overlap": 0.8325958251953125,
+      "source_depth_valid_ratio": 0.425994873046875,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000144.tiff bottom half",
+      "source_frame_id": 144,
+      "source_frame_index": 144,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 144",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 144"
+    },
+    {
+      "output_frame_id": 15,
+      "raw_overlap": 0.817901611328125,
+      "source_depth_valid_ratio": 0.4171600341796875,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000154.tiff bottom half",
+      "source_frame_id": 154,
+      "source_frame_index": 154,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 154",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 154"
+    },
+    {
+      "output_frame_id": 16,
+      "raw_overlap": 0.816662609577179,
+      "source_depth_valid_ratio": 0.4166259765625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000164.tiff bottom half",
+      "source_frame_id": 164,
+      "source_frame_index": 164,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 164",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 164"
+    },
+    {
+      "output_frame_id": 17,
+      "raw_overlap": 0.8021820187568665,
+      "source_depth_valid_ratio": 0.40718385577201843,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000174.tiff bottom half",
+      "source_frame_id": 174,
+      "source_frame_index": 174,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 174",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 174"
+    },
+    {
+      "output_frame_id": 18,
+      "raw_overlap": 0.7941681146621704,
+      "source_depth_valid_ratio": 0.406637579202652,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000184.tiff bottom half",
+      "source_frame_id": 184,
+      "source_frame_index": 184,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 184",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 184"
+    },
+    {
+      "output_frame_id": 19,
+      "raw_overlap": 0.7890533804893494,
+      "source_depth_valid_ratio": 0.4042724668979645,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000194.tiff bottom half",
+      "source_frame_id": 194,
+      "source_frame_index": 194,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 194",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 194"
+    },
+    {
+      "output_frame_id": 20,
+      "raw_overlap": 0.7773712277412415,
+      "source_depth_valid_ratio": 0.401580810546875,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000204.tiff bottom half",
+      "source_frame_id": 204,
+      "source_frame_index": 204,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 204",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 204"
+    },
+    {
+      "output_frame_id": 21,
+      "raw_overlap": 0.7587555050849915,
+      "source_depth_valid_ratio": 0.393289178609848,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000214.tiff bottom half",
+      "source_frame_id": 214,
+      "source_frame_index": 214,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 214",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 214"
+    },
+    {
+      "output_frame_id": 22,
+      "raw_overlap": 0.775543212890625,
+      "source_depth_valid_ratio": 0.395700067281723,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000224.tiff bottom half",
+      "source_frame_id": 224,
+      "source_frame_index": 224,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 224",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 224"
+    },
+    {
+      "output_frame_id": 23,
+      "raw_overlap": 0.807525634765625,
+      "source_depth_valid_ratio": 0.4104461669921875,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000234.tiff bottom half",
+      "source_frame_id": 234,
+      "source_frame_index": 234,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 234",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 234"
+    },
+    {
+      "output_frame_id": 24,
+      "raw_overlap": 0.820892333984375,
+      "source_depth_valid_ratio": 0.4261718690395355,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000244.tiff bottom half",
+      "source_frame_id": 244,
+      "source_frame_index": 244,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 244",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 244"
+    },
+    {
+      "output_frame_id": 25,
+      "raw_overlap": 0.8268676996231079,
+      "source_depth_valid_ratio": 0.43743592500686646,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000254.tiff bottom half",
+      "source_frame_id": 254,
+      "source_frame_index": 254,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 254",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 254"
+    },
+    {
+      "output_frame_id": 26,
+      "raw_overlap": 0.8334564566612244,
+      "source_depth_valid_ratio": 0.4443298280239105,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000264.tiff bottom half",
+      "source_frame_id": 264,
+      "source_frame_index": 264,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 264",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 264"
+    },
+    {
+      "output_frame_id": 27,
+      "raw_overlap": 0.8396545648574829,
+      "source_depth_valid_ratio": 0.4472289979457855,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000274.tiff bottom half",
+      "source_frame_id": 274,
+      "source_frame_index": 274,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 274",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 274"
+    },
+    {
+      "output_frame_id": 28,
+      "raw_overlap": 0.8432098627090454,
+      "source_depth_valid_ratio": 0.447784423828125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000284.tiff bottom half",
+      "source_frame_id": 284,
+      "source_frame_index": 284,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 284",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 284"
+    },
+    {
+      "output_frame_id": 29,
+      "raw_overlap": 0.8529877066612244,
+      "source_depth_valid_ratio": 0.43878480792045593,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000294.tiff bottom half",
+      "source_frame_id": 294,
+      "source_frame_index": 294,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 294",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 294"
+    },
+    {
+      "output_frame_id": 30,
+      "raw_overlap": 0.863604724407196,
+      "source_depth_valid_ratio": 0.4266296327114105,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000304.tiff bottom half",
+      "source_frame_id": 304,
+      "source_frame_index": 304,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 304",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 304"
+    },
+    {
+      "output_frame_id": 31,
+      "raw_overlap": 0.875872790813446,
+      "source_depth_valid_ratio": 0.4113220274448395,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000314.tiff bottom half",
+      "source_frame_id": 314,
+      "source_frame_index": 314,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 314",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 314"
+    },
+    {
+      "output_frame_id": 32,
+      "raw_overlap": 0.8900146484375,
+      "source_depth_valid_ratio": 0.39689332246780396,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000324.tiff bottom half",
+      "source_frame_id": 324,
+      "source_frame_index": 324,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 324",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 324"
+    },
+    {
+      "output_frame_id": 33,
+      "raw_overlap": 0.9068328738212585,
+      "source_depth_valid_ratio": 0.388803094625473,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000334.tiff bottom half",
+      "source_frame_id": 334,
+      "source_frame_index": 334,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 334",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 334"
+    },
+    {
+      "output_frame_id": 34,
+      "raw_overlap": 0.920501708984375,
+      "source_depth_valid_ratio": 0.3768676817417145,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000344.tiff bottom half",
+      "source_frame_id": 344,
+      "source_frame_index": 344,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 344",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 344"
+    },
+    {
+      "output_frame_id": 35,
+      "raw_overlap": 0.918701171875,
+      "source_depth_valid_ratio": 0.355184942483902,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000354.tiff bottom half",
+      "source_frame_id": 354,
+      "source_frame_index": 354,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 354",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 354"
+    },
+    {
+      "output_frame_id": 36,
+      "raw_overlap": 0.910717785358429,
+      "source_depth_valid_ratio": 0.3360229432582855,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000364.tiff bottom half",
+      "source_frame_id": 364,
+      "source_frame_index": 364,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 364",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 364"
+    },
+    {
+      "output_frame_id": 37,
+      "raw_overlap": 0.89947509765625,
+      "source_depth_valid_ratio": 0.3233581483364105,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000374.tiff bottom half",
+      "source_frame_id": 374,
+      "source_frame_index": 374,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 374",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 374"
+    },
+    {
+      "output_frame_id": 38,
+      "raw_overlap": 0.8927887082099915,
+      "source_depth_valid_ratio": 0.3098693788051605,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000384.tiff bottom half",
+      "source_frame_id": 384,
+      "source_frame_index": 384,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 384",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 384"
+    },
+    {
+      "output_frame_id": 39,
+      "raw_overlap": 0.886401355266571,
+      "source_depth_valid_ratio": 0.298309326171875,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000394.tiff bottom half",
+      "source_frame_id": 394,
+      "source_frame_index": 394,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 394",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 394"
+    },
+    {
+      "output_frame_id": 40,
+      "raw_overlap": 0.8802276849746704,
+      "source_depth_valid_ratio": 0.28670045733451843,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000404.tiff bottom half",
+      "source_frame_id": 404,
+      "source_frame_index": 404,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 404",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 404"
+    },
+    {
+      "output_frame_id": 41,
+      "raw_overlap": 0.8675293326377869,
+      "source_depth_valid_ratio": 0.277304083108902,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000414.tiff bottom half",
+      "source_frame_id": 414,
+      "source_frame_index": 414,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 414",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 414"
+    },
+    {
+      "output_frame_id": 42,
+      "raw_overlap": 0.8615478873252869,
+      "source_depth_valid_ratio": 0.27187806367874146,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000424.tiff bottom half",
+      "source_frame_id": 424,
+      "source_frame_index": 424,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 424",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 424"
+    },
+    {
+      "output_frame_id": 43,
+      "raw_overlap": 0.863879382610321,
+      "source_depth_valid_ratio": 0.270913690328598,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000434.tiff bottom half",
+      "source_frame_id": 434,
+      "source_frame_index": 434,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 434",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 434"
+    },
+    {
+      "output_frame_id": 44,
+      "raw_overlap": 0.8778411746025085,
+      "source_depth_valid_ratio": 0.2732696533203125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000444.tiff bottom half",
+      "source_frame_id": 444,
+      "source_frame_index": 444,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 444",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 444"
+    },
+    {
+      "output_frame_id": 45,
+      "raw_overlap": 0.883392333984375,
+      "source_depth_valid_ratio": 0.27318117022514343,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000454.tiff bottom half",
+      "source_frame_id": 454,
+      "source_frame_index": 454,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 454",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 454"
+    },
+    {
+      "output_frame_id": 46,
+      "raw_overlap": 0.883044421672821,
+      "source_depth_valid_ratio": 0.27098390460014343,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000464.tiff bottom half",
+      "source_frame_id": 464,
+      "source_frame_index": 464,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 464",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 464"
+    },
+    {
+      "output_frame_id": 47,
+      "raw_overlap": 0.8889221549034119,
+      "source_depth_valid_ratio": 0.2732910215854645,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000474.tiff bottom half",
+      "source_frame_id": 474,
+      "source_frame_index": 474,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 474",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 474"
+    },
+    {
+      "output_frame_id": 48,
+      "raw_overlap": 0.8969208002090454,
+      "source_depth_valid_ratio": 0.2742248475551605,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000484.tiff bottom half",
+      "source_frame_id": 484,
+      "source_frame_index": 484,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 484",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 484"
+    },
+    {
+      "output_frame_id": 49,
+      "raw_overlap": 0.8967346549034119,
+      "source_depth_valid_ratio": 0.27411195635795593,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000494.tiff bottom half",
+      "source_frame_id": 494,
+      "source_frame_index": 494,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 494",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 494"
+    },
+    {
+      "output_frame_id": 50,
+      "raw_overlap": 0.8992248773574829,
+      "source_depth_valid_ratio": 0.2758422791957855,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000504.tiff bottom half",
+      "source_frame_id": 504,
+      "source_frame_index": 504,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 504",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 504"
+    },
+    {
+      "output_frame_id": 51,
+      "raw_overlap": 0.8995941281318665,
+      "source_depth_valid_ratio": 0.279550164937973,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000514.tiff bottom half",
+      "source_frame_id": 514,
+      "source_frame_index": 514,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 514",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 514"
+    },
+    {
+      "output_frame_id": 52,
+      "raw_overlap": 0.9022491574287415,
+      "source_depth_valid_ratio": 0.281494140625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000524.tiff bottom half",
+      "source_frame_id": 524,
+      "source_frame_index": 524,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 524",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 524"
+    },
+    {
+      "output_frame_id": 53,
+      "raw_overlap": 0.9048919677734375,
+      "source_depth_valid_ratio": 0.283316045999527,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000534.tiff bottom half",
+      "source_frame_id": 534,
+      "source_frame_index": 534,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 534",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 534"
+    },
+    {
+      "output_frame_id": 54,
+      "raw_overlap": 0.90673828125,
+      "source_depth_valid_ratio": 0.28551942110061646,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000544.tiff bottom half",
+      "source_frame_id": 544,
+      "source_frame_index": 544,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 544",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 544"
+    },
+    {
+      "output_frame_id": 55,
+      "raw_overlap": 0.9017974734306335,
+      "source_depth_valid_ratio": 0.28557130694389343,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000554.tiff bottom half",
+      "source_frame_id": 554,
+      "source_frame_index": 554,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 554",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 554"
+    },
+    {
+      "output_frame_id": 56,
+      "raw_overlap": 0.887969970703125,
+      "source_depth_valid_ratio": 0.28197938203811646,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000564.tiff bottom half",
+      "source_frame_id": 564,
+      "source_frame_index": 564,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 564",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 564"
+    },
+    {
+      "output_frame_id": 57,
+      "raw_overlap": 0.8549652099609375,
+      "source_depth_valid_ratio": 0.273184210062027,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000574.tiff bottom half",
+      "source_frame_id": 574,
+      "source_frame_index": 574,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 574",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 574"
+    },
+    {
+      "output_frame_id": 58,
+      "raw_overlap": 0.8386383056640625,
+      "source_depth_valid_ratio": 0.27019959688186646,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000584.tiff bottom half",
+      "source_frame_id": 584,
+      "source_frame_index": 584,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 584",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 584"
+    },
+    {
+      "output_frame_id": 59,
+      "raw_overlap": 0.8235565423965454,
+      "source_depth_valid_ratio": 0.26716309785842896,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000594.tiff bottom half",
+      "source_frame_id": 594,
+      "source_frame_index": 594,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 594",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 594"
+    },
+    {
+      "output_frame_id": 60,
+      "raw_overlap": 0.816455066204071,
+      "source_depth_valid_ratio": 0.26375123858451843,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000604.tiff bottom half",
+      "source_frame_id": 604,
+      "source_frame_index": 604,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 604",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 604"
+    },
+    {
+      "output_frame_id": 61,
+      "raw_overlap": 0.8097900748252869,
+      "source_depth_valid_ratio": 0.262521356344223,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000614.tiff bottom half",
+      "source_frame_id": 614,
+      "source_frame_index": 614,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 614",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 614"
+    },
+    {
+      "output_frame_id": 62,
+      "raw_overlap": 0.7922149896621704,
+      "source_depth_valid_ratio": 0.25742799043655396,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000624.tiff bottom half",
+      "source_frame_id": 624,
+      "source_frame_index": 624,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 624",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 624"
+    },
+    {
+      "output_frame_id": 63,
+      "raw_overlap": 0.767871081829071,
+      "source_depth_valid_ratio": 0.2515869140625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000634.tiff bottom half",
+      "source_frame_id": 634,
+      "source_frame_index": 634,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 634",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 634"
+    },
+    {
+      "output_frame_id": 64,
+      "raw_overlap": 0.7426117062568665,
+      "source_depth_valid_ratio": 0.24405212700366974,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000644.tiff bottom half",
+      "source_frame_id": 644,
+      "source_frame_index": 644,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 644",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 644"
+    },
+    {
+      "output_frame_id": 65,
+      "raw_overlap": 0.7364471554756165,
+      "source_depth_valid_ratio": 0.24342651665210724,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000654.tiff bottom half",
+      "source_frame_id": 654,
+      "source_frame_index": 654,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 654",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 654"
+    },
+    {
+      "output_frame_id": 66,
+      "raw_overlap": 0.7430755496025085,
+      "source_depth_valid_ratio": 0.244903564453125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000664.tiff bottom half",
+      "source_frame_id": 664,
+      "source_frame_index": 664,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 664",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 664"
+    },
+    {
+      "output_frame_id": 67,
+      "raw_overlap": 0.7345032095909119,
+      "source_depth_valid_ratio": 0.24304504692554474,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000674.tiff bottom half",
+      "source_frame_id": 674,
+      "source_frame_index": 674,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 674",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 674"
+    },
+    {
+      "output_frame_id": 68,
+      "raw_overlap": 0.728381335735321,
+      "source_depth_valid_ratio": 0.24207153916358948,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000684.tiff bottom half",
+      "source_frame_id": 684,
+      "source_frame_index": 684,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 684",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 684"
+    },
+    {
+      "output_frame_id": 69,
+      "raw_overlap": 0.728649914264679,
+      "source_depth_valid_ratio": 0.24376831948757172,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000694.tiff bottom half",
+      "source_frame_id": 694,
+      "source_frame_index": 694,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 694",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 694"
+    },
+    {
+      "output_frame_id": 70,
+      "raw_overlap": 0.727893054485321,
+      "source_depth_valid_ratio": 0.242828369140625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000704.tiff bottom half",
+      "source_frame_id": 704,
+      "source_frame_index": 704,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 704",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 704"
+    },
+    {
+      "output_frame_id": 71,
+      "raw_overlap": 0.728009045124054,
+      "source_depth_valid_ratio": 0.24306336045265198,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000714.tiff bottom half",
+      "source_frame_id": 714,
+      "source_frame_index": 714,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 714",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 714"
+    },
+    {
+      "output_frame_id": 72,
+      "raw_overlap": 0.7504974603652954,
+      "source_depth_valid_ratio": 0.25179749727249146,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000724.tiff bottom half",
+      "source_frame_id": 724,
+      "source_frame_index": 724,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 724",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 724"
+    },
+    {
+      "output_frame_id": 73,
+      "raw_overlap": 0.7758331298828125,
+      "source_depth_valid_ratio": 0.25770875811576843,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000734.tiff bottom half",
+      "source_frame_id": 734,
+      "source_frame_index": 734,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 734",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 734"
+    },
+    {
+      "output_frame_id": 74,
+      "raw_overlap": 0.8235687613487244,
+      "source_depth_valid_ratio": 0.269400030374527,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000744.tiff bottom half",
+      "source_frame_id": 744,
+      "source_frame_index": 744,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 744",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 744"
+    },
+    {
+      "output_frame_id": 75,
+      "raw_overlap": 0.8771637082099915,
+      "source_depth_valid_ratio": 0.27666017413139343,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000754.tiff bottom half",
+      "source_frame_id": 754,
+      "source_frame_index": 754,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 754",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 754"
+    },
+    {
+      "output_frame_id": 76,
+      "raw_overlap": 0.8927032351493835,
+      "source_depth_valid_ratio": 0.2754150331020355,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000764.tiff bottom half",
+      "source_frame_id": 764,
+      "source_frame_index": 764,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 764",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 764"
+    },
+    {
+      "output_frame_id": 77,
+      "raw_overlap": 0.8774749636650085,
+      "source_depth_valid_ratio": 0.26739501953125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000774.tiff bottom half",
+      "source_frame_id": 774,
+      "source_frame_index": 774,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 774",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 774"
+    },
+    {
+      "output_frame_id": 78,
+      "raw_overlap": 0.8674896359443665,
+      "source_depth_valid_ratio": 0.2654174864292145,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000784.tiff bottom half",
+      "source_frame_id": 784,
+      "source_frame_index": 784,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 784",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 784"
+    },
+    {
+      "output_frame_id": 79,
+      "raw_overlap": 0.8520264029502869,
+      "source_depth_valid_ratio": 0.25705263018608093,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000794.tiff bottom half",
+      "source_frame_id": 794,
+      "source_frame_index": 794,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 794",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 794"
+    },
+    {
+      "output_frame_id": 80,
+      "raw_overlap": 0.8460479974746704,
+      "source_depth_valid_ratio": 0.2583557069301605,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000804.tiff bottom half",
+      "source_frame_id": 804,
+      "source_frame_index": 804,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 804",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 804"
+    },
+    {
+      "output_frame_id": 81,
+      "raw_overlap": 0.8395447134971619,
+      "source_depth_valid_ratio": 0.25812989473342896,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000814.tiff bottom half",
+      "source_frame_id": 814,
+      "source_frame_index": 814,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 814",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 814"
+    },
+    {
+      "output_frame_id": 82,
+      "raw_overlap": 0.8392578363418579,
+      "source_depth_valid_ratio": 0.26453858613967896,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000824.tiff bottom half",
+      "source_frame_id": 824,
+      "source_frame_index": 824,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 824",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 824"
+    },
+    {
+      "output_frame_id": 83,
+      "raw_overlap": 0.8517517447471619,
+      "source_depth_valid_ratio": 0.26967164874076843,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000834.tiff bottom half",
+      "source_frame_id": 834,
+      "source_frame_index": 834,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 834",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 834"
+    },
+    {
+      "output_frame_id": 84,
+      "raw_overlap": 0.8498870730400085,
+      "source_depth_valid_ratio": 0.272979736328125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000844.tiff bottom half",
+      "source_frame_id": 844,
+      "source_frame_index": 844,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 844",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 844"
+    },
+    {
+      "output_frame_id": 85,
+      "raw_overlap": 0.8580291867256165,
+      "source_depth_valid_ratio": 0.273397833108902,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000854.tiff bottom half",
+      "source_frame_id": 854,
+      "source_frame_index": 854,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 854",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 854"
+    },
+    {
+      "output_frame_id": 86,
+      "raw_overlap": 0.866302490234375,
+      "source_depth_valid_ratio": 0.27731019258499146,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000864.tiff bottom half",
+      "source_frame_id": 864,
+      "source_frame_index": 864,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 864",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 864"
+    },
+    {
+      "output_frame_id": 87,
+      "raw_overlap": 0.8663787841796875,
+      "source_depth_valid_ratio": 0.276437371969223,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000874.tiff bottom half",
+      "source_frame_id": 874,
+      "source_frame_index": 874,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 874",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 874"
+    },
+    {
+      "output_frame_id": 88,
+      "raw_overlap": 0.8526214957237244,
+      "source_depth_valid_ratio": 0.274069219827652,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000884.tiff bottom half",
+      "source_frame_id": 884,
+      "source_frame_index": 884,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 884",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 884"
+    },
+    {
+      "output_frame_id": 89,
+      "raw_overlap": 0.8397003412246704,
+      "source_depth_valid_ratio": 0.27201539278030396,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000894.tiff bottom half",
+      "source_frame_id": 894,
+      "source_frame_index": 894,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 894",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 894"
+    },
+    {
+      "output_frame_id": 90,
+      "raw_overlap": 0.8290130496025085,
+      "source_depth_valid_ratio": 0.267221063375473,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000904.tiff bottom half",
+      "source_frame_id": 904,
+      "source_frame_index": 904,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 904",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 904"
+    },
+    {
+      "output_frame_id": 91,
+      "raw_overlap": 0.8316406607627869,
+      "source_depth_valid_ratio": 0.26544189453125,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000914.tiff bottom half",
+      "source_frame_id": 914,
+      "source_frame_index": 914,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 914",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 914"
+    },
+    {
+      "output_frame_id": 92,
+      "raw_overlap": 0.849438488483429,
+      "source_depth_valid_ratio": 0.2683349549770355,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000924.tiff bottom half",
+      "source_frame_id": 924,
+      "source_frame_index": 924,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 924",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 924"
+    },
+    {
+      "output_frame_id": 93,
+      "raw_overlap": 0.8629913330078125,
+      "source_depth_valid_ratio": 0.2702575623989105,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000934.tiff bottom half",
+      "source_frame_id": 934,
+      "source_frame_index": 934,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 934",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 934"
+    },
+    {
+      "output_frame_id": 94,
+      "raw_overlap": 0.8642425537109375,
+      "source_depth_valid_ratio": 0.2662506103515625,
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000942.tiff bottom half",
+      "source_frame_id": 942,
+      "source_frame_index": 942,
+      "source_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 bottom half, frame 942",
+      "target_rgb": "/home/data/mashixing/dataset_8tb/endovis/test_dataset_8/keyframe_0/rgb.mp4 top half, frame 942"
+    }
+  ],
+  "keyframe": 0,
+  "overlap_metric": {
+    "comparison": "strictly_greater_than",
+    "config_file": {
+      "mtime_ns": 1789089840890585861,
+      "path": "/home/data20tb/shixingma/icra-2027/configs/distrisurg_dataset89.yaml",
+      "size": 1787
+    },
+    "config_path": "/home/data20tb/shixingma/icra-2027/configs/distrisurg_dataset89.yaml",
+    "definition": "DSS valid_mask.mean() over the full target image",
+    "device_type": "cuda",
+    "dss": {
+      "base_footprint_px": 0.75,
+      "max_depth_mm": 500.0,
+      "max_footprint_px": 2.5,
+      "max_sigma_mm": 20.0,
+      "min_depth_mm": 1.0,
+      "min_sigma_mm": 0.25,
+      "min_support": 0.03,
+      "normal_footprint_px": 0.75,
+      "radius": 1,
+      "sigma_samples": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "sigma_weights": [
+        0.2741,
+        0.4518,
+        0.2741
+      ],
+      "visibility_temperature_mm": 2.0
+    },
+    "height": 512,
+    "implementation": {
+      "mtime_ns": 1789052177758672462,
+      "path": "/home/data20tb/shixingma/icra-2027/distrisurg/geometry/dss.py",
+      "size": 16827
+    },
+    "name": "raw_dss_valid_ratio",
+    "project_root": "/home/data20tb/shixingma/icra-2027",
+    "sigma_mm": 0.5,
+    "torch_version": "2.5.1+cu121",
+    "width": 640
+  },
+  "pose_convention": "source right camera to target left camera",
+  "protocol": "simultaneous right-to-left stereo",
+  "schema_version": 1,
+  "selection": {
+    "max_frames_per_scene": 0,
+    "min_frame_gap": 5,
+    "min_overlap": 0.7,
+    "mode": "window-nearest",
+    "scan_all_candidates": false,
+    "temporal_window": 10,
+    "threshold_rule": "raw_overlap > min_overlap"
+  },
+  "summary": {
+    "cache_hit_count": 0,
+    "dataset_id": 8,
+    "dynamic": true,
+    "evaluated_candidate_count": 95,
+    "keyframe_id": 0,
+    "min_frame_gap": 5,
+    "processed_window_count": 95,
+    "scene": "endovis_dataset_8_keyframe_0",
+    "selected_count": 95,
+    "selected_count_before_cap": 95,
+    "selected_overlap_max": 0.920501708984375,
+    "selected_overlap_median": 0.8549652099609375,
+    "selected_overlap_min": 0.727893054485321,
+    "selected_source_frame_ids": [
+      4,
+      14,
+      24,
+      34,
+      44,
+      54,
+      64,
+      74,
+      84,
+      94,
+      104,
+      114,
+      124,
+      134,
+      144,
+      154,
+      164,
+      174,
+      184,
+      194,
+      204,
+      214,
+      224,
+      234,
+      244,
+      254,
+      264,
+      274,
+      284,
+      294,
+      304,
+      314,
+      324,
+      334,
+      344,
+      354,
+      364,
+      374,
+      384,
+      394,
+      404,
+      414,
+      424,
+      434,
+      444,
+      454,
+      464,
+      474,
+      484,
+      494,
+      504,
+      514,
+      524,
+      534,
+      544,
+      554,
+      564,
+      574,
+      584,
+      594,
+      604,
+      614,
+      624,
+      634,
+      644,
+      654,
+      664,
+      674,
+      684,
+      694,
+      704,
+      714,
+      724,
+      734,
+      744,
+      754,
+      764,
+      774,
+      784,
+      794,
+      804,
+      814,
+      824,
+      834,
+      844,
+      854,
+      864,
+      874,
+      884,
+      894,
+      904,
+      914,
+      924,
+      934,
+      942
+    ],
+    "source_frame_count": 945,
+    "threshold_pass_count_among_evaluated": 95,
+    "windows": [
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 4.5,
+        "end_frame_id": 9,
+        "evaluated_frame_ids": [
+          4
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 4,
+        "pre_cap_selected_raw_overlap": 0.8990478515625,
+        "selected_frame_id": 4,
+        "selected_raw_overlap": 0.8990478515625,
+        "start_frame_id": 0,
+        "window_id": 0
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 14.5,
+        "end_frame_id": 19,
+        "evaluated_frame_ids": [
+          14
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 14,
+        "pre_cap_selected_raw_overlap": 0.8632171750068665,
+        "selected_frame_id": 14,
+        "selected_raw_overlap": 0.8632171750068665,
+        "start_frame_id": 10,
+        "window_id": 1
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 24.5,
+        "end_frame_id": 29,
+        "evaluated_frame_ids": [
+          24
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 24,
+        "pre_cap_selected_raw_overlap": 0.8732086420059204,
+        "selected_frame_id": 24,
+        "selected_raw_overlap": 0.8732086420059204,
+        "start_frame_id": 20,
+        "window_id": 2
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 34.5,
+        "end_frame_id": 39,
+        "evaluated_frame_ids": [
+          34
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 34,
+        "pre_cap_selected_raw_overlap": 0.8681122064590454,
+        "selected_frame_id": 34,
+        "selected_raw_overlap": 0.8681122064590454,
+        "start_frame_id": 30,
+        "window_id": 3
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 44.5,
+        "end_frame_id": 49,
+        "evaluated_frame_ids": [
+          44
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 44,
+        "pre_cap_selected_raw_overlap": 0.885211169719696,
+        "selected_frame_id": 44,
+        "selected_raw_overlap": 0.885211169719696,
+        "start_frame_id": 40,
+        "window_id": 4
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 54.5,
+        "end_frame_id": 59,
+        "evaluated_frame_ids": [
+          54
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 54,
+        "pre_cap_selected_raw_overlap": 0.9200378656387329,
+        "selected_frame_id": 54,
+        "selected_raw_overlap": 0.9200378656387329,
+        "start_frame_id": 50,
+        "window_id": 5
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 64.5,
+        "end_frame_id": 69,
+        "evaluated_frame_ids": [
+          64
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 64,
+        "pre_cap_selected_raw_overlap": 0.917376697063446,
+        "selected_frame_id": 64,
+        "selected_raw_overlap": 0.917376697063446,
+        "start_frame_id": 60,
+        "window_id": 6
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 74.5,
+        "end_frame_id": 79,
+        "evaluated_frame_ids": [
+          74
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 74,
+        "pre_cap_selected_raw_overlap": 0.914868175983429,
+        "selected_frame_id": 74,
+        "selected_raw_overlap": 0.914868175983429,
+        "start_frame_id": 70,
+        "window_id": 7
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 84.5,
+        "end_frame_id": 89,
+        "evaluated_frame_ids": [
+          84
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 84,
+        "pre_cap_selected_raw_overlap": 0.9093994498252869,
+        "selected_frame_id": 84,
+        "selected_raw_overlap": 0.9093994498252869,
+        "start_frame_id": 80,
+        "window_id": 8
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 94.5,
+        "end_frame_id": 99,
+        "evaluated_frame_ids": [
+          94
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 94,
+        "pre_cap_selected_raw_overlap": 0.8849121332168579,
+        "selected_frame_id": 94,
+        "selected_raw_overlap": 0.8849121332168579,
+        "start_frame_id": 90,
+        "window_id": 9
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 104.5,
+        "end_frame_id": 109,
+        "evaluated_frame_ids": [
+          104
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 104,
+        "pre_cap_selected_raw_overlap": 0.864733874797821,
+        "selected_frame_id": 104,
+        "selected_raw_overlap": 0.864733874797821,
+        "start_frame_id": 100,
+        "window_id": 10
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 114.5,
+        "end_frame_id": 119,
+        "evaluated_frame_ids": [
+          114
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 114,
+        "pre_cap_selected_raw_overlap": 0.8511993288993835,
+        "selected_frame_id": 114,
+        "selected_raw_overlap": 0.8511993288993835,
+        "start_frame_id": 110,
+        "window_id": 11
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 124.5,
+        "end_frame_id": 129,
+        "evaluated_frame_ids": [
+          124
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 124,
+        "pre_cap_selected_raw_overlap": 0.843859851360321,
+        "selected_frame_id": 124,
+        "selected_raw_overlap": 0.843859851360321,
+        "start_frame_id": 120,
+        "window_id": 12
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 134.5,
+        "end_frame_id": 139,
+        "evaluated_frame_ids": [
+          134
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 134,
+        "pre_cap_selected_raw_overlap": 0.8447327017784119,
+        "selected_frame_id": 134,
+        "selected_raw_overlap": 0.8447327017784119,
+        "start_frame_id": 130,
+        "window_id": 13
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 144.5,
+        "end_frame_id": 149,
+        "evaluated_frame_ids": [
+          144
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 144,
+        "pre_cap_selected_raw_overlap": 0.8325958251953125,
+        "selected_frame_id": 144,
+        "selected_raw_overlap": 0.8325958251953125,
+        "start_frame_id": 140,
+        "window_id": 14
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 154.5,
+        "end_frame_id": 159,
+        "evaluated_frame_ids": [
+          154
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 154,
+        "pre_cap_selected_raw_overlap": 0.817901611328125,
+        "selected_frame_id": 154,
+        "selected_raw_overlap": 0.817901611328125,
+        "start_frame_id": 150,
+        "window_id": 15
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 164.5,
+        "end_frame_id": 169,
+        "evaluated_frame_ids": [
+          164
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 164,
+        "pre_cap_selected_raw_overlap": 0.816662609577179,
+        "selected_frame_id": 164,
+        "selected_raw_overlap": 0.816662609577179,
+        "start_frame_id": 160,
+        "window_id": 16
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 174.5,
+        "end_frame_id": 179,
+        "evaluated_frame_ids": [
+          174
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 174,
+        "pre_cap_selected_raw_overlap": 0.8021820187568665,
+        "selected_frame_id": 174,
+        "selected_raw_overlap": 0.8021820187568665,
+        "start_frame_id": 170,
+        "window_id": 17
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 184.5,
+        "end_frame_id": 189,
+        "evaluated_frame_ids": [
+          184
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 184,
+        "pre_cap_selected_raw_overlap": 0.7941681146621704,
+        "selected_frame_id": 184,
+        "selected_raw_overlap": 0.7941681146621704,
+        "start_frame_id": 180,
+        "window_id": 18
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 194.5,
+        "end_frame_id": 199,
+        "evaluated_frame_ids": [
+          194
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 194,
+        "pre_cap_selected_raw_overlap": 0.7890533804893494,
+        "selected_frame_id": 194,
+        "selected_raw_overlap": 0.7890533804893494,
+        "start_frame_id": 190,
+        "window_id": 19
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 204.5,
+        "end_frame_id": 209,
+        "evaluated_frame_ids": [
+          204
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 204,
+        "pre_cap_selected_raw_overlap": 0.7773712277412415,
+        "selected_frame_id": 204,
+        "selected_raw_overlap": 0.7773712277412415,
+        "start_frame_id": 200,
+        "window_id": 20
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 214.5,
+        "end_frame_id": 219,
+        "evaluated_frame_ids": [
+          214
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 214,
+        "pre_cap_selected_raw_overlap": 0.7587555050849915,
+        "selected_frame_id": 214,
+        "selected_raw_overlap": 0.7587555050849915,
+        "start_frame_id": 210,
+        "window_id": 21
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 224.5,
+        "end_frame_id": 229,
+        "evaluated_frame_ids": [
+          224
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 224,
+        "pre_cap_selected_raw_overlap": 0.775543212890625,
+        "selected_frame_id": 224,
+        "selected_raw_overlap": 0.775543212890625,
+        "start_frame_id": 220,
+        "window_id": 22
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 234.5,
+        "end_frame_id": 239,
+        "evaluated_frame_ids": [
+          234
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 234,
+        "pre_cap_selected_raw_overlap": 0.807525634765625,
+        "selected_frame_id": 234,
+        "selected_raw_overlap": 0.807525634765625,
+        "start_frame_id": 230,
+        "window_id": 23
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 244.5,
+        "end_frame_id": 249,
+        "evaluated_frame_ids": [
+          244
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 244,
+        "pre_cap_selected_raw_overlap": 0.820892333984375,
+        "selected_frame_id": 244,
+        "selected_raw_overlap": 0.820892333984375,
+        "start_frame_id": 240,
+        "window_id": 24
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 254.5,
+        "end_frame_id": 259,
+        "evaluated_frame_ids": [
+          254
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 254,
+        "pre_cap_selected_raw_overlap": 0.8268676996231079,
+        "selected_frame_id": 254,
+        "selected_raw_overlap": 0.8268676996231079,
+        "start_frame_id": 250,
+        "window_id": 25
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 264.5,
+        "end_frame_id": 269,
+        "evaluated_frame_ids": [
+          264
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 264,
+        "pre_cap_selected_raw_overlap": 0.8334564566612244,
+        "selected_frame_id": 264,
+        "selected_raw_overlap": 0.8334564566612244,
+        "start_frame_id": 260,
+        "window_id": 26
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 274.5,
+        "end_frame_id": 279,
+        "evaluated_frame_ids": [
+          274
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 274,
+        "pre_cap_selected_raw_overlap": 0.8396545648574829,
+        "selected_frame_id": 274,
+        "selected_raw_overlap": 0.8396545648574829,
+        "start_frame_id": 270,
+        "window_id": 27
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 284.5,
+        "end_frame_id": 289,
+        "evaluated_frame_ids": [
+          284
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 284,
+        "pre_cap_selected_raw_overlap": 0.8432098627090454,
+        "selected_frame_id": 284,
+        "selected_raw_overlap": 0.8432098627090454,
+        "start_frame_id": 280,
+        "window_id": 28
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 294.5,
+        "end_frame_id": 299,
+        "evaluated_frame_ids": [
+          294
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 294,
+        "pre_cap_selected_raw_overlap": 0.8529877066612244,
+        "selected_frame_id": 294,
+        "selected_raw_overlap": 0.8529877066612244,
+        "start_frame_id": 290,
+        "window_id": 29
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 304.5,
+        "end_frame_id": 309,
+        "evaluated_frame_ids": [
+          304
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 304,
+        "pre_cap_selected_raw_overlap": 0.863604724407196,
+        "selected_frame_id": 304,
+        "selected_raw_overlap": 0.863604724407196,
+        "start_frame_id": 300,
+        "window_id": 30
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 314.5,
+        "end_frame_id": 319,
+        "evaluated_frame_ids": [
+          314
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 314,
+        "pre_cap_selected_raw_overlap": 0.875872790813446,
+        "selected_frame_id": 314,
+        "selected_raw_overlap": 0.875872790813446,
+        "start_frame_id": 310,
+        "window_id": 31
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 324.5,
+        "end_frame_id": 329,
+        "evaluated_frame_ids": [
+          324
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 324,
+        "pre_cap_selected_raw_overlap": 0.8900146484375,
+        "selected_frame_id": 324,
+        "selected_raw_overlap": 0.8900146484375,
+        "start_frame_id": 320,
+        "window_id": 32
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 334.5,
+        "end_frame_id": 339,
+        "evaluated_frame_ids": [
+          334
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 334,
+        "pre_cap_selected_raw_overlap": 0.9068328738212585,
+        "selected_frame_id": 334,
+        "selected_raw_overlap": 0.9068328738212585,
+        "start_frame_id": 330,
+        "window_id": 33
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 344.5,
+        "end_frame_id": 349,
+        "evaluated_frame_ids": [
+          344
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 344,
+        "pre_cap_selected_raw_overlap": 0.920501708984375,
+        "selected_frame_id": 344,
+        "selected_raw_overlap": 0.920501708984375,
+        "start_frame_id": 340,
+        "window_id": 34
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 354.5,
+        "end_frame_id": 359,
+        "evaluated_frame_ids": [
+          354
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 354,
+        "pre_cap_selected_raw_overlap": 0.918701171875,
+        "selected_frame_id": 354,
+        "selected_raw_overlap": 0.918701171875,
+        "start_frame_id": 350,
+        "window_id": 35
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 364.5,
+        "end_frame_id": 369,
+        "evaluated_frame_ids": [
+          364
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 364,
+        "pre_cap_selected_raw_overlap": 0.910717785358429,
+        "selected_frame_id": 364,
+        "selected_raw_overlap": 0.910717785358429,
+        "start_frame_id": 360,
+        "window_id": 36
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 374.5,
+        "end_frame_id": 379,
+        "evaluated_frame_ids": [
+          374
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 374,
+        "pre_cap_selected_raw_overlap": 0.89947509765625,
+        "selected_frame_id": 374,
+        "selected_raw_overlap": 0.89947509765625,
+        "start_frame_id": 370,
+        "window_id": 37
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 384.5,
+        "end_frame_id": 389,
+        "evaluated_frame_ids": [
+          384
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 384,
+        "pre_cap_selected_raw_overlap": 0.8927887082099915,
+        "selected_frame_id": 384,
+        "selected_raw_overlap": 0.8927887082099915,
+        "start_frame_id": 380,
+        "window_id": 38
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 394.5,
+        "end_frame_id": 399,
+        "evaluated_frame_ids": [
+          394
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 394,
+        "pre_cap_selected_raw_overlap": 0.886401355266571,
+        "selected_frame_id": 394,
+        "selected_raw_overlap": 0.886401355266571,
+        "start_frame_id": 390,
+        "window_id": 39
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 404.5,
+        "end_frame_id": 409,
+        "evaluated_frame_ids": [
+          404
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 404,
+        "pre_cap_selected_raw_overlap": 0.8802276849746704,
+        "selected_frame_id": 404,
+        "selected_raw_overlap": 0.8802276849746704,
+        "start_frame_id": 400,
+        "window_id": 40
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 414.5,
+        "end_frame_id": 419,
+        "evaluated_frame_ids": [
+          414
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 414,
+        "pre_cap_selected_raw_overlap": 0.8675293326377869,
+        "selected_frame_id": 414,
+        "selected_raw_overlap": 0.8675293326377869,
+        "start_frame_id": 410,
+        "window_id": 41
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 424.5,
+        "end_frame_id": 429,
+        "evaluated_frame_ids": [
+          424
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 424,
+        "pre_cap_selected_raw_overlap": 0.8615478873252869,
+        "selected_frame_id": 424,
+        "selected_raw_overlap": 0.8615478873252869,
+        "start_frame_id": 420,
+        "window_id": 42
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 434.5,
+        "end_frame_id": 439,
+        "evaluated_frame_ids": [
+          434
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 434,
+        "pre_cap_selected_raw_overlap": 0.863879382610321,
+        "selected_frame_id": 434,
+        "selected_raw_overlap": 0.863879382610321,
+        "start_frame_id": 430,
+        "window_id": 43
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 444.5,
+        "end_frame_id": 449,
+        "evaluated_frame_ids": [
+          444
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 444,
+        "pre_cap_selected_raw_overlap": 0.8778411746025085,
+        "selected_frame_id": 444,
+        "selected_raw_overlap": 0.8778411746025085,
+        "start_frame_id": 440,
+        "window_id": 44
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 454.5,
+        "end_frame_id": 459,
+        "evaluated_frame_ids": [
+          454
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 454,
+        "pre_cap_selected_raw_overlap": 0.883392333984375,
+        "selected_frame_id": 454,
+        "selected_raw_overlap": 0.883392333984375,
+        "start_frame_id": 450,
+        "window_id": 45
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 464.5,
+        "end_frame_id": 469,
+        "evaluated_frame_ids": [
+          464
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 464,
+        "pre_cap_selected_raw_overlap": 0.883044421672821,
+        "selected_frame_id": 464,
+        "selected_raw_overlap": 0.883044421672821,
+        "start_frame_id": 460,
+        "window_id": 46
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 474.5,
+        "end_frame_id": 479,
+        "evaluated_frame_ids": [
+          474
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 474,
+        "pre_cap_selected_raw_overlap": 0.8889221549034119,
+        "selected_frame_id": 474,
+        "selected_raw_overlap": 0.8889221549034119,
+        "start_frame_id": 470,
+        "window_id": 47
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 484.5,
+        "end_frame_id": 489,
+        "evaluated_frame_ids": [
+          484
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 484,
+        "pre_cap_selected_raw_overlap": 0.8969208002090454,
+        "selected_frame_id": 484,
+        "selected_raw_overlap": 0.8969208002090454,
+        "start_frame_id": 480,
+        "window_id": 48
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 494.5,
+        "end_frame_id": 499,
+        "evaluated_frame_ids": [
+          494
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 494,
+        "pre_cap_selected_raw_overlap": 0.8967346549034119,
+        "selected_frame_id": 494,
+        "selected_raw_overlap": 0.8967346549034119,
+        "start_frame_id": 490,
+        "window_id": 49
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 504.5,
+        "end_frame_id": 509,
+        "evaluated_frame_ids": [
+          504
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 504,
+        "pre_cap_selected_raw_overlap": 0.8992248773574829,
+        "selected_frame_id": 504,
+        "selected_raw_overlap": 0.8992248773574829,
+        "start_frame_id": 500,
+        "window_id": 50
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 514.5,
+        "end_frame_id": 519,
+        "evaluated_frame_ids": [
+          514
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 514,
+        "pre_cap_selected_raw_overlap": 0.8995941281318665,
+        "selected_frame_id": 514,
+        "selected_raw_overlap": 0.8995941281318665,
+        "start_frame_id": 510,
+        "window_id": 51
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 524.5,
+        "end_frame_id": 529,
+        "evaluated_frame_ids": [
+          524
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 524,
+        "pre_cap_selected_raw_overlap": 0.9022491574287415,
+        "selected_frame_id": 524,
+        "selected_raw_overlap": 0.9022491574287415,
+        "start_frame_id": 520,
+        "window_id": 52
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 534.5,
+        "end_frame_id": 539,
+        "evaluated_frame_ids": [
+          534
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 534,
+        "pre_cap_selected_raw_overlap": 0.9048919677734375,
+        "selected_frame_id": 534,
+        "selected_raw_overlap": 0.9048919677734375,
+        "start_frame_id": 530,
+        "window_id": 53
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 544.5,
+        "end_frame_id": 549,
+        "evaluated_frame_ids": [
+          544
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 544,
+        "pre_cap_selected_raw_overlap": 0.90673828125,
+        "selected_frame_id": 544,
+        "selected_raw_overlap": 0.90673828125,
+        "start_frame_id": 540,
+        "window_id": 54
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 554.5,
+        "end_frame_id": 559,
+        "evaluated_frame_ids": [
+          554
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 554,
+        "pre_cap_selected_raw_overlap": 0.9017974734306335,
+        "selected_frame_id": 554,
+        "selected_raw_overlap": 0.9017974734306335,
+        "start_frame_id": 550,
+        "window_id": 55
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 564.5,
+        "end_frame_id": 569,
+        "evaluated_frame_ids": [
+          564
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 564,
+        "pre_cap_selected_raw_overlap": 0.887969970703125,
+        "selected_frame_id": 564,
+        "selected_raw_overlap": 0.887969970703125,
+        "start_frame_id": 560,
+        "window_id": 56
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 574.5,
+        "end_frame_id": 579,
+        "evaluated_frame_ids": [
+          574
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 574,
+        "pre_cap_selected_raw_overlap": 0.8549652099609375,
+        "selected_frame_id": 574,
+        "selected_raw_overlap": 0.8549652099609375,
+        "start_frame_id": 570,
+        "window_id": 57
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 584.5,
+        "end_frame_id": 589,
+        "evaluated_frame_ids": [
+          584
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 584,
+        "pre_cap_selected_raw_overlap": 0.8386383056640625,
+        "selected_frame_id": 584,
+        "selected_raw_overlap": 0.8386383056640625,
+        "start_frame_id": 580,
+        "window_id": 58
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 594.5,
+        "end_frame_id": 599,
+        "evaluated_frame_ids": [
+          594
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 594,
+        "pre_cap_selected_raw_overlap": 0.8235565423965454,
+        "selected_frame_id": 594,
+        "selected_raw_overlap": 0.8235565423965454,
+        "start_frame_id": 590,
+        "window_id": 59
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 604.5,
+        "end_frame_id": 609,
+        "evaluated_frame_ids": [
+          604
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 604,
+        "pre_cap_selected_raw_overlap": 0.816455066204071,
+        "selected_frame_id": 604,
+        "selected_raw_overlap": 0.816455066204071,
+        "start_frame_id": 600,
+        "window_id": 60
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 614.5,
+        "end_frame_id": 619,
+        "evaluated_frame_ids": [
+          614
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 614,
+        "pre_cap_selected_raw_overlap": 0.8097900748252869,
+        "selected_frame_id": 614,
+        "selected_raw_overlap": 0.8097900748252869,
+        "start_frame_id": 610,
+        "window_id": 61
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 624.5,
+        "end_frame_id": 629,
+        "evaluated_frame_ids": [
+          624
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 624,
+        "pre_cap_selected_raw_overlap": 0.7922149896621704,
+        "selected_frame_id": 624,
+        "selected_raw_overlap": 0.7922149896621704,
+        "start_frame_id": 620,
+        "window_id": 62
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 634.5,
+        "end_frame_id": 639,
+        "evaluated_frame_ids": [
+          634
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 634,
+        "pre_cap_selected_raw_overlap": 0.767871081829071,
+        "selected_frame_id": 634,
+        "selected_raw_overlap": 0.767871081829071,
+        "start_frame_id": 630,
+        "window_id": 63
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 644.5,
+        "end_frame_id": 649,
+        "evaluated_frame_ids": [
+          644
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 644,
+        "pre_cap_selected_raw_overlap": 0.7426117062568665,
+        "selected_frame_id": 644,
+        "selected_raw_overlap": 0.7426117062568665,
+        "start_frame_id": 640,
+        "window_id": 64
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 654.5,
+        "end_frame_id": 659,
+        "evaluated_frame_ids": [
+          654
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 654,
+        "pre_cap_selected_raw_overlap": 0.7364471554756165,
+        "selected_frame_id": 654,
+        "selected_raw_overlap": 0.7364471554756165,
+        "start_frame_id": 650,
+        "window_id": 65
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 664.5,
+        "end_frame_id": 669,
+        "evaluated_frame_ids": [
+          664
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 664,
+        "pre_cap_selected_raw_overlap": 0.7430755496025085,
+        "selected_frame_id": 664,
+        "selected_raw_overlap": 0.7430755496025085,
+        "start_frame_id": 660,
+        "window_id": 66
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 674.5,
+        "end_frame_id": 679,
+        "evaluated_frame_ids": [
+          674
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 674,
+        "pre_cap_selected_raw_overlap": 0.7345032095909119,
+        "selected_frame_id": 674,
+        "selected_raw_overlap": 0.7345032095909119,
+        "start_frame_id": 670,
+        "window_id": 67
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 684.5,
+        "end_frame_id": 689,
+        "evaluated_frame_ids": [
+          684
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 684,
+        "pre_cap_selected_raw_overlap": 0.728381335735321,
+        "selected_frame_id": 684,
+        "selected_raw_overlap": 0.728381335735321,
+        "start_frame_id": 680,
+        "window_id": 68
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 694.5,
+        "end_frame_id": 699,
+        "evaluated_frame_ids": [
+          694
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 694,
+        "pre_cap_selected_raw_overlap": 0.728649914264679,
+        "selected_frame_id": 694,
+        "selected_raw_overlap": 0.728649914264679,
+        "start_frame_id": 690,
+        "window_id": 69
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 704.5,
+        "end_frame_id": 709,
+        "evaluated_frame_ids": [
+          704
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 704,
+        "pre_cap_selected_raw_overlap": 0.727893054485321,
+        "selected_frame_id": 704,
+        "selected_raw_overlap": 0.727893054485321,
+        "start_frame_id": 700,
+        "window_id": 70
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 714.5,
+        "end_frame_id": 719,
+        "evaluated_frame_ids": [
+          714
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 714,
+        "pre_cap_selected_raw_overlap": 0.728009045124054,
+        "selected_frame_id": 714,
+        "selected_raw_overlap": 0.728009045124054,
+        "start_frame_id": 710,
+        "window_id": 71
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 724.5,
+        "end_frame_id": 729,
+        "evaluated_frame_ids": [
+          724
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 724,
+        "pre_cap_selected_raw_overlap": 0.7504974603652954,
+        "selected_frame_id": 724,
+        "selected_raw_overlap": 0.7504974603652954,
+        "start_frame_id": 720,
+        "window_id": 72
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 734.5,
+        "end_frame_id": 739,
+        "evaluated_frame_ids": [
+          734
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 734,
+        "pre_cap_selected_raw_overlap": 0.7758331298828125,
+        "selected_frame_id": 734,
+        "selected_raw_overlap": 0.7758331298828125,
+        "start_frame_id": 730,
+        "window_id": 73
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 744.5,
+        "end_frame_id": 749,
+        "evaluated_frame_ids": [
+          744
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 744,
+        "pre_cap_selected_raw_overlap": 0.8235687613487244,
+        "selected_frame_id": 744,
+        "selected_raw_overlap": 0.8235687613487244,
+        "start_frame_id": 740,
+        "window_id": 74
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 754.5,
+        "end_frame_id": 759,
+        "evaluated_frame_ids": [
+          754
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 754,
+        "pre_cap_selected_raw_overlap": 0.8771637082099915,
+        "selected_frame_id": 754,
+        "selected_raw_overlap": 0.8771637082099915,
+        "start_frame_id": 750,
+        "window_id": 75
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 764.5,
+        "end_frame_id": 769,
+        "evaluated_frame_ids": [
+          764
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 764,
+        "pre_cap_selected_raw_overlap": 0.8927032351493835,
+        "selected_frame_id": 764,
+        "selected_raw_overlap": 0.8927032351493835,
+        "start_frame_id": 760,
+        "window_id": 76
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 774.5,
+        "end_frame_id": 779,
+        "evaluated_frame_ids": [
+          774
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 774,
+        "pre_cap_selected_raw_overlap": 0.8774749636650085,
+        "selected_frame_id": 774,
+        "selected_raw_overlap": 0.8774749636650085,
+        "start_frame_id": 770,
+        "window_id": 77
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 784.5,
+        "end_frame_id": 789,
+        "evaluated_frame_ids": [
+          784
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 784,
+        "pre_cap_selected_raw_overlap": 0.8674896359443665,
+        "selected_frame_id": 784,
+        "selected_raw_overlap": 0.8674896359443665,
+        "start_frame_id": 780,
+        "window_id": 78
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 794.5,
+        "end_frame_id": 799,
+        "evaluated_frame_ids": [
+          794
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 794,
+        "pre_cap_selected_raw_overlap": 0.8520264029502869,
+        "selected_frame_id": 794,
+        "selected_raw_overlap": 0.8520264029502869,
+        "start_frame_id": 790,
+        "window_id": 79
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 804.5,
+        "end_frame_id": 809,
+        "evaluated_frame_ids": [
+          804
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 804,
+        "pre_cap_selected_raw_overlap": 0.8460479974746704,
+        "selected_frame_id": 804,
+        "selected_raw_overlap": 0.8460479974746704,
+        "start_frame_id": 800,
+        "window_id": 80
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 814.5,
+        "end_frame_id": 819,
+        "evaluated_frame_ids": [
+          814
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 814,
+        "pre_cap_selected_raw_overlap": 0.8395447134971619,
+        "selected_frame_id": 814,
+        "selected_raw_overlap": 0.8395447134971619,
+        "start_frame_id": 810,
+        "window_id": 81
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 824.5,
+        "end_frame_id": 829,
+        "evaluated_frame_ids": [
+          824
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 824,
+        "pre_cap_selected_raw_overlap": 0.8392578363418579,
+        "selected_frame_id": 824,
+        "selected_raw_overlap": 0.8392578363418579,
+        "start_frame_id": 820,
+        "window_id": 82
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 834.5,
+        "end_frame_id": 839,
+        "evaluated_frame_ids": [
+          834
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 834,
+        "pre_cap_selected_raw_overlap": 0.8517517447471619,
+        "selected_frame_id": 834,
+        "selected_raw_overlap": 0.8517517447471619,
+        "start_frame_id": 830,
+        "window_id": 83
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 844.5,
+        "end_frame_id": 849,
+        "evaluated_frame_ids": [
+          844
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 844,
+        "pre_cap_selected_raw_overlap": 0.8498870730400085,
+        "selected_frame_id": 844,
+        "selected_raw_overlap": 0.8498870730400085,
+        "start_frame_id": 840,
+        "window_id": 84
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 854.5,
+        "end_frame_id": 859,
+        "evaluated_frame_ids": [
+          854
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 854,
+        "pre_cap_selected_raw_overlap": 0.8580291867256165,
+        "selected_frame_id": 854,
+        "selected_raw_overlap": 0.8580291867256165,
+        "start_frame_id": 850,
+        "window_id": 85
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 864.5,
+        "end_frame_id": 869,
+        "evaluated_frame_ids": [
+          864
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 864,
+        "pre_cap_selected_raw_overlap": 0.866302490234375,
+        "selected_frame_id": 864,
+        "selected_raw_overlap": 0.866302490234375,
+        "start_frame_id": 860,
+        "window_id": 86
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 874.5,
+        "end_frame_id": 879,
+        "evaluated_frame_ids": [
+          874
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 874,
+        "pre_cap_selected_raw_overlap": 0.8663787841796875,
+        "selected_frame_id": 874,
+        "selected_raw_overlap": 0.8663787841796875,
+        "start_frame_id": 870,
+        "window_id": 87
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 884.5,
+        "end_frame_id": 889,
+        "evaluated_frame_ids": [
+          884
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 884,
+        "pre_cap_selected_raw_overlap": 0.8526214957237244,
+        "selected_frame_id": 884,
+        "selected_raw_overlap": 0.8526214957237244,
+        "start_frame_id": 880,
+        "window_id": 88
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 894.5,
+        "end_frame_id": 899,
+        "evaluated_frame_ids": [
+          894
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 894,
+        "pre_cap_selected_raw_overlap": 0.8397003412246704,
+        "selected_frame_id": 894,
+        "selected_raw_overlap": 0.8397003412246704,
+        "start_frame_id": 890,
+        "window_id": 89
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 904.5,
+        "end_frame_id": 909,
+        "evaluated_frame_ids": [
+          904
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 904,
+        "pre_cap_selected_raw_overlap": 0.8290130496025085,
+        "selected_frame_id": 904,
+        "selected_raw_overlap": 0.8290130496025085,
+        "start_frame_id": 900,
+        "window_id": 90
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 914.5,
+        "end_frame_id": 919,
+        "evaluated_frame_ids": [
+          914
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 914,
+        "pre_cap_selected_raw_overlap": 0.8316406607627869,
+        "selected_frame_id": 914,
+        "selected_raw_overlap": 0.8316406607627869,
+        "start_frame_id": 910,
+        "window_id": 91
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 924.5,
+        "end_frame_id": 929,
+        "evaluated_frame_ids": [
+          924
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 924,
+        "pre_cap_selected_raw_overlap": 0.849438488483429,
+        "selected_frame_id": 924,
+        "selected_raw_overlap": 0.849438488483429,
+        "start_frame_id": 920,
+        "window_id": 92
+      },
+      {
+        "candidate_count": 10,
+        "centre_frame_id": 934.5,
+        "end_frame_id": 939,
+        "evaluated_frame_ids": [
+          934
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 934,
+        "pre_cap_selected_raw_overlap": 0.8629913330078125,
+        "selected_frame_id": 934,
+        "selected_raw_overlap": 0.8629913330078125,
+        "start_frame_id": 930,
+        "window_id": 93
+      },
+      {
+        "candidate_count": 5,
+        "centre_frame_id": 942.0,
+        "end_frame_id": 944,
+        "evaluated_frame_ids": [
+          942
+        ],
+        "gap_rejected_frame_ids": [],
+        "pre_cap_selected_frame_id": 942,
+        "pre_cap_selected_raw_overlap": 0.8642425537109375,
+        "selected_frame_id": 942,
+        "selected_raw_overlap": 0.8642425537109375,
+        "start_frame_id": 940,
+        "window_id": 94
+      }
+    ]
+  },
+  "zero_shot_split": "test_dataset_8_and_9"
+}

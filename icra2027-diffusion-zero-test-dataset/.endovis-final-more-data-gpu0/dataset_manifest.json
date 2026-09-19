@@ -1,0 +1,2787 @@
+{
+  "cache_dir": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/.endovis-final-more-data-overlap-cache",
+  "completed": true,
+  "dataset": "EndoVis/SCARED 2019 held-out test dataset(s) 8",
+  "datasets": [
+    8
+  ],
+  "dry_run": false,
+  "keyframes": [
+    0,
+    1
+  ],
+  "layout": "iMed-compatible endoscope2/right source to endoscope1/left target",
+  "output_root": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/.endovis-final-more-data-gpu0",
+  "overlap_metric": {
+    "comparison": "strictly_greater_than",
+    "config_file": {
+      "mtime_ns": 1789089840890585861,
+      "path": "/home/data20tb/shixingma/icra-2027/configs/distrisurg_dataset89.yaml",
+      "size": 1787
+    },
+    "config_path": "/home/data20tb/shixingma/icra-2027/configs/distrisurg_dataset89.yaml",
+    "definition": "DSS valid_mask.mean() over the full target image",
+    "device_type": "cuda",
+    "dss": {
+      "base_footprint_px": 0.75,
+      "max_depth_mm": 500.0,
+      "max_footprint_px": 2.5,
+      "max_sigma_mm": 20.0,
+      "min_depth_mm": 1.0,
+      "min_sigma_mm": 0.25,
+      "min_support": 0.03,
+      "normal_footprint_px": 0.75,
+      "radius": 1,
+      "sigma_samples": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "sigma_weights": [
+        0.2741,
+        0.4518,
+        0.2741
+      ],
+      "visibility_temperature_mm": 2.0
+    },
+    "height": 512,
+    "implementation": {
+      "mtime_ns": 1789052177758672462,
+      "path": "/home/data20tb/shixingma/icra-2027/distrisurg/geometry/dss.py",
+      "size": 16827
+    },
+    "name": "raw_dss_valid_ratio",
+    "project_root": "/home/data20tb/shixingma/icra-2027",
+    "sigma_mm": 0.5,
+    "torch_version": "2.5.1+cu121",
+    "width": 640
+  },
+  "scene_count": 2,
+  "scene_summaries": [
+    {
+      "cache_hit_count": 0,
+      "dataset_id": 8,
+      "dynamic": true,
+      "evaluated_candidate_count": 95,
+      "keyframe_id": 0,
+      "min_frame_gap": 5,
+      "processed_window_count": 95,
+      "scene": "endovis_dataset_8_keyframe_0",
+      "selected_count": 95,
+      "selected_count_before_cap": 95,
+      "selected_overlap_max": 0.920501708984375,
+      "selected_overlap_median": 0.8549652099609375,
+      "selected_overlap_min": 0.727893054485321,
+      "selected_source_frame_ids": [
+        4,
+        14,
+        24,
+        34,
+        44,
+        54,
+        64,
+        74,
+        84,
+        94,
+        104,
+        114,
+        124,
+        134,
+        144,
+        154,
+        164,
+        174,
+        184,
+        194,
+        204,
+        214,
+        224,
+        234,
+        244,
+        254,
+        264,
+        274,
+        284,
+        294,
+        304,
+        314,
+        324,
+        334,
+        344,
+        354,
+        364,
+        374,
+        384,
+        394,
+        404,
+        414,
+        424,
+        434,
+        444,
+        454,
+        464,
+        474,
+        484,
+        494,
+        504,
+        514,
+        524,
+        534,
+        544,
+        554,
+        564,
+        574,
+        584,
+        594,
+        604,
+        614,
+        624,
+        634,
+        644,
+        654,
+        664,
+        674,
+        684,
+        694,
+        704,
+        714,
+        724,
+        734,
+        744,
+        754,
+        764,
+        774,
+        784,
+        794,
+        804,
+        814,
+        824,
+        834,
+        844,
+        854,
+        864,
+        874,
+        884,
+        894,
+        904,
+        914,
+        924,
+        934,
+        942
+      ],
+      "source_frame_count": 945,
+      "threshold_pass_count_among_evaluated": 95,
+      "windows": [
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 4.5,
+          "end_frame_id": 9,
+          "evaluated_frame_ids": [
+            4
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 4,
+          "pre_cap_selected_raw_overlap": 0.8990478515625,
+          "selected_frame_id": 4,
+          "selected_raw_overlap": 0.8990478515625,
+          "start_frame_id": 0,
+          "window_id": 0
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 14.5,
+          "end_frame_id": 19,
+          "evaluated_frame_ids": [
+            14
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 14,
+          "pre_cap_selected_raw_overlap": 0.8632171750068665,
+          "selected_frame_id": 14,
+          "selected_raw_overlap": 0.8632171750068665,
+          "start_frame_id": 10,
+          "window_id": 1
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 24.5,
+          "end_frame_id": 29,
+          "evaluated_frame_ids": [
+            24
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 24,
+          "pre_cap_selected_raw_overlap": 0.8732086420059204,
+          "selected_frame_id": 24,
+          "selected_raw_overlap": 0.8732086420059204,
+          "start_frame_id": 20,
+          "window_id": 2
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 34.5,
+          "end_frame_id": 39,
+          "evaluated_frame_ids": [
+            34
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 34,
+          "pre_cap_selected_raw_overlap": 0.8681122064590454,
+          "selected_frame_id": 34,
+          "selected_raw_overlap": 0.8681122064590454,
+          "start_frame_id": 30,
+          "window_id": 3
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 44.5,
+          "end_frame_id": 49,
+          "evaluated_frame_ids": [
+            44
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 44,
+          "pre_cap_selected_raw_overlap": 0.885211169719696,
+          "selected_frame_id": 44,
+          "selected_raw_overlap": 0.885211169719696,
+          "start_frame_id": 40,
+          "window_id": 4
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 54.5,
+          "end_frame_id": 59,
+          "evaluated_frame_ids": [
+            54
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 54,
+          "pre_cap_selected_raw_overlap": 0.9200378656387329,
+          "selected_frame_id": 54,
+          "selected_raw_overlap": 0.9200378656387329,
+          "start_frame_id": 50,
+          "window_id": 5
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 64.5,
+          "end_frame_id": 69,
+          "evaluated_frame_ids": [
+            64
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 64,
+          "pre_cap_selected_raw_overlap": 0.917376697063446,
+          "selected_frame_id": 64,
+          "selected_raw_overlap": 0.917376697063446,
+          "start_frame_id": 60,
+          "window_id": 6
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 74.5,
+          "end_frame_id": 79,
+          "evaluated_frame_ids": [
+            74
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 74,
+          "pre_cap_selected_raw_overlap": 0.914868175983429,
+          "selected_frame_id": 74,
+          "selected_raw_overlap": 0.914868175983429,
+          "start_frame_id": 70,
+          "window_id": 7
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 84.5,
+          "end_frame_id": 89,
+          "evaluated_frame_ids": [
+            84
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 84,
+          "pre_cap_selected_raw_overlap": 0.9093994498252869,
+          "selected_frame_id": 84,
+          "selected_raw_overlap": 0.9093994498252869,
+          "start_frame_id": 80,
+          "window_id": 8
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 94.5,
+          "end_frame_id": 99,
+          "evaluated_frame_ids": [
+            94
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 94,
+          "pre_cap_selected_raw_overlap": 0.8849121332168579,
+          "selected_frame_id": 94,
+          "selected_raw_overlap": 0.8849121332168579,
+          "start_frame_id": 90,
+          "window_id": 9
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 104.5,
+          "end_frame_id": 109,
+          "evaluated_frame_ids": [
+            104
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 104,
+          "pre_cap_selected_raw_overlap": 0.864733874797821,
+          "selected_frame_id": 104,
+          "selected_raw_overlap": 0.864733874797821,
+          "start_frame_id": 100,
+          "window_id": 10
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 114.5,
+          "end_frame_id": 119,
+          "evaluated_frame_ids": [
+            114
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 114,
+          "pre_cap_selected_raw_overlap": 0.8511993288993835,
+          "selected_frame_id": 114,
+          "selected_raw_overlap": 0.8511993288993835,
+          "start_frame_id": 110,
+          "window_id": 11
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 124.5,
+          "end_frame_id": 129,
+          "evaluated_frame_ids": [
+            124
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 124,
+          "pre_cap_selected_raw_overlap": 0.843859851360321,
+          "selected_frame_id": 124,
+          "selected_raw_overlap": 0.843859851360321,
+          "start_frame_id": 120,
+          "window_id": 12
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 134.5,
+          "end_frame_id": 139,
+          "evaluated_frame_ids": [
+            134
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 134,
+          "pre_cap_selected_raw_overlap": 0.8447327017784119,
+          "selected_frame_id": 134,
+          "selected_raw_overlap": 0.8447327017784119,
+          "start_frame_id": 130,
+          "window_id": 13
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 144.5,
+          "end_frame_id": 149,
+          "evaluated_frame_ids": [
+            144
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 144,
+          "pre_cap_selected_raw_overlap": 0.8325958251953125,
+          "selected_frame_id": 144,
+          "selected_raw_overlap": 0.8325958251953125,
+          "start_frame_id": 140,
+          "window_id": 14
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 154.5,
+          "end_frame_id": 159,
+          "evaluated_frame_ids": [
+            154
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 154,
+          "pre_cap_selected_raw_overlap": 0.817901611328125,
+          "selected_frame_id": 154,
+          "selected_raw_overlap": 0.817901611328125,
+          "start_frame_id": 150,
+          "window_id": 15
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 164.5,
+          "end_frame_id": 169,
+          "evaluated_frame_ids": [
+            164
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 164,
+          "pre_cap_selected_raw_overlap": 0.816662609577179,
+          "selected_frame_id": 164,
+          "selected_raw_overlap": 0.816662609577179,
+          "start_frame_id": 160,
+          "window_id": 16
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 174.5,
+          "end_frame_id": 179,
+          "evaluated_frame_ids": [
+            174
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 174,
+          "pre_cap_selected_raw_overlap": 0.8021820187568665,
+          "selected_frame_id": 174,
+          "selected_raw_overlap": 0.8021820187568665,
+          "start_frame_id": 170,
+          "window_id": 17
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 184.5,
+          "end_frame_id": 189,
+          "evaluated_frame_ids": [
+            184
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 184,
+          "pre_cap_selected_raw_overlap": 0.7941681146621704,
+          "selected_frame_id": 184,
+          "selected_raw_overlap": 0.7941681146621704,
+          "start_frame_id": 180,
+          "window_id": 18
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 194.5,
+          "end_frame_id": 199,
+          "evaluated_frame_ids": [
+            194
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 194,
+          "pre_cap_selected_raw_overlap": 0.7890533804893494,
+          "selected_frame_id": 194,
+          "selected_raw_overlap": 0.7890533804893494,
+          "start_frame_id": 190,
+          "window_id": 19
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 204.5,
+          "end_frame_id": 209,
+          "evaluated_frame_ids": [
+            204
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 204,
+          "pre_cap_selected_raw_overlap": 0.7773712277412415,
+          "selected_frame_id": 204,
+          "selected_raw_overlap": 0.7773712277412415,
+          "start_frame_id": 200,
+          "window_id": 20
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 214.5,
+          "end_frame_id": 219,
+          "evaluated_frame_ids": [
+            214
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 214,
+          "pre_cap_selected_raw_overlap": 0.7587555050849915,
+          "selected_frame_id": 214,
+          "selected_raw_overlap": 0.7587555050849915,
+          "start_frame_id": 210,
+          "window_id": 21
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 224.5,
+          "end_frame_id": 229,
+          "evaluated_frame_ids": [
+            224
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 224,
+          "pre_cap_selected_raw_overlap": 0.775543212890625,
+          "selected_frame_id": 224,
+          "selected_raw_overlap": 0.775543212890625,
+          "start_frame_id": 220,
+          "window_id": 22
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 234.5,
+          "end_frame_id": 239,
+          "evaluated_frame_ids": [
+            234
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 234,
+          "pre_cap_selected_raw_overlap": 0.807525634765625,
+          "selected_frame_id": 234,
+          "selected_raw_overlap": 0.807525634765625,
+          "start_frame_id": 230,
+          "window_id": 23
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 244.5,
+          "end_frame_id": 249,
+          "evaluated_frame_ids": [
+            244
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 244,
+          "pre_cap_selected_raw_overlap": 0.820892333984375,
+          "selected_frame_id": 244,
+          "selected_raw_overlap": 0.820892333984375,
+          "start_frame_id": 240,
+          "window_id": 24
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 254.5,
+          "end_frame_id": 259,
+          "evaluated_frame_ids": [
+            254
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 254,
+          "pre_cap_selected_raw_overlap": 0.8268676996231079,
+          "selected_frame_id": 254,
+          "selected_raw_overlap": 0.8268676996231079,
+          "start_frame_id": 250,
+          "window_id": 25
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 264.5,
+          "end_frame_id": 269,
+          "evaluated_frame_ids": [
+            264
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 264,
+          "pre_cap_selected_raw_overlap": 0.8334564566612244,
+          "selected_frame_id": 264,
+          "selected_raw_overlap": 0.8334564566612244,
+          "start_frame_id": 260,
+          "window_id": 26
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 274.5,
+          "end_frame_id": 279,
+          "evaluated_frame_ids": [
+            274
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 274,
+          "pre_cap_selected_raw_overlap": 0.8396545648574829,
+          "selected_frame_id": 274,
+          "selected_raw_overlap": 0.8396545648574829,
+          "start_frame_id": 270,
+          "window_id": 27
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 284.5,
+          "end_frame_id": 289,
+          "evaluated_frame_ids": [
+            284
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 284,
+          "pre_cap_selected_raw_overlap": 0.8432098627090454,
+          "selected_frame_id": 284,
+          "selected_raw_overlap": 0.8432098627090454,
+          "start_frame_id": 280,
+          "window_id": 28
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 294.5,
+          "end_frame_id": 299,
+          "evaluated_frame_ids": [
+            294
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 294,
+          "pre_cap_selected_raw_overlap": 0.8529877066612244,
+          "selected_frame_id": 294,
+          "selected_raw_overlap": 0.8529877066612244,
+          "start_frame_id": 290,
+          "window_id": 29
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 304.5,
+          "end_frame_id": 309,
+          "evaluated_frame_ids": [
+            304
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 304,
+          "pre_cap_selected_raw_overlap": 0.863604724407196,
+          "selected_frame_id": 304,
+          "selected_raw_overlap": 0.863604724407196,
+          "start_frame_id": 300,
+          "window_id": 30
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 314.5,
+          "end_frame_id": 319,
+          "evaluated_frame_ids": [
+            314
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 314,
+          "pre_cap_selected_raw_overlap": 0.875872790813446,
+          "selected_frame_id": 314,
+          "selected_raw_overlap": 0.875872790813446,
+          "start_frame_id": 310,
+          "window_id": 31
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 324.5,
+          "end_frame_id": 329,
+          "evaluated_frame_ids": [
+            324
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 324,
+          "pre_cap_selected_raw_overlap": 0.8900146484375,
+          "selected_frame_id": 324,
+          "selected_raw_overlap": 0.8900146484375,
+          "start_frame_id": 320,
+          "window_id": 32
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 334.5,
+          "end_frame_id": 339,
+          "evaluated_frame_ids": [
+            334
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 334,
+          "pre_cap_selected_raw_overlap": 0.9068328738212585,
+          "selected_frame_id": 334,
+          "selected_raw_overlap": 0.9068328738212585,
+          "start_frame_id": 330,
+          "window_id": 33
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 344.5,
+          "end_frame_id": 349,
+          "evaluated_frame_ids": [
+            344
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 344,
+          "pre_cap_selected_raw_overlap": 0.920501708984375,
+          "selected_frame_id": 344,
+          "selected_raw_overlap": 0.920501708984375,
+          "start_frame_id": 340,
+          "window_id": 34
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 354.5,
+          "end_frame_id": 359,
+          "evaluated_frame_ids": [
+            354
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 354,
+          "pre_cap_selected_raw_overlap": 0.918701171875,
+          "selected_frame_id": 354,
+          "selected_raw_overlap": 0.918701171875,
+          "start_frame_id": 350,
+          "window_id": 35
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 364.5,
+          "end_frame_id": 369,
+          "evaluated_frame_ids": [
+            364
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 364,
+          "pre_cap_selected_raw_overlap": 0.910717785358429,
+          "selected_frame_id": 364,
+          "selected_raw_overlap": 0.910717785358429,
+          "start_frame_id": 360,
+          "window_id": 36
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 374.5,
+          "end_frame_id": 379,
+          "evaluated_frame_ids": [
+            374
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 374,
+          "pre_cap_selected_raw_overlap": 0.89947509765625,
+          "selected_frame_id": 374,
+          "selected_raw_overlap": 0.89947509765625,
+          "start_frame_id": 370,
+          "window_id": 37
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 384.5,
+          "end_frame_id": 389,
+          "evaluated_frame_ids": [
+            384
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 384,
+          "pre_cap_selected_raw_overlap": 0.8927887082099915,
+          "selected_frame_id": 384,
+          "selected_raw_overlap": 0.8927887082099915,
+          "start_frame_id": 380,
+          "window_id": 38
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 394.5,
+          "end_frame_id": 399,
+          "evaluated_frame_ids": [
+            394
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 394,
+          "pre_cap_selected_raw_overlap": 0.886401355266571,
+          "selected_frame_id": 394,
+          "selected_raw_overlap": 0.886401355266571,
+          "start_frame_id": 390,
+          "window_id": 39
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 404.5,
+          "end_frame_id": 409,
+          "evaluated_frame_ids": [
+            404
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 404,
+          "pre_cap_selected_raw_overlap": 0.8802276849746704,
+          "selected_frame_id": 404,
+          "selected_raw_overlap": 0.8802276849746704,
+          "start_frame_id": 400,
+          "window_id": 40
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 414.5,
+          "end_frame_id": 419,
+          "evaluated_frame_ids": [
+            414
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 414,
+          "pre_cap_selected_raw_overlap": 0.8675293326377869,
+          "selected_frame_id": 414,
+          "selected_raw_overlap": 0.8675293326377869,
+          "start_frame_id": 410,
+          "window_id": 41
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 424.5,
+          "end_frame_id": 429,
+          "evaluated_frame_ids": [
+            424
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 424,
+          "pre_cap_selected_raw_overlap": 0.8615478873252869,
+          "selected_frame_id": 424,
+          "selected_raw_overlap": 0.8615478873252869,
+          "start_frame_id": 420,
+          "window_id": 42
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 434.5,
+          "end_frame_id": 439,
+          "evaluated_frame_ids": [
+            434
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 434,
+          "pre_cap_selected_raw_overlap": 0.863879382610321,
+          "selected_frame_id": 434,
+          "selected_raw_overlap": 0.863879382610321,
+          "start_frame_id": 430,
+          "window_id": 43
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 444.5,
+          "end_frame_id": 449,
+          "evaluated_frame_ids": [
+            444
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 444,
+          "pre_cap_selected_raw_overlap": 0.8778411746025085,
+          "selected_frame_id": 444,
+          "selected_raw_overlap": 0.8778411746025085,
+          "start_frame_id": 440,
+          "window_id": 44
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 454.5,
+          "end_frame_id": 459,
+          "evaluated_frame_ids": [
+            454
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 454,
+          "pre_cap_selected_raw_overlap": 0.883392333984375,
+          "selected_frame_id": 454,
+          "selected_raw_overlap": 0.883392333984375,
+          "start_frame_id": 450,
+          "window_id": 45
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 464.5,
+          "end_frame_id": 469,
+          "evaluated_frame_ids": [
+            464
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 464,
+          "pre_cap_selected_raw_overlap": 0.883044421672821,
+          "selected_frame_id": 464,
+          "selected_raw_overlap": 0.883044421672821,
+          "start_frame_id": 460,
+          "window_id": 46
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 474.5,
+          "end_frame_id": 479,
+          "evaluated_frame_ids": [
+            474
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 474,
+          "pre_cap_selected_raw_overlap": 0.8889221549034119,
+          "selected_frame_id": 474,
+          "selected_raw_overlap": 0.8889221549034119,
+          "start_frame_id": 470,
+          "window_id": 47
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 484.5,
+          "end_frame_id": 489,
+          "evaluated_frame_ids": [
+            484
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 484,
+          "pre_cap_selected_raw_overlap": 0.8969208002090454,
+          "selected_frame_id": 484,
+          "selected_raw_overlap": 0.8969208002090454,
+          "start_frame_id": 480,
+          "window_id": 48
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 494.5,
+          "end_frame_id": 499,
+          "evaluated_frame_ids": [
+            494
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 494,
+          "pre_cap_selected_raw_overlap": 0.8967346549034119,
+          "selected_frame_id": 494,
+          "selected_raw_overlap": 0.8967346549034119,
+          "start_frame_id": 490,
+          "window_id": 49
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 504.5,
+          "end_frame_id": 509,
+          "evaluated_frame_ids": [
+            504
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 504,
+          "pre_cap_selected_raw_overlap": 0.8992248773574829,
+          "selected_frame_id": 504,
+          "selected_raw_overlap": 0.8992248773574829,
+          "start_frame_id": 500,
+          "window_id": 50
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 514.5,
+          "end_frame_id": 519,
+          "evaluated_frame_ids": [
+            514
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 514,
+          "pre_cap_selected_raw_overlap": 0.8995941281318665,
+          "selected_frame_id": 514,
+          "selected_raw_overlap": 0.8995941281318665,
+          "start_frame_id": 510,
+          "window_id": 51
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 524.5,
+          "end_frame_id": 529,
+          "evaluated_frame_ids": [
+            524
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 524,
+          "pre_cap_selected_raw_overlap": 0.9022491574287415,
+          "selected_frame_id": 524,
+          "selected_raw_overlap": 0.9022491574287415,
+          "start_frame_id": 520,
+          "window_id": 52
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 534.5,
+          "end_frame_id": 539,
+          "evaluated_frame_ids": [
+            534
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 534,
+          "pre_cap_selected_raw_overlap": 0.9048919677734375,
+          "selected_frame_id": 534,
+          "selected_raw_overlap": 0.9048919677734375,
+          "start_frame_id": 530,
+          "window_id": 53
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 544.5,
+          "end_frame_id": 549,
+          "evaluated_frame_ids": [
+            544
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 544,
+          "pre_cap_selected_raw_overlap": 0.90673828125,
+          "selected_frame_id": 544,
+          "selected_raw_overlap": 0.90673828125,
+          "start_frame_id": 540,
+          "window_id": 54
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 554.5,
+          "end_frame_id": 559,
+          "evaluated_frame_ids": [
+            554
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 554,
+          "pre_cap_selected_raw_overlap": 0.9017974734306335,
+          "selected_frame_id": 554,
+          "selected_raw_overlap": 0.9017974734306335,
+          "start_frame_id": 550,
+          "window_id": 55
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 564.5,
+          "end_frame_id": 569,
+          "evaluated_frame_ids": [
+            564
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 564,
+          "pre_cap_selected_raw_overlap": 0.887969970703125,
+          "selected_frame_id": 564,
+          "selected_raw_overlap": 0.887969970703125,
+          "start_frame_id": 560,
+          "window_id": 56
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 574.5,
+          "end_frame_id": 579,
+          "evaluated_frame_ids": [
+            574
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 574,
+          "pre_cap_selected_raw_overlap": 0.8549652099609375,
+          "selected_frame_id": 574,
+          "selected_raw_overlap": 0.8549652099609375,
+          "start_frame_id": 570,
+          "window_id": 57
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 584.5,
+          "end_frame_id": 589,
+          "evaluated_frame_ids": [
+            584
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 584,
+          "pre_cap_selected_raw_overlap": 0.8386383056640625,
+          "selected_frame_id": 584,
+          "selected_raw_overlap": 0.8386383056640625,
+          "start_frame_id": 580,
+          "window_id": 58
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 594.5,
+          "end_frame_id": 599,
+          "evaluated_frame_ids": [
+            594
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 594,
+          "pre_cap_selected_raw_overlap": 0.8235565423965454,
+          "selected_frame_id": 594,
+          "selected_raw_overlap": 0.8235565423965454,
+          "start_frame_id": 590,
+          "window_id": 59
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 604.5,
+          "end_frame_id": 609,
+          "evaluated_frame_ids": [
+            604
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 604,
+          "pre_cap_selected_raw_overlap": 0.816455066204071,
+          "selected_frame_id": 604,
+          "selected_raw_overlap": 0.816455066204071,
+          "start_frame_id": 600,
+          "window_id": 60
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 614.5,
+          "end_frame_id": 619,
+          "evaluated_frame_ids": [
+            614
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 614,
+          "pre_cap_selected_raw_overlap": 0.8097900748252869,
+          "selected_frame_id": 614,
+          "selected_raw_overlap": 0.8097900748252869,
+          "start_frame_id": 610,
+          "window_id": 61
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 624.5,
+          "end_frame_id": 629,
+          "evaluated_frame_ids": [
+            624
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 624,
+          "pre_cap_selected_raw_overlap": 0.7922149896621704,
+          "selected_frame_id": 624,
+          "selected_raw_overlap": 0.7922149896621704,
+          "start_frame_id": 620,
+          "window_id": 62
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 634.5,
+          "end_frame_id": 639,
+          "evaluated_frame_ids": [
+            634
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 634,
+          "pre_cap_selected_raw_overlap": 0.767871081829071,
+          "selected_frame_id": 634,
+          "selected_raw_overlap": 0.767871081829071,
+          "start_frame_id": 630,
+          "window_id": 63
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 644.5,
+          "end_frame_id": 649,
+          "evaluated_frame_ids": [
+            644
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 644,
+          "pre_cap_selected_raw_overlap": 0.7426117062568665,
+          "selected_frame_id": 644,
+          "selected_raw_overlap": 0.7426117062568665,
+          "start_frame_id": 640,
+          "window_id": 64
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 654.5,
+          "end_frame_id": 659,
+          "evaluated_frame_ids": [
+            654
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 654,
+          "pre_cap_selected_raw_overlap": 0.7364471554756165,
+          "selected_frame_id": 654,
+          "selected_raw_overlap": 0.7364471554756165,
+          "start_frame_id": 650,
+          "window_id": 65
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 664.5,
+          "end_frame_id": 669,
+          "evaluated_frame_ids": [
+            664
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 664,
+          "pre_cap_selected_raw_overlap": 0.7430755496025085,
+          "selected_frame_id": 664,
+          "selected_raw_overlap": 0.7430755496025085,
+          "start_frame_id": 660,
+          "window_id": 66
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 674.5,
+          "end_frame_id": 679,
+          "evaluated_frame_ids": [
+            674
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 674,
+          "pre_cap_selected_raw_overlap": 0.7345032095909119,
+          "selected_frame_id": 674,
+          "selected_raw_overlap": 0.7345032095909119,
+          "start_frame_id": 670,
+          "window_id": 67
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 684.5,
+          "end_frame_id": 689,
+          "evaluated_frame_ids": [
+            684
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 684,
+          "pre_cap_selected_raw_overlap": 0.728381335735321,
+          "selected_frame_id": 684,
+          "selected_raw_overlap": 0.728381335735321,
+          "start_frame_id": 680,
+          "window_id": 68
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 694.5,
+          "end_frame_id": 699,
+          "evaluated_frame_ids": [
+            694
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 694,
+          "pre_cap_selected_raw_overlap": 0.728649914264679,
+          "selected_frame_id": 694,
+          "selected_raw_overlap": 0.728649914264679,
+          "start_frame_id": 690,
+          "window_id": 69
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 704.5,
+          "end_frame_id": 709,
+          "evaluated_frame_ids": [
+            704
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 704,
+          "pre_cap_selected_raw_overlap": 0.727893054485321,
+          "selected_frame_id": 704,
+          "selected_raw_overlap": 0.727893054485321,
+          "start_frame_id": 700,
+          "window_id": 70
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 714.5,
+          "end_frame_id": 719,
+          "evaluated_frame_ids": [
+            714
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 714,
+          "pre_cap_selected_raw_overlap": 0.728009045124054,
+          "selected_frame_id": 714,
+          "selected_raw_overlap": 0.728009045124054,
+          "start_frame_id": 710,
+          "window_id": 71
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 724.5,
+          "end_frame_id": 729,
+          "evaluated_frame_ids": [
+            724
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 724,
+          "pre_cap_selected_raw_overlap": 0.7504974603652954,
+          "selected_frame_id": 724,
+          "selected_raw_overlap": 0.7504974603652954,
+          "start_frame_id": 720,
+          "window_id": 72
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 734.5,
+          "end_frame_id": 739,
+          "evaluated_frame_ids": [
+            734
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 734,
+          "pre_cap_selected_raw_overlap": 0.7758331298828125,
+          "selected_frame_id": 734,
+          "selected_raw_overlap": 0.7758331298828125,
+          "start_frame_id": 730,
+          "window_id": 73
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 744.5,
+          "end_frame_id": 749,
+          "evaluated_frame_ids": [
+            744
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 744,
+          "pre_cap_selected_raw_overlap": 0.8235687613487244,
+          "selected_frame_id": 744,
+          "selected_raw_overlap": 0.8235687613487244,
+          "start_frame_id": 740,
+          "window_id": 74
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 754.5,
+          "end_frame_id": 759,
+          "evaluated_frame_ids": [
+            754
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 754,
+          "pre_cap_selected_raw_overlap": 0.8771637082099915,
+          "selected_frame_id": 754,
+          "selected_raw_overlap": 0.8771637082099915,
+          "start_frame_id": 750,
+          "window_id": 75
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 764.5,
+          "end_frame_id": 769,
+          "evaluated_frame_ids": [
+            764
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 764,
+          "pre_cap_selected_raw_overlap": 0.8927032351493835,
+          "selected_frame_id": 764,
+          "selected_raw_overlap": 0.8927032351493835,
+          "start_frame_id": 760,
+          "window_id": 76
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 774.5,
+          "end_frame_id": 779,
+          "evaluated_frame_ids": [
+            774
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 774,
+          "pre_cap_selected_raw_overlap": 0.8774749636650085,
+          "selected_frame_id": 774,
+          "selected_raw_overlap": 0.8774749636650085,
+          "start_frame_id": 770,
+          "window_id": 77
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 784.5,
+          "end_frame_id": 789,
+          "evaluated_frame_ids": [
+            784
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 784,
+          "pre_cap_selected_raw_overlap": 0.8674896359443665,
+          "selected_frame_id": 784,
+          "selected_raw_overlap": 0.8674896359443665,
+          "start_frame_id": 780,
+          "window_id": 78
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 794.5,
+          "end_frame_id": 799,
+          "evaluated_frame_ids": [
+            794
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 794,
+          "pre_cap_selected_raw_overlap": 0.8520264029502869,
+          "selected_frame_id": 794,
+          "selected_raw_overlap": 0.8520264029502869,
+          "start_frame_id": 790,
+          "window_id": 79
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 804.5,
+          "end_frame_id": 809,
+          "evaluated_frame_ids": [
+            804
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 804,
+          "pre_cap_selected_raw_overlap": 0.8460479974746704,
+          "selected_frame_id": 804,
+          "selected_raw_overlap": 0.8460479974746704,
+          "start_frame_id": 800,
+          "window_id": 80
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 814.5,
+          "end_frame_id": 819,
+          "evaluated_frame_ids": [
+            814
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 814,
+          "pre_cap_selected_raw_overlap": 0.8395447134971619,
+          "selected_frame_id": 814,
+          "selected_raw_overlap": 0.8395447134971619,
+          "start_frame_id": 810,
+          "window_id": 81
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 824.5,
+          "end_frame_id": 829,
+          "evaluated_frame_ids": [
+            824
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 824,
+          "pre_cap_selected_raw_overlap": 0.8392578363418579,
+          "selected_frame_id": 824,
+          "selected_raw_overlap": 0.8392578363418579,
+          "start_frame_id": 820,
+          "window_id": 82
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 834.5,
+          "end_frame_id": 839,
+          "evaluated_frame_ids": [
+            834
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 834,
+          "pre_cap_selected_raw_overlap": 0.8517517447471619,
+          "selected_frame_id": 834,
+          "selected_raw_overlap": 0.8517517447471619,
+          "start_frame_id": 830,
+          "window_id": 83
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 844.5,
+          "end_frame_id": 849,
+          "evaluated_frame_ids": [
+            844
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 844,
+          "pre_cap_selected_raw_overlap": 0.8498870730400085,
+          "selected_frame_id": 844,
+          "selected_raw_overlap": 0.8498870730400085,
+          "start_frame_id": 840,
+          "window_id": 84
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 854.5,
+          "end_frame_id": 859,
+          "evaluated_frame_ids": [
+            854
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 854,
+          "pre_cap_selected_raw_overlap": 0.8580291867256165,
+          "selected_frame_id": 854,
+          "selected_raw_overlap": 0.8580291867256165,
+          "start_frame_id": 850,
+          "window_id": 85
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 864.5,
+          "end_frame_id": 869,
+          "evaluated_frame_ids": [
+            864
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 864,
+          "pre_cap_selected_raw_overlap": 0.866302490234375,
+          "selected_frame_id": 864,
+          "selected_raw_overlap": 0.866302490234375,
+          "start_frame_id": 860,
+          "window_id": 86
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 874.5,
+          "end_frame_id": 879,
+          "evaluated_frame_ids": [
+            874
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 874,
+          "pre_cap_selected_raw_overlap": 0.8663787841796875,
+          "selected_frame_id": 874,
+          "selected_raw_overlap": 0.8663787841796875,
+          "start_frame_id": 870,
+          "window_id": 87
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 884.5,
+          "end_frame_id": 889,
+          "evaluated_frame_ids": [
+            884
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 884,
+          "pre_cap_selected_raw_overlap": 0.8526214957237244,
+          "selected_frame_id": 884,
+          "selected_raw_overlap": 0.8526214957237244,
+          "start_frame_id": 880,
+          "window_id": 88
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 894.5,
+          "end_frame_id": 899,
+          "evaluated_frame_ids": [
+            894
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 894,
+          "pre_cap_selected_raw_overlap": 0.8397003412246704,
+          "selected_frame_id": 894,
+          "selected_raw_overlap": 0.8397003412246704,
+          "start_frame_id": 890,
+          "window_id": 89
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 904.5,
+          "end_frame_id": 909,
+          "evaluated_frame_ids": [
+            904
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 904,
+          "pre_cap_selected_raw_overlap": 0.8290130496025085,
+          "selected_frame_id": 904,
+          "selected_raw_overlap": 0.8290130496025085,
+          "start_frame_id": 900,
+          "window_id": 90
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 914.5,
+          "end_frame_id": 919,
+          "evaluated_frame_ids": [
+            914
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 914,
+          "pre_cap_selected_raw_overlap": 0.8316406607627869,
+          "selected_frame_id": 914,
+          "selected_raw_overlap": 0.8316406607627869,
+          "start_frame_id": 910,
+          "window_id": 91
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 924.5,
+          "end_frame_id": 929,
+          "evaluated_frame_ids": [
+            924
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 924,
+          "pre_cap_selected_raw_overlap": 0.849438488483429,
+          "selected_frame_id": 924,
+          "selected_raw_overlap": 0.849438488483429,
+          "start_frame_id": 920,
+          "window_id": 92
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 934.5,
+          "end_frame_id": 939,
+          "evaluated_frame_ids": [
+            934
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 934,
+          "pre_cap_selected_raw_overlap": 0.8629913330078125,
+          "selected_frame_id": 934,
+          "selected_raw_overlap": 0.8629913330078125,
+          "start_frame_id": 930,
+          "window_id": 93
+        },
+        {
+          "candidate_count": 5,
+          "centre_frame_id": 942.0,
+          "end_frame_id": 944,
+          "evaluated_frame_ids": [
+            942
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 942,
+          "pre_cap_selected_raw_overlap": 0.8642425537109375,
+          "selected_frame_id": 942,
+          "selected_raw_overlap": 0.8642425537109375,
+          "start_frame_id": 940,
+          "window_id": 94
+        }
+      ]
+    },
+    {
+      "cache_hit_count": 0,
+      "dataset_id": 8,
+      "dynamic": true,
+      "evaluated_candidate_count": 199,
+      "keyframe_id": 1,
+      "min_frame_gap": 5,
+      "processed_window_count": 64,
+      "scene": "endovis_dataset_8_keyframe_1",
+      "selected_count": 50,
+      "selected_count_before_cap": 50,
+      "selected_overlap_max": 0.9583770632743835,
+      "selected_overlap_median": 0.8667541742324829,
+      "selected_overlap_min": 0.7030792236328125,
+      "selected_source_frame_ids": [
+        4,
+        14,
+        24,
+        34,
+        44,
+        54,
+        64,
+        74,
+        84,
+        94,
+        104,
+        114,
+        124,
+        134,
+        164,
+        174,
+        184,
+        194,
+        204,
+        214,
+        224,
+        234,
+        244,
+        254,
+        264,
+        274,
+        284,
+        294,
+        304,
+        314,
+        324,
+        334,
+        344,
+        354,
+        364,
+        374,
+        384,
+        394,
+        404,
+        414,
+        424,
+        434,
+        444,
+        579,
+        584,
+        594,
+        604,
+        614,
+        624,
+        633
+      ],
+      "source_frame_count": 637,
+      "threshold_pass_count_among_evaluated": 50,
+      "windows": [
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 4.5,
+          "end_frame_id": 9,
+          "evaluated_frame_ids": [
+            4
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 4,
+          "pre_cap_selected_raw_overlap": 0.940081775188446,
+          "selected_frame_id": 4,
+          "selected_raw_overlap": 0.940081775188446,
+          "start_frame_id": 0,
+          "window_id": 0
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 14.5,
+          "end_frame_id": 19,
+          "evaluated_frame_ids": [
+            14
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 14,
+          "pre_cap_selected_raw_overlap": 0.9198150634765625,
+          "selected_frame_id": 14,
+          "selected_raw_overlap": 0.9198150634765625,
+          "start_frame_id": 10,
+          "window_id": 1
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 24.5,
+          "end_frame_id": 29,
+          "evaluated_frame_ids": [
+            24
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 24,
+          "pre_cap_selected_raw_overlap": 0.883679211139679,
+          "selected_frame_id": 24,
+          "selected_raw_overlap": 0.883679211139679,
+          "start_frame_id": 20,
+          "window_id": 2
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 34.5,
+          "end_frame_id": 39,
+          "evaluated_frame_ids": [
+            34
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 34,
+          "pre_cap_selected_raw_overlap": 0.873077392578125,
+          "selected_frame_id": 34,
+          "selected_raw_overlap": 0.873077392578125,
+          "start_frame_id": 30,
+          "window_id": 3
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 44.5,
+          "end_frame_id": 49,
+          "evaluated_frame_ids": [
+            44
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 44,
+          "pre_cap_selected_raw_overlap": 0.8701721429824829,
+          "selected_frame_id": 44,
+          "selected_raw_overlap": 0.8701721429824829,
+          "start_frame_id": 40,
+          "window_id": 4
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 54.5,
+          "end_frame_id": 59,
+          "evaluated_frame_ids": [
+            54
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 54,
+          "pre_cap_selected_raw_overlap": 0.8633362054824829,
+          "selected_frame_id": 54,
+          "selected_raw_overlap": 0.8633362054824829,
+          "start_frame_id": 50,
+          "window_id": 5
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 64.5,
+          "end_frame_id": 69,
+          "evaluated_frame_ids": [
+            64
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 64,
+          "pre_cap_selected_raw_overlap": 0.8733764886856079,
+          "selected_frame_id": 64,
+          "selected_raw_overlap": 0.8733764886856079,
+          "start_frame_id": 60,
+          "window_id": 6
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 74.5,
+          "end_frame_id": 79,
+          "evaluated_frame_ids": [
+            74
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 74,
+          "pre_cap_selected_raw_overlap": 0.9124115109443665,
+          "selected_frame_id": 74,
+          "selected_raw_overlap": 0.9124115109443665,
+          "start_frame_id": 70,
+          "window_id": 7
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 84.5,
+          "end_frame_id": 89,
+          "evaluated_frame_ids": [
+            84
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 84,
+          "pre_cap_selected_raw_overlap": 0.9469238519668579,
+          "selected_frame_id": 84,
+          "selected_raw_overlap": 0.9469238519668579,
+          "start_frame_id": 80,
+          "window_id": 8
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 94.5,
+          "end_frame_id": 99,
+          "evaluated_frame_ids": [
+            94
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 94,
+          "pre_cap_selected_raw_overlap": 0.9037750363349915,
+          "selected_frame_id": 94,
+          "selected_raw_overlap": 0.9037750363349915,
+          "start_frame_id": 90,
+          "window_id": 9
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 104.5,
+          "end_frame_id": 109,
+          "evaluated_frame_ids": [
+            104
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 104,
+          "pre_cap_selected_raw_overlap": 0.8440307974815369,
+          "selected_frame_id": 104,
+          "selected_raw_overlap": 0.8440307974815369,
+          "start_frame_id": 100,
+          "window_id": 10
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 114.5,
+          "end_frame_id": 119,
+          "evaluated_frame_ids": [
+            114
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 114,
+          "pre_cap_selected_raw_overlap": 0.7918121218681335,
+          "selected_frame_id": 114,
+          "selected_raw_overlap": 0.7918121218681335,
+          "start_frame_id": 110,
+          "window_id": 11
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 124.5,
+          "end_frame_id": 129,
+          "evaluated_frame_ids": [
+            124
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 124,
+          "pre_cap_selected_raw_overlap": 0.7576873898506165,
+          "selected_frame_id": 124,
+          "selected_raw_overlap": 0.7576873898506165,
+          "start_frame_id": 120,
+          "window_id": 12
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 134.5,
+          "end_frame_id": 139,
+          "evaluated_frame_ids": [
+            134
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 134,
+          "pre_cap_selected_raw_overlap": 0.7188202142715454,
+          "selected_frame_id": 134,
+          "selected_raw_overlap": 0.7188202142715454,
+          "start_frame_id": 130,
+          "window_id": 13
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 144.5,
+          "end_frame_id": 149,
+          "evaluated_frame_ids": [
+            144,
+            145,
+            143,
+            146,
+            142,
+            147,
+            141,
+            148,
+            140,
+            149
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 140,
+          "window_id": 14
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 154.5,
+          "end_frame_id": 159,
+          "evaluated_frame_ids": [
+            154,
+            155,
+            153,
+            156,
+            152,
+            157,
+            151,
+            158,
+            150,
+            159
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 150,
+          "window_id": 15
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 164.5,
+          "end_frame_id": 169,
+          "evaluated_frame_ids": [
+            164
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 164,
+          "pre_cap_selected_raw_overlap": 0.7200347781181335,
+          "selected_frame_id": 164,
+          "selected_raw_overlap": 0.7200347781181335,
+          "start_frame_id": 160,
+          "window_id": 16
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 174.5,
+          "end_frame_id": 179,
+          "evaluated_frame_ids": [
+            174
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 174,
+          "pre_cap_selected_raw_overlap": 0.8065124750137329,
+          "selected_frame_id": 174,
+          "selected_raw_overlap": 0.8065124750137329,
+          "start_frame_id": 170,
+          "window_id": 17
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 184.5,
+          "end_frame_id": 189,
+          "evaluated_frame_ids": [
+            184
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 184,
+          "pre_cap_selected_raw_overlap": 0.858569324016571,
+          "selected_frame_id": 184,
+          "selected_raw_overlap": 0.858569324016571,
+          "start_frame_id": 180,
+          "window_id": 18
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 194.5,
+          "end_frame_id": 199,
+          "evaluated_frame_ids": [
+            194
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 194,
+          "pre_cap_selected_raw_overlap": 0.8841949701309204,
+          "selected_frame_id": 194,
+          "selected_raw_overlap": 0.8841949701309204,
+          "start_frame_id": 190,
+          "window_id": 19
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 204.5,
+          "end_frame_id": 209,
+          "evaluated_frame_ids": [
+            204
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 204,
+          "pre_cap_selected_raw_overlap": 0.9048126339912415,
+          "selected_frame_id": 204,
+          "selected_raw_overlap": 0.9048126339912415,
+          "start_frame_id": 200,
+          "window_id": 20
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 214.5,
+          "end_frame_id": 219,
+          "evaluated_frame_ids": [
+            214
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 214,
+          "pre_cap_selected_raw_overlap": 0.9358734488487244,
+          "selected_frame_id": 214,
+          "selected_raw_overlap": 0.9358734488487244,
+          "start_frame_id": 210,
+          "window_id": 21
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 224.5,
+          "end_frame_id": 229,
+          "evaluated_frame_ids": [
+            224
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 224,
+          "pre_cap_selected_raw_overlap": 0.9578308463096619,
+          "selected_frame_id": 224,
+          "selected_raw_overlap": 0.9578308463096619,
+          "start_frame_id": 220,
+          "window_id": 22
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 234.5,
+          "end_frame_id": 239,
+          "evaluated_frame_ids": [
+            234
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 234,
+          "pre_cap_selected_raw_overlap": 0.9583770632743835,
+          "selected_frame_id": 234,
+          "selected_raw_overlap": 0.9583770632743835,
+          "start_frame_id": 230,
+          "window_id": 23
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 244.5,
+          "end_frame_id": 249,
+          "evaluated_frame_ids": [
+            244
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 244,
+          "pre_cap_selected_raw_overlap": 0.9384247064590454,
+          "selected_frame_id": 244,
+          "selected_raw_overlap": 0.9384247064590454,
+          "start_frame_id": 240,
+          "window_id": 24
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 254.5,
+          "end_frame_id": 259,
+          "evaluated_frame_ids": [
+            254
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 254,
+          "pre_cap_selected_raw_overlap": 0.9197937250137329,
+          "selected_frame_id": 254,
+          "selected_raw_overlap": 0.9197937250137329,
+          "start_frame_id": 250,
+          "window_id": 25
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 264.5,
+          "end_frame_id": 269,
+          "evaluated_frame_ids": [
+            264
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 264,
+          "pre_cap_selected_raw_overlap": 0.9025238156318665,
+          "selected_frame_id": 264,
+          "selected_raw_overlap": 0.9025238156318665,
+          "start_frame_id": 260,
+          "window_id": 26
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 274.5,
+          "end_frame_id": 279,
+          "evaluated_frame_ids": [
+            274
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 274,
+          "pre_cap_selected_raw_overlap": 0.8784698843955994,
+          "selected_frame_id": 274,
+          "selected_raw_overlap": 0.8784698843955994,
+          "start_frame_id": 270,
+          "window_id": 27
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 284.5,
+          "end_frame_id": 289,
+          "evaluated_frame_ids": [
+            284
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 284,
+          "pre_cap_selected_raw_overlap": 0.8264190554618835,
+          "selected_frame_id": 284,
+          "selected_raw_overlap": 0.8264190554618835,
+          "start_frame_id": 280,
+          "window_id": 28
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 294.5,
+          "end_frame_id": 299,
+          "evaluated_frame_ids": [
+            294
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 294,
+          "pre_cap_selected_raw_overlap": 0.799163818359375,
+          "selected_frame_id": 294,
+          "selected_raw_overlap": 0.799163818359375,
+          "start_frame_id": 290,
+          "window_id": 29
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 304.5,
+          "end_frame_id": 309,
+          "evaluated_frame_ids": [
+            304
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 304,
+          "pre_cap_selected_raw_overlap": 0.7859466671943665,
+          "selected_frame_id": 304,
+          "selected_raw_overlap": 0.7859466671943665,
+          "start_frame_id": 300,
+          "window_id": 30
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 314.5,
+          "end_frame_id": 319,
+          "evaluated_frame_ids": [
+            314
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 314,
+          "pre_cap_selected_raw_overlap": 0.8006927371025085,
+          "selected_frame_id": 314,
+          "selected_raw_overlap": 0.8006927371025085,
+          "start_frame_id": 310,
+          "window_id": 31
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 324.5,
+          "end_frame_id": 329,
+          "evaluated_frame_ids": [
+            324
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 324,
+          "pre_cap_selected_raw_overlap": 0.858020007610321,
+          "selected_frame_id": 324,
+          "selected_raw_overlap": 0.858020007610321,
+          "start_frame_id": 320,
+          "window_id": 32
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 334.5,
+          "end_frame_id": 339,
+          "evaluated_frame_ids": [
+            334
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 334,
+          "pre_cap_selected_raw_overlap": 0.9039673209190369,
+          "selected_frame_id": 334,
+          "selected_raw_overlap": 0.9039673209190369,
+          "start_frame_id": 330,
+          "window_id": 33
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 344.5,
+          "end_frame_id": 349,
+          "evaluated_frame_ids": [
+            344
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 344,
+          "pre_cap_selected_raw_overlap": 0.9100341796875,
+          "selected_frame_id": 344,
+          "selected_raw_overlap": 0.9100341796875,
+          "start_frame_id": 340,
+          "window_id": 34
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 354.5,
+          "end_frame_id": 359,
+          "evaluated_frame_ids": [
+            354
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 354,
+          "pre_cap_selected_raw_overlap": 0.928057849407196,
+          "selected_frame_id": 354,
+          "selected_raw_overlap": 0.928057849407196,
+          "start_frame_id": 350,
+          "window_id": 35
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 364.5,
+          "end_frame_id": 369,
+          "evaluated_frame_ids": [
+            364
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 364,
+          "pre_cap_selected_raw_overlap": 0.9341400265693665,
+          "selected_frame_id": 364,
+          "selected_raw_overlap": 0.9341400265693665,
+          "start_frame_id": 360,
+          "window_id": 36
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 374.5,
+          "end_frame_id": 379,
+          "evaluated_frame_ids": [
+            374
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 374,
+          "pre_cap_selected_raw_overlap": 0.9342895746231079,
+          "selected_frame_id": 374,
+          "selected_raw_overlap": 0.9342895746231079,
+          "start_frame_id": 370,
+          "window_id": 37
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 384.5,
+          "end_frame_id": 389,
+          "evaluated_frame_ids": [
+            384
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 384,
+          "pre_cap_selected_raw_overlap": 0.912915050983429,
+          "selected_frame_id": 384,
+          "selected_raw_overlap": 0.912915050983429,
+          "start_frame_id": 380,
+          "window_id": 38
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 394.5,
+          "end_frame_id": 399,
+          "evaluated_frame_ids": [
+            394
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 394,
+          "pre_cap_selected_raw_overlap": 0.8550201654434204,
+          "selected_frame_id": 394,
+          "selected_raw_overlap": 0.8550201654434204,
+          "start_frame_id": 390,
+          "window_id": 39
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 404.5,
+          "end_frame_id": 409,
+          "evaluated_frame_ids": [
+            404
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 404,
+          "pre_cap_selected_raw_overlap": 0.8288726806640625,
+          "selected_frame_id": 404,
+          "selected_raw_overlap": 0.8288726806640625,
+          "start_frame_id": 400,
+          "window_id": 40
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 414.5,
+          "end_frame_id": 419,
+          "evaluated_frame_ids": [
+            414
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 414,
+          "pre_cap_selected_raw_overlap": 0.8175873160362244,
+          "selected_frame_id": 414,
+          "selected_raw_overlap": 0.8175873160362244,
+          "start_frame_id": 410,
+          "window_id": 41
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 424.5,
+          "end_frame_id": 429,
+          "evaluated_frame_ids": [
+            424
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 424,
+          "pre_cap_selected_raw_overlap": 0.7974457144737244,
+          "selected_frame_id": 424,
+          "selected_raw_overlap": 0.7974457144737244,
+          "start_frame_id": 420,
+          "window_id": 42
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 434.5,
+          "end_frame_id": 439,
+          "evaluated_frame_ids": [
+            434
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 434,
+          "pre_cap_selected_raw_overlap": 0.765777587890625,
+          "selected_frame_id": 434,
+          "selected_raw_overlap": 0.765777587890625,
+          "start_frame_id": 430,
+          "window_id": 43
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 444.5,
+          "end_frame_id": 449,
+          "evaluated_frame_ids": [
+            444
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 444,
+          "pre_cap_selected_raw_overlap": 0.7142364382743835,
+          "selected_frame_id": 444,
+          "selected_raw_overlap": 0.7142364382743835,
+          "start_frame_id": 440,
+          "window_id": 44
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 454.5,
+          "end_frame_id": 459,
+          "evaluated_frame_ids": [
+            454,
+            455,
+            453,
+            456,
+            452,
+            457,
+            451,
+            458,
+            450,
+            459
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 450,
+          "window_id": 45
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 464.5,
+          "end_frame_id": 469,
+          "evaluated_frame_ids": [
+            464,
+            465,
+            463,
+            466,
+            462,
+            467,
+            461,
+            468,
+            460,
+            469
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 460,
+          "window_id": 46
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 474.5,
+          "end_frame_id": 479,
+          "evaluated_frame_ids": [
+            474,
+            475,
+            473,
+            476,
+            472,
+            477,
+            471,
+            478,
+            470,
+            479
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 470,
+          "window_id": 47
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 484.5,
+          "end_frame_id": 489,
+          "evaluated_frame_ids": [
+            484,
+            485,
+            483,
+            486,
+            482,
+            487,
+            481,
+            488,
+            480,
+            489
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 480,
+          "window_id": 48
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 494.5,
+          "end_frame_id": 499,
+          "evaluated_frame_ids": [
+            494,
+            495,
+            493,
+            496,
+            492,
+            497,
+            491,
+            498,
+            490,
+            499
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 490,
+          "window_id": 49
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 504.5,
+          "end_frame_id": 509,
+          "evaluated_frame_ids": [
+            504,
+            505,
+            503,
+            506,
+            502,
+            507,
+            501,
+            508,
+            500,
+            509
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 500,
+          "window_id": 50
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 514.5,
+          "end_frame_id": 519,
+          "evaluated_frame_ids": [
+            514,
+            515,
+            513,
+            516,
+            512,
+            517,
+            511,
+            518,
+            510,
+            519
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 510,
+          "window_id": 51
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 524.5,
+          "end_frame_id": 529,
+          "evaluated_frame_ids": [
+            524,
+            525,
+            523,
+            526,
+            522,
+            527,
+            521,
+            528,
+            520,
+            529
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 520,
+          "window_id": 52
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 534.5,
+          "end_frame_id": 539,
+          "evaluated_frame_ids": [
+            534,
+            535,
+            533,
+            536,
+            532,
+            537,
+            531,
+            538,
+            530,
+            539
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 530,
+          "window_id": 53
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 544.5,
+          "end_frame_id": 549,
+          "evaluated_frame_ids": [
+            544,
+            545,
+            543,
+            546,
+            542,
+            547,
+            541,
+            548,
+            540,
+            549
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 540,
+          "window_id": 54
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 554.5,
+          "end_frame_id": 559,
+          "evaluated_frame_ids": [
+            554,
+            555,
+            553,
+            556,
+            552,
+            557,
+            551,
+            558,
+            550,
+            559
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 550,
+          "window_id": 55
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 564.5,
+          "end_frame_id": 569,
+          "evaluated_frame_ids": [
+            564,
+            565,
+            563,
+            566,
+            562,
+            567,
+            561,
+            568,
+            560,
+            569
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": null,
+          "pre_cap_selected_raw_overlap": null,
+          "selected_frame_id": null,
+          "selected_raw_overlap": null,
+          "start_frame_id": 560,
+          "window_id": 56
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 574.5,
+          "end_frame_id": 579,
+          "evaluated_frame_ids": [
+            574,
+            575,
+            573,
+            576,
+            572,
+            577,
+            571,
+            578,
+            570,
+            579
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 579,
+          "pre_cap_selected_raw_overlap": 0.7030792236328125,
+          "selected_frame_id": 579,
+          "selected_raw_overlap": 0.7030792236328125,
+          "start_frame_id": 570,
+          "window_id": 57
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 584.5,
+          "end_frame_id": 589,
+          "evaluated_frame_ids": [
+            584
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 584,
+          "pre_cap_selected_raw_overlap": 0.74639892578125,
+          "selected_frame_id": 584,
+          "selected_raw_overlap": 0.74639892578125,
+          "start_frame_id": 580,
+          "window_id": 58
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 594.5,
+          "end_frame_id": 599,
+          "evaluated_frame_ids": [
+            594
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 594,
+          "pre_cap_selected_raw_overlap": 0.7981597781181335,
+          "selected_frame_id": 594,
+          "selected_raw_overlap": 0.7981597781181335,
+          "start_frame_id": 590,
+          "window_id": 59
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 604.5,
+          "end_frame_id": 609,
+          "evaluated_frame_ids": [
+            604
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 604,
+          "pre_cap_selected_raw_overlap": 0.8518585562705994,
+          "selected_frame_id": 604,
+          "selected_raw_overlap": 0.8518585562705994,
+          "start_frame_id": 600,
+          "window_id": 60
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 614.5,
+          "end_frame_id": 619,
+          "evaluated_frame_ids": [
+            614
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 614,
+          "pre_cap_selected_raw_overlap": 0.8853759765625,
+          "selected_frame_id": 614,
+          "selected_raw_overlap": 0.8853759765625,
+          "start_frame_id": 610,
+          "window_id": 61
+        },
+        {
+          "candidate_count": 10,
+          "centre_frame_id": 624.5,
+          "end_frame_id": 629,
+          "evaluated_frame_ids": [
+            624
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 624,
+          "pre_cap_selected_raw_overlap": 0.85137939453125,
+          "selected_frame_id": 624,
+          "selected_raw_overlap": 0.85137939453125,
+          "start_frame_id": 620,
+          "window_id": 62
+        },
+        {
+          "candidate_count": 7,
+          "centre_frame_id": 633.0,
+          "end_frame_id": 636,
+          "evaluated_frame_ids": [
+            633
+          ],
+          "gap_rejected_frame_ids": [],
+          "pre_cap_selected_frame_id": 633,
+          "pre_cap_selected_raw_overlap": 0.7992828488349915,
+          "selected_frame_id": 633,
+          "selected_raw_overlap": 0.7992828488349915,
+          "start_frame_id": 630,
+          "window_id": 63
+        }
+      ]
+    }
+  ],
+  "scenes": [
+    "endovis_dataset_8_keyframe_0",
+    "endovis_dataset_8_keyframe_1"
+  ],
+  "schema_version": 1,
+  "selected_frame_count": 145,
+  "selection": {
+    "max_frames_per_scene": 0,
+    "max_windows_per_scene": 0,
+    "min_frame_gap": 5,
+    "min_overlap": 0.7,
+    "mode": "window-nearest",
+    "policy_note": "window-nearest uses a fixed centre-out search and never maximizes overlap; a window with no strict pass is omitted without lowering the threshold",
+    "scan_all_candidates": false,
+    "temporal_window": 10,
+    "threshold_rule": "raw_overlap > min_overlap"
+  },
+  "source_root": "/home/data/mashixing/dataset_8tb/endovis"
+}

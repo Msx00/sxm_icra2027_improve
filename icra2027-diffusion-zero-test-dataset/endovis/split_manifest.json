@@ -1,0 +1,37 @@
+{
+  "split_unit": "keyframe directory",
+  "rule": "last keyframe of each dataset is test; preceding keyframes are train",
+  "train_scenes": [
+    "endovis_dataset_1_keyframe_1",
+    "endovis_dataset_1_keyframe_2",
+    "endovis_dataset_2_keyframe_1",
+    "endovis_dataset_2_keyframe_2",
+    "endovis_dataset_2_keyframe_3",
+    "endovis_dataset_3_keyframe_1",
+    "endovis_dataset_3_keyframe_2",
+    "endovis_dataset_3_keyframe_3",
+    "endovis_dataset_6_keyframe_1",
+    "endovis_dataset_6_keyframe_2",
+    "endovis_dataset_6_keyframe_3",
+    "endovis_dataset_7_keyframe_1",
+    "endovis_dataset_7_keyframe_2",
+    "endovis_dataset_7_keyframe_3",
+    "endovis_dataset_8_keyframe_0",
+    "endovis_dataset_8_keyframe_1",
+    "endovis_dataset_8_keyframe_2",
+    "endovis_dataset_8_keyframe_3",
+    "endovis_dataset_9_keyframe_0",
+    "endovis_dataset_9_keyframe_1",
+    "endovis_dataset_9_keyframe_2",
+    "endovis_dataset_9_keyframe_3"
+  ],
+  "test_scenes": [
+    "endovis_dataset_1_keyframe_3",
+    "endovis_dataset_2_keyframe_4",
+    "endovis_dataset_3_keyframe_4",
+    "endovis_dataset_6_keyframe_4",
+    "endovis_dataset_7_keyframe_4",
+    "endovis_dataset_8_keyframe_4",
+    "endovis_dataset_9_keyframe_4"
+  ]
+}

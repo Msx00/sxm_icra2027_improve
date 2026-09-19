@@ -1,0 +1,181 @@
+{
+  "steps": 4,
+  "guidance_scale": 1.5,
+  "prompt": "surgical endoscopy image, realistic tissue",
+  "negative_prompt": "cartoon, illustration, text, watermark",
+  "seed": 6666,
+  "model": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/models/sd15-inpainting",
+  "lcm_lora": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/models/lcm-lora-sdv1-5",
+  "lcm_scale": 1.0,
+  "domain_lora": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/myTrain/endo1-supervised-rank32/checkpoint-002500",
+  "domain_lora_scale": 0.8,
+  "inpaint_exterior_only": true,
+  "hard_composition": true,
+  "small_hole_repair": {
+    "method": "telea_from_warped_rgb",
+    "max_area_ratio": 0.0,
+    "radius": 3.0
+  },
+  "renders_dir": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders",
+  "method": "SD1.5 Inpainting + LCM-LoRA",
+  "strict_known_pixel_preservation": true,
+  "E1_RGB_READ": false,
+  "completed": true,
+  "elapsed_seconds": 10.956066013779491,
+  "frames": [
+    {
+      "frame_id": 0,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000000.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000000.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000000.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000000.png",
+      "seconds_per_frame_batch": 1.719085305929184,
+      "known_ratio": 0.7479583740234375,
+      "excluded_internal_mask_ratio": 0.083868408203125,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 1,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000001.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000001.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000001.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000001.png",
+      "seconds_per_frame_batch": 0.493130159098655,
+      "known_ratio": 0.6995849609375,
+      "excluded_internal_mask_ratio": 0.1249114990234375,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 2,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000002.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000002.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000002.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000002.png",
+      "seconds_per_frame_batch": 0.5154639412648976,
+      "known_ratio": 0.694830322265625,
+      "excluded_internal_mask_ratio": 0.1503082275390625,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 3,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000003.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000003.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000003.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000003.png",
+      "seconds_per_frame_batch": 0.4716911260038614,
+      "known_ratio": 0.6769439697265625,
+      "excluded_internal_mask_ratio": 0.1661895751953125,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 4,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000004.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000004.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000004.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000004.png",
+      "seconds_per_frame_batch": 0.46177736204117537,
+      "known_ratio": 0.6618316650390625,
+      "excluded_internal_mask_ratio": 0.158306884765625,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 5,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000005.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000005.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000005.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000005.png",
+      "seconds_per_frame_batch": 0.484266338404268,
+      "known_ratio": 0.6456207275390625,
+      "excluded_internal_mask_ratio": 0.15926513671875,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 6,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000006.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000006.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000006.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000006.png",
+      "seconds_per_frame_batch": 0.39501831494271755,
+      "known_ratio": 0.6316650390625,
+      "excluded_internal_mask_ratio": 0.1484619140625,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 7,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000007.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000007.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000007.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000007.png",
+      "seconds_per_frame_batch": 0.3980885501950979,
+      "known_ratio": 0.6098663330078125,
+      "excluded_internal_mask_ratio": 0.1334442138671875,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 8,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000008.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000008.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000008.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000008.png",
+      "seconds_per_frame_batch": 0.4095587097108364,
+      "known_ratio": 0.6039398193359375,
+      "excluded_internal_mask_ratio": 0.1264617919921875,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 9,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000009.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000009.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000009.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000009.png",
+      "seconds_per_frame_batch": 0.38381327455863357,
+      "known_ratio": 0.59659423828125,
+      "excluded_internal_mask_ratio": 0.1207489013671875,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 10,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000010.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000010.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000010.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000010.png",
+      "seconds_per_frame_batch": 0.39048739382997155,
+      "known_ratio": 0.599859619140625,
+      "excluded_internal_mask_ratio": 0.1067474365234375,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 11,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000011.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000011.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000011.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000011.png",
+      "seconds_per_frame_batch": 0.3827419001609087,
+      "known_ratio": 0.600128173828125,
+      "excluded_internal_mask_ratio": 0.0979705810546875,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 12,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000012.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000012.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000012.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000012.png",
+      "seconds_per_frame_batch": 0.4182446859776974,
+      "known_ratio": 0.6020965576171875,
+      "excluded_internal_mask_ratio": 0.0831573486328125,
+      "small_hole_repair_ratio": 0.0
+    },
+    {
+      "frame_id": 13,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/final/frame_000013.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/renders/frame_000013.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000013.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000013.png",
+      "seconds_per_frame_batch": 0.3925230507738888,
+      "known_ratio": 0.6052581787109375,
+      "excluded_internal_mask_ratio": 0.0665771484375,
+      "small_hole_repair_ratio": 0.0
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "model": "DistriNVS / no_hard_composition",
+  "checkpoint": "/home/data20tb/shixingma/icra-2027/checkpoints/ablations/no_hard_composition/seed_6666/step_0010000.pt",
+  "checkpoint_step": 10000,
+  "hard_composition": false,
+  "post_processing": false,
+  "matched_sample": "session_004_scene_2_tool_3/frame_000002",
+  "matched_source": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_3/endoscope2/L/frame_000002.png",
+  "archived_warp": "/home/data20tb/shixingma/icra-2027/outputs/ablations_validation_no_post/no_hard_composition/seed_6666/session_004_scene_2_tool_3/warps/frame_000002.png",
+  "archived_warp_sha256": "c24aa087b64d778380af5ad3551a5dbaa4cdf1a154676d597509d3e891da4649",
+  "requested_tool4_image": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_4/endoscope2/L/frame_000002.png",
+  "requested_tool4_sha256": "c88366ea05d01218da4f3b0b99a283351a359ad702198f8336d3da0b915f3f19",
+  "requested_tool4_role": "training-domain appearance example only; not paired with the tool_3 warp",
+  "train_scene_contains_requested_tool4": true,
+  "soft_fusion_identity_max_abs_error": 0.0,
+  "archived_warp_max_u8_error": 0,
+  "display_ranges": {
+    "source_depth_mean": [
+      37.72556106567383,
+      133.59989883422855
+    ],
+    "source_depth_sigma": [
+      0.0,
+      0.2607647687196736
+    ],
+    "support": [
+      0.0,
+      16.372567024230957
+    ],
+    "render_variance": [
+      0.0,
+      3.4664453125000136
+    ],
+    "collision_entropy": [
+      0.0,
+      1.0
+    ],
+    "physics_prior": [
+      0.0,
+      1.0
+    ],
+    "synthesis_gate": [
+      0.0,
+      1.0
+    ],
+    "risk": [
+      0.0,
+      1.0
+    ],
+    "render_depth": [
+      49.19487609863281,
+      173.89286834716796
+    ],
+    "source_confidence": [
+      0.0,
+      1.0
+    ],
+    "render_confidence": [
+      0.0,
+      1.0
+    ]
+  },
+  "gate_quantiles": [
+    0.0,
+    0.9999221563339233,
+    0.9999221563339233,
+    0.9999221563339233,
+    0.9999221563339233
+  ],
+  "asset_note": "Heatmaps are display-normalized as documented by display_ranges; raw float arrays are preserved in intermediates_raw.npz."
+}

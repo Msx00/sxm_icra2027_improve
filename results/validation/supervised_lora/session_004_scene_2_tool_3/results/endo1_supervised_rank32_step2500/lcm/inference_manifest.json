@@ -1,0 +1,2012 @@
+{
+  "steps": 4,
+  "guidance_scale": 1.5,
+  "prompt": "surgical endoscopy image, realistic tissue",
+  "negative_prompt": "cartoon, illustration, text, watermark",
+  "seed": 6666,
+  "model": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/models/sd15-inpainting",
+  "lcm_lora": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/models/lcm-lora-sdv1-5",
+  "lcm_scale": 1.0,
+  "domain_lora": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/myTrain/endo1-supervised-rank32/checkpoint-002500",
+  "domain_lora_scale": 0.8,
+  "inpaint_exterior_only": true,
+  "hard_composition": true,
+  "renders_dir": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders",
+  "method": "SD1.5 Inpainting + LCM-LoRA",
+  "strict_known_pixel_preservation": true,
+  "E1_RGB_READ": false,
+  "completed": true,
+  "elapsed_seconds": 203.67830613814294,
+  "frames": [
+    {
+      "frame_id": 2,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000002.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000002.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000002.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000002.png",
+      "seconds_per_frame_batch": 2.490126583725214,
+      "known_ratio": 0.412286376953125,
+      "excluded_internal_mask_ratio": 0.0045806884765625
+    },
+    {
+      "frame_id": 5,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000005.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000005.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000005.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000005.png",
+      "seconds_per_frame_batch": 0.6534244809299707,
+      "known_ratio": 0.412774658203125,
+      "excluded_internal_mask_ratio": 0.004254150390625
+    },
+    {
+      "frame_id": 8,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000008.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000008.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000008.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000008.png",
+      "seconds_per_frame_batch": 0.5587022169493139,
+      "known_ratio": 0.412652587890625,
+      "excluded_internal_mask_ratio": 0.0041748046875
+    },
+    {
+      "frame_id": 11,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000011.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000011.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000011.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000011.png",
+      "seconds_per_frame_batch": 0.5612396192736924,
+      "known_ratio": 0.413775634765625,
+      "excluded_internal_mask_ratio": 0.0035980224609375
+    },
+    {
+      "frame_id": 14,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000014.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000014.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000014.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000014.png",
+      "seconds_per_frame_batch": 0.5682250228710473,
+      "known_ratio": 0.413800048828125,
+      "excluded_internal_mask_ratio": 0.0034637451171875
+    },
+    {
+      "frame_id": 17,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000017.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000017.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000017.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000017.png",
+      "seconds_per_frame_batch": 0.5115231131203473,
+      "known_ratio": 0.413800048828125,
+      "excluded_internal_mask_ratio": 0.00244140625
+    },
+    {
+      "frame_id": 20,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000020.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000020.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000020.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000020.png",
+      "seconds_per_frame_batch": 0.6595561518333852,
+      "known_ratio": 0.415264892578125,
+      "excluded_internal_mask_ratio": 0.00252685546875
+    },
+    {
+      "frame_id": 23,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000023.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000023.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000023.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000023.png",
+      "seconds_per_frame_batch": 0.6726938849315047,
+      "known_ratio": 0.4144805908203125,
+      "excluded_internal_mask_ratio": 0.0024871826171875
+    },
+    {
+      "frame_id": 26,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000026.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000026.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000026.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000026.png",
+      "seconds_per_frame_batch": 0.5189338489435613,
+      "known_ratio": 0.4138092041015625,
+      "excluded_internal_mask_ratio": 0.00247802734375
+    },
+    {
+      "frame_id": 29,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000029.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000029.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000029.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000029.png",
+      "seconds_per_frame_batch": 0.7003600769676268,
+      "known_ratio": 0.415228271484375,
+      "excluded_internal_mask_ratio": 0.0022705078125
+    },
+    {
+      "frame_id": 32,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000032.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000032.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000032.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000032.png",
+      "seconds_per_frame_batch": 0.5971292988397181,
+      "known_ratio": 0.4147979736328125,
+      "excluded_internal_mask_ratio": 0.002581787109375
+    },
+    {
+      "frame_id": 35,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000035.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000035.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000035.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000035.png",
+      "seconds_per_frame_batch": 0.6297346581704915,
+      "known_ratio": 0.41483154296875,
+      "excluded_internal_mask_ratio": 0.0022735595703125
+    },
+    {
+      "frame_id": 38,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000038.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000038.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000038.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000038.png",
+      "seconds_per_frame_batch": 0.7813556781038642,
+      "known_ratio": 0.4150909423828125,
+      "excluded_internal_mask_ratio": 0.00218505859375
+    },
+    {
+      "frame_id": 41,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000041.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000041.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000041.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000041.png",
+      "seconds_per_frame_batch": 0.7407245631329715,
+      "known_ratio": 0.4141815185546875,
+      "excluded_internal_mask_ratio": 0.0026153564453125
+    },
+    {
+      "frame_id": 44,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000044.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000044.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000044.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000044.png",
+      "seconds_per_frame_batch": 0.6788851139135659,
+      "known_ratio": 0.4137847900390625,
+      "excluded_internal_mask_ratio": 0.0023406982421875
+    },
+    {
+      "frame_id": 47,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000047.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000047.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000047.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000047.png",
+      "seconds_per_frame_batch": 0.7446060599759221,
+      "known_ratio": 0.415057373046875,
+      "excluded_internal_mask_ratio": 0.0020263671875
+    },
+    {
+      "frame_id": 50,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000050.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000050.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000050.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000050.png",
+      "seconds_per_frame_batch": 0.767061484977603,
+      "known_ratio": 0.4154754638671875,
+      "excluded_internal_mask_ratio": 0.0018890380859375
+    },
+    {
+      "frame_id": 53,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000053.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000053.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000053.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000053.png",
+      "seconds_per_frame_batch": 0.711265129968524,
+      "known_ratio": 0.4150054931640625,
+      "excluded_internal_mask_ratio": 0.0020416259765625
+    },
+    {
+      "frame_id": 56,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000056.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000056.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000056.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000056.png",
+      "seconds_per_frame_batch": 0.5509615759365261,
+      "known_ratio": 0.4146240234375,
+      "excluded_internal_mask_ratio": 0.0019775390625
+    },
+    {
+      "frame_id": 59,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000059.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000059.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000059.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000059.png",
+      "seconds_per_frame_batch": 0.5580658009275794,
+      "known_ratio": 0.4137664794921875,
+      "excluded_internal_mask_ratio": 0.0021759033203125
+    },
+    {
+      "frame_id": 62,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000062.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000062.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000062.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000062.png",
+      "seconds_per_frame_batch": 0.580145048443228,
+      "known_ratio": 0.4148162841796875,
+      "excluded_internal_mask_ratio": 0.0020843505859375
+    },
+    {
+      "frame_id": 65,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000065.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000065.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000065.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000065.png",
+      "seconds_per_frame_batch": 0.5666807251982391,
+      "known_ratio": 0.414300537109375,
+      "excluded_internal_mask_ratio": 0.00208740234375
+    },
+    {
+      "frame_id": 68,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000068.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000068.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000068.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000068.png",
+      "seconds_per_frame_batch": 0.6757317679002881,
+      "known_ratio": 0.4158599853515625,
+      "excluded_internal_mask_ratio": 0.0024078369140625
+    },
+    {
+      "frame_id": 71,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000071.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000071.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000071.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000071.png",
+      "seconds_per_frame_batch": 0.5425611739046872,
+      "known_ratio": 0.415826416015625,
+      "excluded_internal_mask_ratio": 0.002655029296875
+    },
+    {
+      "frame_id": 74,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000074.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000074.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000074.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000074.png",
+      "seconds_per_frame_batch": 0.6916522150859237,
+      "known_ratio": 0.4160186767578125,
+      "excluded_internal_mask_ratio": 0.0030303955078125
+    },
+    {
+      "frame_id": 77,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000077.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000077.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000077.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000077.png",
+      "seconds_per_frame_batch": 0.662136057857424,
+      "known_ratio": 0.4165557861328125,
+      "excluded_internal_mask_ratio": 0.0025177001953125
+    },
+    {
+      "frame_id": 80,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000080.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000080.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000080.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000080.png",
+      "seconds_per_frame_batch": 0.5962418001145124,
+      "known_ratio": 0.4161865234375,
+      "excluded_internal_mask_ratio": 0.002911376953125
+    },
+    {
+      "frame_id": 83,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000083.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000083.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000083.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000083.png",
+      "seconds_per_frame_batch": 0.5818140469491482,
+      "known_ratio": 0.416070556640625,
+      "excluded_internal_mask_ratio": 0.0025726318359375
+    },
+    {
+      "frame_id": 86,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000086.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000086.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000086.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000086.png",
+      "seconds_per_frame_batch": 0.6668524639680982,
+      "known_ratio": 0.415625,
+      "excluded_internal_mask_ratio": 0.0028076171875
+    },
+    {
+      "frame_id": 89,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000089.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000089.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000089.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000089.png",
+      "seconds_per_frame_batch": 0.5562627990730107,
+      "known_ratio": 0.4115966796875,
+      "excluded_internal_mask_ratio": 0.003057861328125
+    },
+    {
+      "frame_id": 92,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000092.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000092.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000092.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000092.png",
+      "seconds_per_frame_batch": 0.623174044303596,
+      "known_ratio": 0.4111602783203125,
+      "excluded_internal_mask_ratio": 0.0033721923828125
+    },
+    {
+      "frame_id": 95,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000095.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000095.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000095.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000095.png",
+      "seconds_per_frame_batch": 0.5771420761011541,
+      "known_ratio": 0.4097412109375,
+      "excluded_internal_mask_ratio": 0.0104827880859375
+    },
+    {
+      "frame_id": 98,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000098.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000098.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000098.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000098.png",
+      "seconds_per_frame_batch": 0.5938488030806184,
+      "known_ratio": 0.40806884765625,
+      "excluded_internal_mask_ratio": 0.0024505615234375
+    },
+    {
+      "frame_id": 101,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000101.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000101.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000101.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000101.png",
+      "seconds_per_frame_batch": 0.5921318670734763,
+      "known_ratio": 0.4072357177734375,
+      "excluded_internal_mask_ratio": 0.0026123046875
+    },
+    {
+      "frame_id": 104,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000104.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000104.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000104.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000104.png",
+      "seconds_per_frame_batch": 0.5199298160150647,
+      "known_ratio": 0.4063568115234375,
+      "excluded_internal_mask_ratio": 0.0024261474609375
+    },
+    {
+      "frame_id": 107,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000107.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000107.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000107.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000107.png",
+      "seconds_per_frame_batch": 0.5991815789602697,
+      "known_ratio": 0.4072052001953125,
+      "excluded_internal_mask_ratio": 0.0035125732421875
+    },
+    {
+      "frame_id": 110,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000110.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000110.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000110.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000110.png",
+      "seconds_per_frame_batch": 0.5638019661419094,
+      "known_ratio": 0.4077117919921875,
+      "excluded_internal_mask_ratio": 0.0031585693359375
+    },
+    {
+      "frame_id": 113,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000113.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000113.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000113.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000113.png",
+      "seconds_per_frame_batch": 0.5711223781108856,
+      "known_ratio": 0.408544921875,
+      "excluded_internal_mask_ratio": 0.0027923583984375
+    },
+    {
+      "frame_id": 116,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000116.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000116.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000116.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000116.png",
+      "seconds_per_frame_batch": 0.6735821138136089,
+      "known_ratio": 0.4085784912109375,
+      "excluded_internal_mask_ratio": 0.00289306640625
+    },
+    {
+      "frame_id": 119,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000119.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000119.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000119.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000119.png",
+      "seconds_per_frame_batch": 0.5962822563014925,
+      "known_ratio": 0.41016845703125,
+      "excluded_internal_mask_ratio": 0.00250244140625
+    },
+    {
+      "frame_id": 122,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000122.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000122.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000122.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000122.png",
+      "seconds_per_frame_batch": 0.6765863187611103,
+      "known_ratio": 0.4096588134765625,
+      "excluded_internal_mask_ratio": 0.0024017333984375
+    },
+    {
+      "frame_id": 125,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000125.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000125.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000125.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000125.png",
+      "seconds_per_frame_batch": 0.583264721557498,
+      "known_ratio": 0.410498046875,
+      "excluded_internal_mask_ratio": 0.00224609375
+    },
+    {
+      "frame_id": 128,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000128.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000128.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000128.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000128.png",
+      "seconds_per_frame_batch": 0.6346630859188735,
+      "known_ratio": 0.4098297119140625,
+      "excluded_internal_mask_ratio": 0.001922607421875
+    },
+    {
+      "frame_id": 131,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000131.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000131.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000131.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000131.png",
+      "seconds_per_frame_batch": 0.5947757819667459,
+      "known_ratio": 0.4111785888671875,
+      "excluded_internal_mask_ratio": 0.003570556640625
+    },
+    {
+      "frame_id": 134,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000134.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000134.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000134.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000134.png",
+      "seconds_per_frame_batch": 0.5632710587233305,
+      "known_ratio": 0.4113861083984375,
+      "excluded_internal_mask_ratio": 0.002667236328125
+    },
+    {
+      "frame_id": 137,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000137.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000137.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000137.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000137.png",
+      "seconds_per_frame_batch": 0.4413795378059149,
+      "known_ratio": 0.411859130859375,
+      "excluded_internal_mask_ratio": 0.002496337890625
+    },
+    {
+      "frame_id": 140,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000140.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000140.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000140.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000140.png",
+      "seconds_per_frame_batch": 0.475905551109463,
+      "known_ratio": 0.4126007080078125,
+      "excluded_internal_mask_ratio": 0.0032867431640625
+    },
+    {
+      "frame_id": 143,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000143.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000143.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000143.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000143.png",
+      "seconds_per_frame_batch": 0.5183855826035142,
+      "known_ratio": 0.41180419921875,
+      "excluded_internal_mask_ratio": 0.00262451171875
+    },
+    {
+      "frame_id": 146,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000146.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000146.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000146.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000146.png",
+      "seconds_per_frame_batch": 0.5778435347601771,
+      "known_ratio": 0.4127166748046875,
+      "excluded_internal_mask_ratio": 0.002850341796875
+    },
+    {
+      "frame_id": 149,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000149.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000149.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000149.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000149.png",
+      "seconds_per_frame_batch": 0.5477613699622452,
+      "known_ratio": 0.413836669921875,
+      "excluded_internal_mask_ratio": 0.001971435546875
+    },
+    {
+      "frame_id": 152,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000152.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000152.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000152.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000152.png",
+      "seconds_per_frame_batch": 0.6021660221740603,
+      "known_ratio": 0.4144744873046875,
+      "excluded_internal_mask_ratio": 0.00233154296875
+    },
+    {
+      "frame_id": 155,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000155.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000155.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000155.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000155.png",
+      "seconds_per_frame_batch": 0.6394129558466375,
+      "known_ratio": 0.414691162109375,
+      "excluded_internal_mask_ratio": 0.0022003173828125
+    },
+    {
+      "frame_id": 158,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000158.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000158.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000158.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000158.png",
+      "seconds_per_frame_batch": 0.5898864069022238,
+      "known_ratio": 0.414044189453125,
+      "excluded_internal_mask_ratio": 0.001873779296875
+    },
+    {
+      "frame_id": 161,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000161.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000161.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000161.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000161.png",
+      "seconds_per_frame_batch": 0.643649984151125,
+      "known_ratio": 0.413232421875,
+      "excluded_internal_mask_ratio": 0.00191650390625
+    },
+    {
+      "frame_id": 164,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000164.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000164.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000164.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000164.png",
+      "seconds_per_frame_batch": 0.5271960599347949,
+      "known_ratio": 0.4119781494140625,
+      "excluded_internal_mask_ratio": 0.00206298828125
+    },
+    {
+      "frame_id": 167,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000167.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000167.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000167.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000167.png",
+      "seconds_per_frame_batch": 0.5342341526411474,
+      "known_ratio": 0.4127838134765625,
+      "excluded_internal_mask_ratio": 0.002679443359375
+    },
+    {
+      "frame_id": 170,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000170.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000170.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000170.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000170.png",
+      "seconds_per_frame_batch": 0.7264987230300903,
+      "known_ratio": 0.4080322265625,
+      "excluded_internal_mask_ratio": 0.0034881591796875
+    },
+    {
+      "frame_id": 173,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000173.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000173.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000173.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000173.png",
+      "seconds_per_frame_batch": 0.5901788049377501,
+      "known_ratio": 0.4045074462890625,
+      "excluded_internal_mask_ratio": 0.0026580810546875
+    },
+    {
+      "frame_id": 176,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000176.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000176.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000176.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000176.png",
+      "seconds_per_frame_batch": 0.6915429271757603,
+      "known_ratio": 0.4027618408203125,
+      "excluded_internal_mask_ratio": 0.0022216796875
+    },
+    {
+      "frame_id": 179,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000179.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000179.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000179.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000179.png",
+      "seconds_per_frame_batch": 0.5632151137106121,
+      "known_ratio": 0.400787353515625,
+      "excluded_internal_mask_ratio": 0.002105712890625
+    },
+    {
+      "frame_id": 182,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000182.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000182.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000182.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000182.png",
+      "seconds_per_frame_batch": 0.7063484997488558,
+      "known_ratio": 0.40052490234375,
+      "excluded_internal_mask_ratio": 0.002362060546875
+    },
+    {
+      "frame_id": 185,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000185.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000185.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000185.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000185.png",
+      "seconds_per_frame_batch": 0.6068314518779516,
+      "known_ratio": 0.403216552734375,
+      "excluded_internal_mask_ratio": 0.0040557861328125
+    },
+    {
+      "frame_id": 188,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000188.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000188.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000188.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000188.png",
+      "seconds_per_frame_batch": 0.522433094214648,
+      "known_ratio": 0.404638671875,
+      "excluded_internal_mask_ratio": 0.0041168212890625
+    },
+    {
+      "frame_id": 191,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000191.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000191.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000191.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000191.png",
+      "seconds_per_frame_batch": 0.5294222850352526,
+      "known_ratio": 0.403961181640625,
+      "excluded_internal_mask_ratio": 0.0046112060546875
+    },
+    {
+      "frame_id": 194,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000194.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000194.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000194.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000194.png",
+      "seconds_per_frame_batch": 0.6308420533314347,
+      "known_ratio": 0.405120849609375,
+      "excluded_internal_mask_ratio": 0.0043701171875
+    },
+    {
+      "frame_id": 197,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000197.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000197.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000197.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000197.png",
+      "seconds_per_frame_batch": 0.6444263979792595,
+      "known_ratio": 0.4061981201171875,
+      "excluded_internal_mask_ratio": 0.004071044921875
+    },
+    {
+      "frame_id": 200,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000200.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000200.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000200.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000200.png",
+      "seconds_per_frame_batch": 0.5047103320248425,
+      "known_ratio": 0.4078094482421875,
+      "excluded_internal_mask_ratio": 0.0038360595703125
+    },
+    {
+      "frame_id": 203,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000203.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000203.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000203.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000203.png",
+      "seconds_per_frame_batch": 0.702934199012816,
+      "known_ratio": 0.4083221435546875,
+      "excluded_internal_mask_ratio": 0.0034881591796875
+    },
+    {
+      "frame_id": 206,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000206.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000206.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000206.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000206.png",
+      "seconds_per_frame_batch": 0.6239197589457035,
+      "known_ratio": 0.4087982177734375,
+      "excluded_internal_mask_ratio": 0.0035003662109375
+    },
+    {
+      "frame_id": 209,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000209.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000209.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000209.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000209.png",
+      "seconds_per_frame_batch": 0.5931538310833275,
+      "known_ratio": 0.408184814453125,
+      "excluded_internal_mask_ratio": 0.003216552734375
+    },
+    {
+      "frame_id": 212,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000212.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000212.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000212.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000212.png",
+      "seconds_per_frame_batch": 0.6020268611609936,
+      "known_ratio": 0.40833740234375,
+      "excluded_internal_mask_ratio": 0.0027252197265625
+    },
+    {
+      "frame_id": 215,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000215.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000215.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000215.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000215.png",
+      "seconds_per_frame_batch": 0.5839618612080812,
+      "known_ratio": 0.408990478515625,
+      "excluded_internal_mask_ratio": 0.002197265625
+    },
+    {
+      "frame_id": 218,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000218.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000218.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000218.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000218.png",
+      "seconds_per_frame_batch": 0.5866536237299442,
+      "known_ratio": 0.4095489501953125,
+      "excluded_internal_mask_ratio": 0.0025604248046875
+    },
+    {
+      "frame_id": 221,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000221.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000221.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000221.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000221.png",
+      "seconds_per_frame_batch": 0.5548767843283713,
+      "known_ratio": 0.409979248046875,
+      "excluded_internal_mask_ratio": 0.002593994140625
+    },
+    {
+      "frame_id": 224,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000224.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000224.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000224.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000224.png",
+      "seconds_per_frame_batch": 0.5347863659262657,
+      "known_ratio": 0.41123046875,
+      "excluded_internal_mask_ratio": 0.00235595703125
+    },
+    {
+      "frame_id": 227,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000227.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000227.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000227.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000227.png",
+      "seconds_per_frame_batch": 0.5512961251661181,
+      "known_ratio": 0.4109466552734375,
+      "excluded_internal_mask_ratio": 0.00264892578125
+    },
+    {
+      "frame_id": 230,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000230.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000230.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000230.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000230.png",
+      "seconds_per_frame_batch": 0.6409622370265424,
+      "known_ratio": 0.4090362548828125,
+      "excluded_internal_mask_ratio": 0.0030670166015625
+    },
+    {
+      "frame_id": 233,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000233.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000233.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000233.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000233.png",
+      "seconds_per_frame_batch": 0.5839887340553105,
+      "known_ratio": 0.40875244140625,
+      "excluded_internal_mask_ratio": 0.00377197265625
+    },
+    {
+      "frame_id": 236,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000236.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000236.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000236.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000236.png",
+      "seconds_per_frame_batch": 0.6607892252504826,
+      "known_ratio": 0.4078094482421875,
+      "excluded_internal_mask_ratio": 0.0048614501953125
+    },
+    {
+      "frame_id": 239,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000239.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000239.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000239.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000239.png",
+      "seconds_per_frame_batch": 0.5881121698766947,
+      "known_ratio": 0.408642578125,
+      "excluded_internal_mask_ratio": 0.00489501953125
+    },
+    {
+      "frame_id": 242,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000242.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000242.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000242.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000242.png",
+      "seconds_per_frame_batch": 0.58356316620484,
+      "known_ratio": 0.40828857421875,
+      "excluded_internal_mask_ratio": 0.0049163818359375
+    },
+    {
+      "frame_id": 245,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000245.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000245.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000245.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000245.png",
+      "seconds_per_frame_batch": 0.6167721110396087,
+      "known_ratio": 0.4091278076171875,
+      "excluded_internal_mask_ratio": 0.00526123046875
+    },
+    {
+      "frame_id": 248,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000248.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000248.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000248.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000248.png",
+      "seconds_per_frame_batch": 0.6316347289830446,
+      "known_ratio": 0.4090576171875,
+      "excluded_internal_mask_ratio": 0.005303955078125
+    },
+    {
+      "frame_id": 251,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000251.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000251.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000251.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000251.png",
+      "seconds_per_frame_batch": 0.5515701724216342,
+      "known_ratio": 0.40836181640625,
+      "excluded_internal_mask_ratio": 0.0053680419921875
+    },
+    {
+      "frame_id": 254,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000254.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000254.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000254.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000254.png",
+      "seconds_per_frame_batch": 0.5686645857058465,
+      "known_ratio": 0.408477783203125,
+      "excluded_internal_mask_ratio": 0.005615234375
+    },
+    {
+      "frame_id": 257,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000257.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000257.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000257.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000257.png",
+      "seconds_per_frame_batch": 0.5213119680993259,
+      "known_ratio": 0.4081390380859375,
+      "excluded_internal_mask_ratio": 0.006005859375
+    },
+    {
+      "frame_id": 260,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000260.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000260.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000260.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000260.png",
+      "seconds_per_frame_batch": 0.6179394898936152,
+      "known_ratio": 0.408074951171875,
+      "excluded_internal_mask_ratio": 0.005987548828125
+    },
+    {
+      "frame_id": 263,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000263.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000263.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000263.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000263.png",
+      "seconds_per_frame_batch": 0.592640935909003,
+      "known_ratio": 0.4084228515625,
+      "excluded_internal_mask_ratio": 0.006170654296875
+    },
+    {
+      "frame_id": 266,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000266.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000266.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000266.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000266.png",
+      "seconds_per_frame_batch": 0.5268571521155536,
+      "known_ratio": 0.403924560546875,
+      "excluded_internal_mask_ratio": 0.0074676513671875
+    },
+    {
+      "frame_id": 269,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000269.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000269.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000269.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000269.png",
+      "seconds_per_frame_batch": 0.5605661128647625,
+      "known_ratio": 0.4027252197265625,
+      "excluded_internal_mask_ratio": 0.008941650390625
+    },
+    {
+      "frame_id": 272,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000272.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000272.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000272.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000272.png",
+      "seconds_per_frame_batch": 0.5359880570322275,
+      "known_ratio": 0.4032501220703125,
+      "excluded_internal_mask_ratio": 0.0095428466796875
+    },
+    {
+      "frame_id": 275,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000275.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000275.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000275.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000275.png",
+      "seconds_per_frame_batch": 0.5898086498491466,
+      "known_ratio": 0.4004119873046875,
+      "excluded_internal_mask_ratio": 0.0020538330078125
+    },
+    {
+      "frame_id": 278,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000278.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000278.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000278.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000278.png",
+      "seconds_per_frame_batch": 0.59544378798455,
+      "known_ratio": 0.398486328125,
+      "excluded_internal_mask_ratio": 0.002313232421875
+    },
+    {
+      "frame_id": 281,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000281.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000281.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000281.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000281.png",
+      "seconds_per_frame_batch": 0.5344989728182554,
+      "known_ratio": 0.3978729248046875,
+      "excluded_internal_mask_ratio": 0.002105712890625
+    },
+    {
+      "frame_id": 284,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000284.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000284.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000284.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000284.png",
+      "seconds_per_frame_batch": 0.5648545413278043,
+      "known_ratio": 0.3964508056640625,
+      "excluded_internal_mask_ratio": 0.004437255859375
+    },
+    {
+      "frame_id": 287,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000287.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000287.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000287.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000287.png",
+      "seconds_per_frame_batch": 0.603201488032937,
+      "known_ratio": 0.3959136962890625,
+      "excluded_internal_mask_ratio": 0.003472900390625
+    },
+    {
+      "frame_id": 290,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000290.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000290.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000290.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000290.png",
+      "seconds_per_frame_batch": 0.5625368962064385,
+      "known_ratio": 0.3967437744140625,
+      "excluded_internal_mask_ratio": 0.0029388427734375
+    },
+    {
+      "frame_id": 293,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000293.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000293.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000293.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000293.png",
+      "seconds_per_frame_batch": 0.5747278821654618,
+      "known_ratio": 0.3962677001953125,
+      "excluded_internal_mask_ratio": 0.00303955078125
+    },
+    {
+      "frame_id": 296,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000296.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000296.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000296.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000296.png",
+      "seconds_per_frame_batch": 0.7196753621101379,
+      "known_ratio": 0.396893310546875,
+      "excluded_internal_mask_ratio": 0.002978515625
+    },
+    {
+      "frame_id": 299,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000299.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000299.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000299.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000299.png",
+      "seconds_per_frame_batch": 0.5281493617221713,
+      "known_ratio": 0.3976715087890625,
+      "excluded_internal_mask_ratio": 0.0032562255859375
+    },
+    {
+      "frame_id": 302,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000302.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000302.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000302.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000302.png",
+      "seconds_per_frame_batch": 0.5853839772753417,
+      "known_ratio": 0.398370361328125,
+      "excluded_internal_mask_ratio": 0.0032196044921875
+    },
+    {
+      "frame_id": 305,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000305.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000305.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000305.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000305.png",
+      "seconds_per_frame_batch": 0.5885180900804698,
+      "known_ratio": 0.3989013671875,
+      "excluded_internal_mask_ratio": 0.0037750244140625
+    },
+    {
+      "frame_id": 308,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000308.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000308.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000308.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000308.png",
+      "seconds_per_frame_batch": 0.5653254222124815,
+      "known_ratio": 0.3994232177734375,
+      "excluded_internal_mask_ratio": 0.003839111328125
+    },
+    {
+      "frame_id": 311,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000311.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000311.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000311.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000311.png",
+      "seconds_per_frame_batch": 0.5530992192216218,
+      "known_ratio": 0.3983123779296875,
+      "excluded_internal_mask_ratio": 0.00389404296875
+    },
+    {
+      "frame_id": 314,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000314.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000314.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000314.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000314.png",
+      "seconds_per_frame_batch": 0.5608928180299699,
+      "known_ratio": 0.398870849609375,
+      "excluded_internal_mask_ratio": 0.005645751953125
+    },
+    {
+      "frame_id": 317,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000317.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000317.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000317.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000317.png",
+      "seconds_per_frame_batch": 0.5256537375971675,
+      "known_ratio": 0.397991943359375,
+      "excluded_internal_mask_ratio": 0.0055694580078125
+    },
+    {
+      "frame_id": 320,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000320.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000320.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000320.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000320.png",
+      "seconds_per_frame_batch": 0.50673533603549,
+      "known_ratio": 0.398828125,
+      "excluded_internal_mask_ratio": 0.0043121337890625
+    },
+    {
+      "frame_id": 323,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000323.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000323.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000323.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000323.png",
+      "seconds_per_frame_batch": 0.5918382951058447,
+      "known_ratio": 0.3993072509765625,
+      "excluded_internal_mask_ratio": 0.004010009765625
+    },
+    {
+      "frame_id": 326,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000326.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000326.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000326.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000326.png",
+      "seconds_per_frame_batch": 0.5647790599614382,
+      "known_ratio": 0.39979248046875,
+      "excluded_internal_mask_ratio": 0.003973388671875
+    },
+    {
+      "frame_id": 329,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000329.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000329.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000329.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000329.png",
+      "seconds_per_frame_batch": 0.6345046078786254,
+      "known_ratio": 0.401470947265625,
+      "excluded_internal_mask_ratio": 0.0033935546875
+    },
+    {
+      "frame_id": 332,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000332.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000332.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000332.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000332.png",
+      "seconds_per_frame_batch": 0.5120520950295031,
+      "known_ratio": 0.4020965576171875,
+      "excluded_internal_mask_ratio": 0.0034271240234375
+    },
+    {
+      "frame_id": 335,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000335.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000335.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000335.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000335.png",
+      "seconds_per_frame_batch": 0.5226550833322108,
+      "known_ratio": 0.402239990234375,
+      "excluded_internal_mask_ratio": 0.0033782958984375
+    },
+    {
+      "frame_id": 338,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000338.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000338.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000338.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000338.png",
+      "seconds_per_frame_batch": 0.5283119850791991,
+      "known_ratio": 0.4019744873046875,
+      "excluded_internal_mask_ratio": 0.0029510498046875
+    },
+    {
+      "frame_id": 341,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000341.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000341.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000341.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000341.png",
+      "seconds_per_frame_batch": 0.5758164320141077,
+      "known_ratio": 0.404364013671875,
+      "excluded_internal_mask_ratio": 0.00262451171875
+    },
+    {
+      "frame_id": 344,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000344.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000344.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000344.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000344.png",
+      "seconds_per_frame_batch": 0.5508162900805473,
+      "known_ratio": 0.4024383544921875,
+      "excluded_internal_mask_ratio": 0.002166748046875
+    },
+    {
+      "frame_id": 347,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000347.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000347.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000347.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000347.png",
+      "seconds_per_frame_batch": 0.5417495127767324,
+      "known_ratio": 0.4013671875,
+      "excluded_internal_mask_ratio": 0.0024993896484375
+    },
+    {
+      "frame_id": 350,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000350.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000350.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000350.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000350.png",
+      "seconds_per_frame_batch": 0.5680335769429803,
+      "known_ratio": 0.40018310546875,
+      "excluded_internal_mask_ratio": 0.00233154296875
+    },
+    {
+      "frame_id": 353,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000353.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000353.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000353.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000353.png",
+      "seconds_per_frame_batch": 0.5607590479776263,
+      "known_ratio": 0.3986541748046875,
+      "excluded_internal_mask_ratio": 0.0026275634765625
+    },
+    {
+      "frame_id": 356,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000356.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000356.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000356.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000356.png",
+      "seconds_per_frame_batch": 0.517919197678566,
+      "known_ratio": 0.397369384765625,
+      "excluded_internal_mask_ratio": 0.0022735595703125
+    },
+    {
+      "frame_id": 359,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000359.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000359.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000359.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000359.png",
+      "seconds_per_frame_batch": 0.6545250099152327,
+      "known_ratio": 0.3952728271484375,
+      "excluded_internal_mask_ratio": 0.0021820068359375
+    },
+    {
+      "frame_id": 362,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000362.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000362.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000362.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000362.png",
+      "seconds_per_frame_batch": 0.562031950801611,
+      "known_ratio": 0.39349365234375,
+      "excluded_internal_mask_ratio": 0.002154541015625
+    },
+    {
+      "frame_id": 365,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000365.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000365.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000365.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000365.png",
+      "seconds_per_frame_batch": 0.5288020288571715,
+      "known_ratio": 0.39090576171875,
+      "excluded_internal_mask_ratio": 0.0022918701171875
+    },
+    {
+      "frame_id": 368,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000368.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000368.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000368.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000368.png",
+      "seconds_per_frame_batch": 0.5116340909153223,
+      "known_ratio": 0.3886688232421875,
+      "excluded_internal_mask_ratio": 0.0026275634765625
+    },
+    {
+      "frame_id": 371,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000371.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000371.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000371.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000371.png",
+      "seconds_per_frame_batch": 0.4995860308408737,
+      "known_ratio": 0.3865142822265625,
+      "excluded_internal_mask_ratio": 0.0021942138671875
+    },
+    {
+      "frame_id": 374,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000374.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000374.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000374.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000374.png",
+      "seconds_per_frame_batch": 0.6196126639842987,
+      "known_ratio": 0.3841400146484375,
+      "excluded_internal_mask_ratio": 0.0023651123046875
+    },
+    {
+      "frame_id": 377,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000377.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000377.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000377.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000377.png",
+      "seconds_per_frame_batch": 0.5460473322309554,
+      "known_ratio": 0.38446044921875,
+      "excluded_internal_mask_ratio": 0.002691650390625
+    },
+    {
+      "frame_id": 380,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000380.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000380.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000380.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000380.png",
+      "seconds_per_frame_batch": 0.5857983278110623,
+      "known_ratio": 0.3841064453125,
+      "excluded_internal_mask_ratio": 0.0027008056640625
+    },
+    {
+      "frame_id": 383,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000383.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000383.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000383.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000383.png",
+      "seconds_per_frame_batch": 0.5062071862630546,
+      "known_ratio": 0.3848358154296875,
+      "excluded_internal_mask_ratio": 0.0028411865234375
+    },
+    {
+      "frame_id": 386,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000386.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000386.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000386.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000386.png",
+      "seconds_per_frame_batch": 0.7296495982445776,
+      "known_ratio": 0.3869110107421875,
+      "excluded_internal_mask_ratio": 0.003131103515625
+    },
+    {
+      "frame_id": 389,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000389.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000389.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000389.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000389.png",
+      "seconds_per_frame_batch": 0.5062986412085593,
+      "known_ratio": 0.3874969482421875,
+      "excluded_internal_mask_ratio": 0.003082275390625
+    },
+    {
+      "frame_id": 392,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000392.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000392.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000392.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000392.png",
+      "seconds_per_frame_batch": 0.5813757423311472,
+      "known_ratio": 0.3888458251953125,
+      "excluded_internal_mask_ratio": 0.003106689453125
+    },
+    {
+      "frame_id": 395,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000395.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000395.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000395.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000395.png",
+      "seconds_per_frame_batch": 0.5262904651463032,
+      "known_ratio": 0.3880157470703125,
+      "excluded_internal_mask_ratio": 0.003509521484375
+    },
+    {
+      "frame_id": 398,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000398.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000398.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000398.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000398.png",
+      "seconds_per_frame_batch": 0.5806737137027085,
+      "known_ratio": 0.3901763916015625,
+      "excluded_internal_mask_ratio": 0.0031280517578125
+    },
+    {
+      "frame_id": 401,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000401.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000401.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000401.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000401.png",
+      "seconds_per_frame_batch": 0.5604650368914008,
+      "known_ratio": 0.3881256103515625,
+      "excluded_internal_mask_ratio": 0.0031585693359375
+    },
+    {
+      "frame_id": 404,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000404.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000404.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000404.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000404.png",
+      "seconds_per_frame_batch": 0.5739422859624028,
+      "known_ratio": 0.3872314453125,
+      "excluded_internal_mask_ratio": 0.0033050537109375
+    },
+    {
+      "frame_id": 407,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000407.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000407.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000407.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000407.png",
+      "seconds_per_frame_batch": 0.5243966239504516,
+      "known_ratio": 0.3868011474609375,
+      "excluded_internal_mask_ratio": 0.0035797119140625
+    },
+    {
+      "frame_id": 410,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000410.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000410.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000410.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000410.png",
+      "seconds_per_frame_batch": 0.5105386823415756,
+      "known_ratio": 0.3863037109375,
+      "excluded_internal_mask_ratio": 0.0034332275390625
+    },
+    {
+      "frame_id": 413,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000413.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000413.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000413.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000413.png",
+      "seconds_per_frame_batch": 0.567752524279058,
+      "known_ratio": 0.3872406005859375,
+      "excluded_internal_mask_ratio": 0.0030731201171875
+    },
+    {
+      "frame_id": 416,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000416.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000416.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000416.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000416.png",
+      "seconds_per_frame_batch": 0.5822492851875722,
+      "known_ratio": 0.3865570068359375,
+      "excluded_internal_mask_ratio": 0.0024993896484375
+    },
+    {
+      "frame_id": 419,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000419.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000419.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000419.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000419.png",
+      "seconds_per_frame_batch": 0.6885765809565783,
+      "known_ratio": 0.3863739013671875,
+      "excluded_internal_mask_ratio": 0.002069091796875
+    },
+    {
+      "frame_id": 422,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000422.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000422.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000422.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000422.png",
+      "seconds_per_frame_batch": 0.5271013132296503,
+      "known_ratio": 0.386773681640625,
+      "excluded_internal_mask_ratio": 0.0018096923828125
+    },
+    {
+      "frame_id": 425,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000425.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000425.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000425.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000425.png",
+      "seconds_per_frame_batch": 0.5591353862546384,
+      "known_ratio": 0.386004638671875,
+      "excluded_internal_mask_ratio": 0.001708984375
+    },
+    {
+      "frame_id": 428,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000428.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000428.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000428.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000428.png",
+      "seconds_per_frame_batch": 0.573945980053395,
+      "known_ratio": 0.3850067138671875,
+      "excluded_internal_mask_ratio": 0.0018096923828125
+    },
+    {
+      "frame_id": 431,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000431.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000431.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000431.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000431.png",
+      "seconds_per_frame_batch": 0.5236992640420794,
+      "known_ratio": 0.3860321044921875,
+      "excluded_internal_mask_ratio": 0.0018218994140625
+    },
+    {
+      "frame_id": 434,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000434.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000434.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000434.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000434.png",
+      "seconds_per_frame_batch": 0.5596383530646563,
+      "known_ratio": 0.38641357421875,
+      "excluded_internal_mask_ratio": 0.001611328125
+    },
+    {
+      "frame_id": 437,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000437.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000437.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000437.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000437.png",
+      "seconds_per_frame_batch": 0.5707765729166567,
+      "known_ratio": 0.3861358642578125,
+      "excluded_internal_mask_ratio": 0.0017120361328125
+    },
+    {
+      "frame_id": 440,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000440.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000440.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000440.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000440.png",
+      "seconds_per_frame_batch": 0.6714018709026277,
+      "known_ratio": 0.3859832763671875,
+      "excluded_internal_mask_ratio": 0.002001953125
+    },
+    {
+      "frame_id": 443,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000443.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000443.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000443.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000443.png",
+      "seconds_per_frame_batch": 0.5550718838348985,
+      "known_ratio": 0.3861358642578125,
+      "excluded_internal_mask_ratio": 0.0017852783203125
+    },
+    {
+      "frame_id": 446,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000446.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000446.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000446.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000446.png",
+      "seconds_per_frame_batch": 0.581793594174087,
+      "known_ratio": 0.387603759765625,
+      "excluded_internal_mask_ratio": 0.0015594482421875
+    },
+    {
+      "frame_id": 449,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000449.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000449.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000449.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000449.png",
+      "seconds_per_frame_batch": 0.5653550010174513,
+      "known_ratio": 0.3872161865234375,
+      "excluded_internal_mask_ratio": 0.0016937255859375
+    },
+    {
+      "frame_id": 452,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000452.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000452.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000452.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000452.png",
+      "seconds_per_frame_batch": 0.5515897162258625,
+      "known_ratio": 0.3852630615234375,
+      "excluded_internal_mask_ratio": 0.0019073486328125
+    },
+    {
+      "frame_id": 455,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000455.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000455.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000455.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000455.png",
+      "seconds_per_frame_batch": 0.7023035911843181,
+      "known_ratio": 0.3860382080078125,
+      "excluded_internal_mask_ratio": 0.0019805908203125
+    },
+    {
+      "frame_id": 458,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000458.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000458.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000458.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000458.png",
+      "seconds_per_frame_batch": 0.5888828937895596,
+      "known_ratio": 0.3841033935546875,
+      "excluded_internal_mask_ratio": 0.0037078857421875
+    },
+    {
+      "frame_id": 461,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000461.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000461.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000461.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000461.png",
+      "seconds_per_frame_batch": 0.5796945090405643,
+      "known_ratio": 0.384674072265625,
+      "excluded_internal_mask_ratio": 0.00589599609375
+    },
+    {
+      "frame_id": 464,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000464.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000464.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000464.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000464.png",
+      "seconds_per_frame_batch": 0.5427588592283428,
+      "known_ratio": 0.3838043212890625,
+      "excluded_internal_mask_ratio": 0.01092529296875
+    },
+    {
+      "frame_id": 467,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000467.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000467.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000467.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000467.png",
+      "seconds_per_frame_batch": 0.5687296111136675,
+      "known_ratio": 0.3842803955078125,
+      "excluded_internal_mask_ratio": 0.0113189697265625
+    },
+    {
+      "frame_id": 470,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000470.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000470.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000470.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000470.png",
+      "seconds_per_frame_batch": 0.5946187828667462,
+      "known_ratio": 0.3845062255859375,
+      "excluded_internal_mask_ratio": 0.0127044677734375
+    },
+    {
+      "frame_id": 473,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000473.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000473.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000473.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000473.png",
+      "seconds_per_frame_batch": 0.5937764029949903,
+      "known_ratio": 0.382177734375,
+      "excluded_internal_mask_ratio": 0.0096405029296875
+    },
+    {
+      "frame_id": 476,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000476.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000476.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000476.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000476.png",
+      "seconds_per_frame_batch": 0.566090454813093,
+      "known_ratio": 0.3832550048828125,
+      "excluded_internal_mask_ratio": 0.0097564697265625
+    },
+    {
+      "frame_id": 479,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000479.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000479.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000479.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000479.png",
+      "seconds_per_frame_batch": 0.5125060928985476,
+      "known_ratio": 0.383624267578125,
+      "excluded_internal_mask_ratio": 0.0101806640625
+    },
+    {
+      "frame_id": 482,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000482.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000482.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000482.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000482.png",
+      "seconds_per_frame_batch": 0.5371070220135152,
+      "known_ratio": 0.3808807373046875,
+      "excluded_internal_mask_ratio": 0.0031982421875
+    },
+    {
+      "frame_id": 485,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000485.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000485.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000485.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000485.png",
+      "seconds_per_frame_batch": 0.5703838341869414,
+      "known_ratio": 0.3825408935546875,
+      "excluded_internal_mask_ratio": 0.00245361328125
+    },
+    {
+      "frame_id": 488,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000488.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000488.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000488.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000488.png",
+      "seconds_per_frame_batch": 0.5269805928692222,
+      "known_ratio": 0.392730712890625,
+      "excluded_internal_mask_ratio": 0.0025604248046875
+    },
+    {
+      "frame_id": 491,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000491.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000491.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000491.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000491.png",
+      "seconds_per_frame_batch": 0.5851827380247414,
+      "known_ratio": 0.395208740234375,
+      "excluded_internal_mask_ratio": 0.0038482666015625
+    },
+    {
+      "frame_id": 494,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000494.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000494.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000494.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000494.png",
+      "seconds_per_frame_batch": 0.5061513418331742,
+      "known_ratio": 0.3932464599609375,
+      "excluded_internal_mask_ratio": 0.002154541015625
+    },
+    {
+      "frame_id": 497,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000497.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000497.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000497.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000497.png",
+      "seconds_per_frame_batch": 0.595637648832053,
+      "known_ratio": 0.3949615478515625,
+      "excluded_internal_mask_ratio": 0.0050994873046875
+    },
+    {
+      "frame_id": 500,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000500.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000500.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000500.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000500.png",
+      "seconds_per_frame_batch": 0.5237196725793183,
+      "known_ratio": 0.3949951171875,
+      "excluded_internal_mask_ratio": 0.005157470703125
+    },
+    {
+      "frame_id": 503,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000503.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000503.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000503.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000503.png",
+      "seconds_per_frame_batch": 0.5608496060594916,
+      "known_ratio": 0.3946685791015625,
+      "excluded_internal_mask_ratio": 0.005804443359375
+    },
+    {
+      "frame_id": 506,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000506.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000506.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000506.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000506.png",
+      "seconds_per_frame_batch": 0.5119958911091089,
+      "known_ratio": 0.3949676513671875,
+      "excluded_internal_mask_ratio": 0.005780029296875
+    },
+    {
+      "frame_id": 509,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000509.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000509.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000509.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000509.png",
+      "seconds_per_frame_batch": 0.5871594920754433,
+      "known_ratio": 0.3973419189453125,
+      "excluded_internal_mask_ratio": 0.00516357421875
+    },
+    {
+      "frame_id": 512,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000512.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000512.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000512.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000512.png",
+      "seconds_per_frame_batch": 0.5793052520602942,
+      "known_ratio": 0.397509765625,
+      "excluded_internal_mask_ratio": 0.00467529296875
+    },
+    {
+      "frame_id": 515,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000515.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000515.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000515.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000515.png",
+      "seconds_per_frame_batch": 0.6286881156265736,
+      "known_ratio": 0.397039794921875,
+      "excluded_internal_mask_ratio": 0.00467529296875
+    },
+    {
+      "frame_id": 518,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000518.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000518.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000518.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000518.png",
+      "seconds_per_frame_batch": 0.6657621068879962,
+      "known_ratio": 0.39892578125,
+      "excluded_internal_mask_ratio": 0.0043548583984375
+    },
+    {
+      "frame_id": 521,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000521.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000521.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000521.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000521.png",
+      "seconds_per_frame_batch": 0.5668327729217708,
+      "known_ratio": 0.3996002197265625,
+      "excluded_internal_mask_ratio": 0.004644775390625
+    },
+    {
+      "frame_id": 524,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000524.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000524.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000524.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000524.png",
+      "seconds_per_frame_batch": 0.5501284669153392,
+      "known_ratio": 0.400628662109375,
+      "excluded_internal_mask_ratio": 0.0039031982421875
+    },
+    {
+      "frame_id": 527,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000527.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000527.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000527.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000527.png",
+      "seconds_per_frame_batch": 0.5098922709003091,
+      "known_ratio": 0.4009307861328125,
+      "excluded_internal_mask_ratio": 0.003619384765625
+    },
+    {
+      "frame_id": 530,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000530.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000530.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000530.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000530.png",
+      "seconds_per_frame_batch": 0.6091434992849827,
+      "known_ratio": 0.4019134521484375,
+      "excluded_internal_mask_ratio": 0.003570556640625
+    },
+    {
+      "frame_id": 533,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000533.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000533.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000533.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000533.png",
+      "seconds_per_frame_batch": 0.554862598888576,
+      "known_ratio": 0.403363037109375,
+      "excluded_internal_mask_ratio": 0.00345458984375
+    },
+    {
+      "frame_id": 536,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000536.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000536.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000536.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000536.png",
+      "seconds_per_frame_batch": 0.49008163902908564,
+      "known_ratio": 0.404541015625,
+      "excluded_internal_mask_ratio": 0.003741455078125
+    },
+    {
+      "frame_id": 539,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000539.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000539.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000539.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000539.png",
+      "seconds_per_frame_batch": 0.6256899908185005,
+      "known_ratio": 0.406402587890625,
+      "excluded_internal_mask_ratio": 0.0034271240234375
+    },
+    {
+      "frame_id": 542,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000542.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000542.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000542.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000542.png",
+      "seconds_per_frame_batch": 0.7469375641085207,
+      "known_ratio": 0.4086883544921875,
+      "excluded_internal_mask_ratio": 0.0038299560546875
+    },
+    {
+      "frame_id": 545,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000545.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000545.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000545.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000545.png",
+      "seconds_per_frame_batch": 0.6169450101442635,
+      "known_ratio": 0.41051025390625,
+      "excluded_internal_mask_ratio": 0.0042266845703125
+    },
+    {
+      "frame_id": 548,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000548.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000548.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000548.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000548.png",
+      "seconds_per_frame_batch": 0.5459951558150351,
+      "known_ratio": 0.4115570068359375,
+      "excluded_internal_mask_ratio": 0.0039337158203125
+    },
+    {
+      "frame_id": 551,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000551.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000551.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000551.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000551.png",
+      "seconds_per_frame_batch": 0.562206270173192,
+      "known_ratio": 0.41097412109375,
+      "excluded_internal_mask_ratio": 0.003924560546875
+    },
+    {
+      "frame_id": 554,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000554.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000554.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000554.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000554.png",
+      "seconds_per_frame_batch": 0.631560770329088,
+      "known_ratio": 0.4098236083984375,
+      "excluded_internal_mask_ratio": 0.003271484375
+    },
+    {
+      "frame_id": 557,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000557.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000557.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000557.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000557.png",
+      "seconds_per_frame_batch": 0.5573269240558147,
+      "known_ratio": 0.40880126953125,
+      "excluded_internal_mask_ratio": 0.0032135009765625
+    },
+    {
+      "frame_id": 560,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000560.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000560.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000560.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000560.png",
+      "seconds_per_frame_batch": 0.5118478862568736,
+      "known_ratio": 0.4090972900390625,
+      "excluded_internal_mask_ratio": 0.003076171875
+    },
+    {
+      "frame_id": 563,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000563.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000563.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000563.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000563.png",
+      "seconds_per_frame_batch": 0.5504052862524986,
+      "known_ratio": 0.40797119140625,
+      "excluded_internal_mask_ratio": 0.002838134765625
+    },
+    {
+      "frame_id": 566,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000566.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000566.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000566.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000566.png",
+      "seconds_per_frame_batch": 0.48616232816129923,
+      "known_ratio": 0.4067535400390625,
+      "excluded_internal_mask_ratio": 0.002569580078125
+    },
+    {
+      "frame_id": 569,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000569.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000569.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000569.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000569.png",
+      "seconds_per_frame_batch": 0.5313367657363415,
+      "known_ratio": 0.405767822265625,
+      "excluded_internal_mask_ratio": 0.0025482177734375
+    },
+    {
+      "frame_id": 572,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000572.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000572.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000572.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000572.png",
+      "seconds_per_frame_batch": 0.6428577452898026,
+      "known_ratio": 0.40263671875,
+      "excluded_internal_mask_ratio": 0.0022216796875
+    },
+    {
+      "frame_id": 575,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000575.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000575.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000575.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000575.png",
+      "seconds_per_frame_batch": 0.5207419111393392,
+      "known_ratio": 0.3998687744140625,
+      "excluded_internal_mask_ratio": 0.00216064453125
+    },
+    {
+      "frame_id": 578,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000578.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000578.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000578.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000578.png",
+      "seconds_per_frame_batch": 0.5509099350310862,
+      "known_ratio": 0.3999603271484375,
+      "excluded_internal_mask_ratio": 0.0023345947265625
+    },
+    {
+      "frame_id": 581,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000581.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000581.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000581.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000581.png",
+      "seconds_per_frame_batch": 0.4813307272270322,
+      "known_ratio": 0.3990936279296875,
+      "excluded_internal_mask_ratio": 0.0033447265625
+    },
+    {
+      "frame_id": 584,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000584.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000584.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000584.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000584.png",
+      "seconds_per_frame_batch": 0.5610783225856721,
+      "known_ratio": 0.3966400146484375,
+      "excluded_internal_mask_ratio": 0.001934814453125
+    },
+    {
+      "frame_id": 587,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000587.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000587.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000587.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000587.png",
+      "seconds_per_frame_batch": 0.5236185020767152,
+      "known_ratio": 0.396429443359375,
+      "excluded_internal_mask_ratio": 0.00157470703125
+    },
+    {
+      "frame_id": 590,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000590.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000590.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000590.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000590.png",
+      "seconds_per_frame_batch": 0.6939010247588158,
+      "known_ratio": 0.399249267578125,
+      "excluded_internal_mask_ratio": 0.0018157958984375
+    },
+    {
+      "frame_id": 593,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000593.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000593.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000593.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000593.png",
+      "seconds_per_frame_batch": 0.5245666680857539,
+      "known_ratio": 0.3985626220703125,
+      "excluded_internal_mask_ratio": 0.0016357421875
+    },
+    {
+      "frame_id": 596,
+      "output": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/final/frame_000596.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/renders/frame_000596.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000596.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora/session_004_scene_2_tool_3/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000596.png",
+      "seconds_per_frame_batch": 0.5464076707139611,
+      "known_ratio": 0.4002960205078125,
+      "excluded_internal_mask_ratio": 0.0019775390625
+    }
+  ]
+}

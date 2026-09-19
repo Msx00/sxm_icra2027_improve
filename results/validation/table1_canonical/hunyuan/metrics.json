@@ -1,0 +1,289 @@
+{
+  "protocol": {
+    "name": "Table I equal-N image-completion evaluation",
+    "primary_run": "/home/data20tb/shixingma/icra-2027/results/validation/distrisurg",
+    "completion_input_list": "/home/data20tb/shixingma/icra-2027/results/validation/generic_inpainting/comparison_methods/zeroshot_inputs.jsonl",
+    "hunyuan_checkpoint": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2/task2_final/completion/HunyuanDiT/outputs/imed_hunyuan_completion_allscenes_v4_ddp/checkpoints/latest",
+    "data_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+    "scenes": {
+      "session_004_scene_2_tool_3": 199,
+      "session_004_scene_6_tool_3": 199,
+      "session_005_scene_7_tool_3": 198,
+      "session_006_scene_7_tool_3": 199,
+      "session_007_scene_10_tool_2": 199,
+      "session_007_scene_11_tool_3": 199,
+      "session_007_scene_5_tool_2": 199
+    },
+    "count_per_method": 1392,
+    "prediction_layouts": {
+      "Hunyuan-DiT (in-domain adapted)": {
+        "root": "/home/data20tb/shixingma/icra-2027/results/validation/hunyuan_completion/parts",
+        "pattern": "gpu*/inference/*/*_completed.png"
+      }
+    },
+    "aggregation": "frame-wise mean and sample standard deviation (ddof=1)",
+    "inclusion": "all protocol frames retained, including degenerate predictions",
+    "full_mask": "primary-run non-tool tissue mask",
+    "hole_mask": "primary-run non-tool tissue intersected with saved raw-DSS hole mask",
+    "lpips": "AlexNet LPIPS; [0,1] inputs normalized internally to [-1,1]; spatial map averaged for H-LPIPS",
+    "known_region_audit": "Hunyuan only: generic warped_rgb outside its binary inpaint_mask; not used for quality metrics"
+  },
+  "methods": {
+    "Hunyuan-DiT (in-domain adapted)": {
+      "method_key": "hunyuan",
+      "method": "Hunyuan-DiT (in-domain adapted)",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 0,
+      "metrics": {
+        "psnr": {
+          "mean": 19.51863997215512,
+          "sample_sd": 1.511333711573316
+        },
+        "ssim": {
+          "mean": 0.4213282377298536,
+          "sample_sd": 0.1179139468923386
+        },
+        "lpips": {
+          "mean": 0.3830702303769602,
+          "sample_sd": 0.04488435602980145
+        },
+        "hole_psnr": {
+          "mean": 20.870260958013862,
+          "sample_sd": 2.071649051595264
+        },
+        "hole_ssim": {
+          "mean": 0.6371367185151783,
+          "sample_sd": 0.0756334950478171
+        },
+        "hole_lpips": {
+          "mean": 0.4866474951435437,
+          "sample_sd": 0.03295110407866473
+        }
+      },
+      "per_scene": {
+        "session_004_scene_2_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 21.21039551586362,
+              "sample_sd": 0.5482062606757717
+            },
+            "ssim": {
+              "mean": 0.6418421286434385,
+              "sample_sd": 0.014514087375340224
+            },
+            "lpips": {
+              "mean": 0.394282807656868,
+              "sample_sd": 0.01356416871914063
+            },
+            "hole_psnr": {
+              "mean": 22.94378260511849,
+              "sample_sd": 0.7589610874915107
+            },
+            "hole_ssim": {
+              "mean": 0.723382255839343,
+              "sample_sd": 0.01667072588992524
+            },
+            "hole_lpips": {
+              "mean": 0.4637401810842543,
+              "sample_sd": 0.009527168888726383
+            }
+          }
+        },
+        "session_004_scene_6_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 20.06978498871003,
+              "sample_sd": 0.816890049939376
+            },
+            "ssim": {
+              "mean": 0.5458003959464068,
+              "sample_sd": 0.013156079748327129
+            },
+            "lpips": {
+              "mean": 0.3961511413056647,
+              "sample_sd": 0.015105020645367206
+            },
+            "hole_psnr": {
+              "mean": 23.29683161021477,
+              "sample_sd": 1.169507186217096
+            },
+            "hole_ssim": {
+              "mean": 0.7516614315497815,
+              "sample_sd": 0.013324115568272206
+            },
+            "hole_lpips": {
+              "mean": 0.5003932465859993,
+              "sample_sd": 0.013519929161051877
+            }
+          }
+        },
+        "session_005_scene_7_tool_3": {
+          "count": 198,
+          "metrics": {
+            "psnr": {
+              "mean": 17.44202198645081,
+              "sample_sd": 0.3436807659781375
+            },
+            "ssim": {
+              "mean": 0.3342304350149752,
+              "sample_sd": 0.014589941325831296
+            },
+            "lpips": {
+              "mean": 0.35778118504418266,
+              "sample_sd": 0.009292957930626754
+            },
+            "hole_psnr": {
+              "mean": 19.14706846680304,
+              "sample_sd": 0.9284588957725781
+            },
+            "hole_ssim": {
+              "mean": 0.5851706797727431,
+              "sample_sd": 0.043850824563464674
+            },
+            "hole_lpips": {
+              "mean": 0.4948737485842271,
+              "sample_sd": 0.0392554069202687
+            }
+          }
+        },
+        "session_006_scene_7_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 21.34061222939036,
+              "sample_sd": 0.2687034919666647
+            },
+            "ssim": {
+              "mean": 0.42467459721780904,
+              "sample_sd": 0.00866275941915736
+            },
+            "lpips": {
+              "mean": 0.45334991063903923,
+              "sample_sd": 0.009752002889998748
+            },
+            "hole_psnr": {
+              "mean": 22.82020777793386,
+              "sample_sd": 0.5025599937551176
+            },
+            "hole_ssim": {
+              "mean": 0.6721523853402641,
+              "sample_sd": 0.009581875376529774
+            },
+            "hole_lpips": {
+              "mean": 0.466840588567245,
+              "sample_sd": 0.016409853362645853
+            }
+          }
+        },
+        "session_007_scene_10_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 19.928538078039736,
+              "sample_sd": 0.2670828990037273
+            },
+            "ssim": {
+              "mean": 0.3549281785536052,
+              "sample_sd": 0.010049483302263159
+            },
+            "lpips": {
+              "mean": 0.32675824123411323,
+              "sample_sd": 0.013079182321456181
+            },
+            "hole_psnr": {
+              "mean": 18.810360338220644,
+              "sample_sd": 0.6291272873048211
+            },
+            "hole_ssim": {
+              "mean": 0.566923864522771,
+              "sample_sd": 0.0236765819636409
+            },
+            "hole_lpips": {
+              "mean": 0.4501030371716274,
+              "sample_sd": 0.029161494511660845
+            }
+          }
+        },
+        "session_007_scene_11_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 18.74990913256928,
+              "sample_sd": 0.6694317888407745
+            },
+            "ssim": {
+              "mean": 0.30627155708308196,
+              "sample_sd": 0.007693971564988924
+            },
+            "lpips": {
+              "mean": 0.3323062502559106,
+              "sample_sd": 0.012217427103050101
+            },
+            "hole_psnr": {
+              "mean": 18.800834531161055,
+              "sample_sd": 0.561359952127308
+            },
+            "hole_ssim": {
+              "mean": 0.568554424161288,
+              "sample_sd": 0.01907594619762713
+            },
+            "hole_lpips": {
+              "mean": 0.5183239502822934,
+              "sample_sd": 0.014321718089453539
+            }
+          }
+        },
+        "session_007_scene_5_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 17.878782607802194,
+              "sample_sd": 0.2712312512097517
+            },
+            "ssim": {
+              "mean": 0.34111269424908125,
+              "sample_sd": 0.02454083190002834
+            },
+            "lpips": {
+              "mean": 0.4207349958731301,
+              "sample_sd": 0.011606493868398484
+            },
+            "hole_psnr": {
+              "mean": 20.264082117895384,
+              "sample_sd": 0.6460485842302561
+            },
+            "hole_ssim": {
+              "mean": 0.5918508525469794,
+              "sample_sd": 0.02164611619463767
+            },
+            "hole_lpips": {
+              "mean": 0.512299051686148,
+              "sample_sd": 0.017464342959775454
+            }
+          }
+        }
+      },
+      "known_region_preservation": {
+        "definition": "prediction versus generic-completion warped_rgb outside inpaint_mask",
+        "quantization": "absolute RGB error in 8-bit intensity units; a pixel is changed if any channel differs by >0.5",
+        "known_pixel_count": 338251088,
+        "changed_known_pixel_count": 0,
+        "changed_known_pixel_fraction": 0.0,
+        "frames_with_changed_known_pixels": 0,
+        "global_known_mae_8bit": 0.0,
+        "global_known_max_abs_8bit": 0.0,
+        "per_frame_known_mae_8bit": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        },
+        "per_frame_changed_pixel_fraction": {
+          "mean": 0.0,
+          "sample_sd": 0.0
+        }
+      }
+    }
+  }
+}

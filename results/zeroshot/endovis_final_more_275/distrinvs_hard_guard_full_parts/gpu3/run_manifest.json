@@ -1,0 +1,225 @@
+{
+  "method": "DistriSurg",
+  "split": "endovis89-combined-overlap-gt-0.70",
+  "protocol": "endovis89-combined-overlap-gt-0.70; right-to-left inference; raw DSS valid ratio strictly greater than threshold",
+  "data_root": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data",
+  "checkpoint": "/home/data20tb/shixingma/icra-2027/checkpoints/ablations/full/seed_6666/step_0010000.pt",
+  "checkpoint_train_scenes": [
+    "session_004_scene_2_tool_1",
+    "session_004_scene_2_tool_2",
+    "session_004_scene_2_tool_4",
+    "session_004_scene_6_tool_1",
+    "session_004_scene_6_tool_2",
+    "session_005_scene_7_tool_1",
+    "session_005_scene_7_tool_2",
+    "session_006_scene_7_tool_1",
+    "session_006_scene_7_tool_2",
+    "session_007_scene_10_tool_1",
+    "session_007_scene_5_tool_1",
+    "session_007_scene_11_tool_1",
+    "session_007_scene_11_tool_2"
+  ],
+  "scenes": [
+    "endovis_dataset_8_keyframe_2",
+    "endovis_dataset_8_keyframe_3",
+    "endovis_dataset_9_keyframe_2",
+    "endovis_dataset_9_keyframe_3"
+  ],
+  "min_overlap": 0.7,
+  "small_hole_repair": {
+    "method": "telea_from_warped_rgb",
+    "max_area_ratio": 0.0,
+    "radius": 3.0
+  },
+  "config": {
+    "data": {
+      "train_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+      "train_scenes_file": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/train_scenes.txt",
+      "eval_root": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data",
+      "height": 512,
+      "width": 640,
+      "min_overlap": 0.7,
+      "num_workers": 4
+    },
+    "dss": {
+      "sigma_samples": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "sigma_weights": [
+        0.2741,
+        0.4518,
+        0.2741
+      ],
+      "min_depth_mm": 1.0,
+      "max_depth_mm": 500.0,
+      "min_sigma_mm": 0.25,
+      "max_sigma_mm": 20.0,
+      "base_footprint_px": 0.75,
+      "normal_footprint_px": 0.75,
+      "max_footprint_px": 2.5,
+      "radius": 1,
+      "visibility_temperature_mm": 2.0,
+      "min_support": 0.03
+    },
+    "model": {
+      "base_channels": 32,
+      "source_feature_channels": 16,
+      "reliability_channels": 24,
+      "max_depth_residual_ratio": 0.1,
+      "invalid_depth_confidence_scale": 0.35,
+      "trusted_support": 0.35,
+      "trusted_variance_mm2": 9.0,
+      "trusted_entropy": 1.0,
+      "router_residual_scale": 0.25,
+      "trust_cleanup_kernel": 7
+    },
+    "loss": {
+      "hole": 3.0,
+      "visible": 1.0,
+      "seam": 2.0,
+      "gradient": 0.2,
+      "depth_nll": 0.2,
+      "cycle": 0.2,
+      "router": 0.1,
+      "uncertainty": 0.1,
+      "seam_width": 7
+    },
+    "train": {
+      "seed": 6666,
+      "steps": 10000,
+      "batch_size": 1,
+      "accumulation_steps": 4,
+      "learning_rate": 0.0002,
+      "weight_decay": 0.0001,
+      "save_every": 500,
+      "log_every": 20,
+      "mixed_precision": true,
+      "amp_dtype": "bfloat16",
+      "depth_dropout": 0.15,
+      "grad_clip": 1.0,
+      "forbid_eval_scene_training": true
+    },
+    "ablation": {
+      "depth_completion": true,
+      "distributional_depth": true,
+      "anisotropic_footprint": true,
+      "physics_router": true,
+      "hard_composition": true,
+      "rgbd_cycle": true
+    }
+  },
+  "selected_frames": [
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000000",
+      "raw_overlap": 0.9221863150596619
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000001",
+      "raw_overlap": 0.9022766351699829
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000002",
+      "raw_overlap": 0.857800304889679
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000003",
+      "raw_overlap": 0.8239166140556335
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000004",
+      "raw_overlap": 0.8043792843818665
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000005",
+      "raw_overlap": 0.75103759765625
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000006",
+      "raw_overlap": 0.722766101360321
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000007",
+      "raw_overlap": 0.7113403677940369
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000008",
+      "raw_overlap": 0.730511486530304
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000000",
+      "raw_overlap": 0.9674011468887329
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000001",
+      "raw_overlap": 0.852740466594696
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000002",
+      "raw_overlap": 0.8160064816474915
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000003",
+      "raw_overlap": 0.77069091796875
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000004",
+      "raw_overlap": 0.7065063714981079
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000005",
+      "raw_overlap": 0.7057769894599915
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000000",
+      "raw_overlap": 0.9004913568496704
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000001",
+      "raw_overlap": 0.851208508014679
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000002",
+      "raw_overlap": 0.7914367914199829
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000003",
+      "raw_overlap": 0.7116333246231079
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000000",
+      "raw_overlap": 0.8612213134765625
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000001",
+      "raw_overlap": 0.8482605218887329
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000002",
+      "raw_overlap": 0.7742462158203125
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000003",
+      "raw_overlap": 0.7104736566543579
+    }
+  ],
+  "skipped_frames": [],
+  "completed": true,
+  "started_at_unix": 1789239116.3392956,
+  "completed_at_unix": 1789239141.7929022,
+  "selected_count": 23,
+  "skipped_count": 0,
+  "checkpoint_step": 10000,
+  "checkpoint_training_ablation": {
+    "depth_completion": true,
+    "distributional_depth": true,
+    "anisotropic_footprint": true,
+    "physics_router": true,
+    "hard_composition": true,
+    "rgbd_cycle": true
+  },
+  "checkpoint_inference_ablation_mismatches": {},
+  "output_rule": "hard-trained; hard trusted-region composition at inference",
+  "variant_status": "consistent hard-composition model"
+}

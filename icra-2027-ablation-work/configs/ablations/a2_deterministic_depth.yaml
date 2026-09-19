@@ -1,0 +1,6 @@
+# Collapse each learned depth distribution to one mean-depth sample.
+dss:
+  sigma_samples: [0.0]
+  sigma_weights: [1.0]
+ablation:
+  distributional_depth: false

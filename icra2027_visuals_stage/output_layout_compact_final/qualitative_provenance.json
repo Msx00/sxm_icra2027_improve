@@ -1,0 +1,28 @@
+{
+  "generator": "/home/data20tb/shixingma/icra-2027/latex/figures/table_comparisons/make_table_visualizations.py",
+  "backend": "Python/matplotlib",
+  "matplotlib_version": "3.11.0",
+  "font_family": "Times New Roman",
+  "font_file": "/home/data/mashixing/.local/share/fonts/msttcorefonts/Times.TTF",
+  "color_semantics": {
+    "#12857D": "DistriNVS identifier only; not a best-method or ranking cue"
+  },
+  "processing": "RGB display; Table-II source RGB uses target-size bilinear resize; other panels use target-size Lanczos only when required; no crop; no per-image enhancement",
+  "table1": {
+    "output_base": "/home/data/mashixing/icra2027_visuals_stage/output_layout_compact_final/table1_qualitative_comparison",
+    "selection_rule": "100th retained pair in lexicographically first and last iMED validation scenes",
+    "selected_samples": [
+      "session_004_scene_2_tool_3/frame_000299",
+      "session_007_scene_5_tool_2/frame_000299"
+    ]
+  },
+  "table2": {
+    "output_base": "/home/data/mashixing/icra2027_visuals_stage/output_layout_compact_final/table2_zeroshot_qualitative_comparison",
+    "distrinvs_frame_metrics": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/distrinvs_soft_train_hard_guard/table2_evaluation/frame_metrics.csv",
+    "selection_rule": "largest positive DistriNVS PSNR margin per dataset with raw hole >= 0.10",
+    "selected_samples": [
+      "endovis_dataset_8_keyframe_3/frame_000005",
+      "endovis_dataset_9_keyframe_0/frame_000067"
+    ]
+  }
+}

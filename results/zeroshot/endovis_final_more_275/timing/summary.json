@@ -1,0 +1,82 @@
+{
+  "protocol": {
+    "full_test_pairs": 275,
+    "timing_pairs": 10,
+    "selection": "Hunyuan global indices; uniformly strided over the frozen list",
+    "batch_size": 1,
+    "unit": "s/frame",
+    "dispersion": "sample standard deviation"
+  },
+  "methods": {
+    "LDM": {
+      "count": 10,
+      "mean_seconds": 2.572325717844069,
+      "sample_sd_seconds": 0.1505938291348027,
+      "mean_ms": 2572.325717844069,
+      "sample_sd_ms": 150.59382913480272,
+      "min_seconds": 2.4872300531715155,
+      "max_seconds": 2.989486226812005,
+      "two_decimal_seconds_text": "2.57\\pm0.15",
+      "two_decimal_ms_text": "2572.33\\pm150.59",
+      "sources": [
+        "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/timing/ldm.json"
+      ]
+    },
+    "LaMa": {
+      "count": 10,
+      "mean_seconds": 0.03649259335361421,
+      "sample_sd_seconds": 0.0020438875336846575,
+      "mean_ms": 36.49259335361421,
+      "sample_sd_ms": 2.0438875336846576,
+      "min_seconds": 0.03508260706439614,
+      "max_seconds": 0.04179138084873557,
+      "two_decimal_seconds_text": "0.04\\pm0.00",
+      "two_decimal_ms_text": "36.49\\pm2.04",
+      "sources": [
+        "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/timing/lama.json"
+      ]
+    },
+    "LCM-LoRA": {
+      "count": 10,
+      "mean_seconds": 0.4038254147861153,
+      "sample_sd_seconds": 0.03843995107582083,
+      "mean_ms": 403.8254147861153,
+      "sample_sd_ms": 38.43995107582083,
+      "min_seconds": 0.3741744039580226,
+      "max_seconds": 0.5046915742568672,
+      "two_decimal_seconds_text": "0.40\\pm0.04",
+      "two_decimal_ms_text": "403.83\\pm38.44",
+      "sources": [
+        "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/timing/lcm_lora.json"
+      ]
+    },
+    "Hunyuan-DiT": {
+      "count": 10,
+      "mean_seconds": 13.042688215710223,
+      "sample_sd_seconds": 0.07493538774681845,
+      "mean_ms": 13042.688215710223,
+      "sample_sd_ms": 74.93538774681845,
+      "min_seconds": 12.939396496862173,
+      "max_seconds": 13.130731529090554,
+      "two_decimal_seconds_text": "13.04\\pm0.07",
+      "two_decimal_ms_text": "13042.69\\pm74.94",
+      "sources": [
+        "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/timing/hunyuan.json"
+      ]
+    },
+    "DistriNVS": {
+      "count": 10,
+      "mean_seconds": 0.07892629923298955,
+      "sample_sd_seconds": 0.007025774643794338,
+      "mean_ms": 78.92629923298955,
+      "sample_sd_ms": 7.025774643794338,
+      "min_seconds": 0.07053504977375269,
+      "max_seconds": 0.08973055798560381,
+      "two_decimal_seconds_text": "0.08\\pm0.01",
+      "two_decimal_ms_text": "78.93\\pm7.03",
+      "sources": [
+        "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/timing/distrinvs.json"
+      ]
+    }
+  }
+}

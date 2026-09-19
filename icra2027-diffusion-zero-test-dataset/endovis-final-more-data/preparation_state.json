@@ -1,0 +1,7 @@
+{
+  "completed": true,
+  "completed_at_unix": 1789234139.877236,
+  "final_output_root": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/endovis-final-more-data",
+  "merged_from_shards": 4,
+  "schema_version": 1
+}

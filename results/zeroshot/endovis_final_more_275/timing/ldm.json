@@ -1,0 +1,1117 @@
+{
+  "method": "LDM",
+  "protocol": "single-frame GPU model latency; model loaded once; disk I/O excluded",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "precision": "float16",
+  "batch_size": 1,
+  "warmup_frames": 10,
+  "count": 275,
+  "mean_seconds": 2.5503687740574508,
+  "sample_sd_seconds": 0.09249549426166218,
+  "steps": 50,
+  "guidance_scale": 7.5,
+  "input": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/comparison_methods/zeroshot_inputs.jsonl",
+  "model": "/home/data20tb/shixingma/icra2027-diffusion-comparison-methods/weights/sd15_inpainting",
+  "frames": [
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000000",
+      "seconds": 2.599728720728308
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000001",
+      "seconds": 2.6048814398236573
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000002",
+      "seconds": 2.6084747430868447
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000003",
+      "seconds": 2.593270191922784
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000004",
+      "seconds": 2.692918627988547
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000005",
+      "seconds": 2.641824332997203
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000006",
+      "seconds": 2.641019592061639
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000007",
+      "seconds": 2.637356048915535
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000008",
+      "seconds": 2.6270816340111196
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000009",
+      "seconds": 2.684173800982535
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000010",
+      "seconds": 2.6426802054047585
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000011",
+      "seconds": 2.621313608251512
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000012",
+      "seconds": 2.5982419247739017
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000013",
+      "seconds": 2.566225030925125
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000014",
+      "seconds": 2.624913769774139
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000015",
+      "seconds": 2.5721461470238864
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000016",
+      "seconds": 2.578312113881111
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000017",
+      "seconds": 2.5602986100129783
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000018",
+      "seconds": 2.607787048909813
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000019",
+      "seconds": 2.5568899773061275
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000020",
+      "seconds": 2.5475109070539474
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000021",
+      "seconds": 2.565594903193414
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000022",
+      "seconds": 2.5486620347946882
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000023",
+      "seconds": 2.5530696283094585
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000024",
+      "seconds": 2.5432912847027183
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000025",
+      "seconds": 2.5424604499712586
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000026",
+      "seconds": 2.558212358970195
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000027",
+      "seconds": 2.5459010880440474
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000028",
+      "seconds": 2.5403186241164804
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000029",
+      "seconds": 2.536083498969674
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000030",
+      "seconds": 2.555907818954438
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000031",
+      "seconds": 2.5459696142934263
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000032",
+      "seconds": 2.5795614970847964
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000033",
+      "seconds": 2.61058565787971
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000034",
+      "seconds": 2.5426944280043244
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000035",
+      "seconds": 2.545392397325486
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000036",
+      "seconds": 2.54311662632972
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000037",
+      "seconds": 2.5264248489402235
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000038",
+      "seconds": 2.534446995239705
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000039",
+      "seconds": 2.514602500014007
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000040",
+      "seconds": 2.4905957290902734
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000041",
+      "seconds": 2.502792329993099
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000042",
+      "seconds": 2.514013276901096
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000043",
+      "seconds": 2.529070269316435
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000044",
+      "seconds": 2.493407698813826
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000045",
+      "seconds": 2.499517273157835
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000046",
+      "seconds": 2.517770813778043
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000047",
+      "seconds": 2.5132569107227027
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000048",
+      "seconds": 2.51851970795542
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000049",
+      "seconds": 2.486181757878512
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000050",
+      "seconds": 2.505170995835215
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000051",
+      "seconds": 2.484235916752368
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000052",
+      "seconds": 2.5165824978612363
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000053",
+      "seconds": 2.4801345919258893
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000054",
+      "seconds": 2.5082839401438832
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000055",
+      "seconds": 2.486075656954199
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000056",
+      "seconds": 2.4884521942585707
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000057",
+      "seconds": 2.4965752619318664
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000058",
+      "seconds": 2.488990269601345
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000059",
+      "seconds": 2.500142355915159
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000060",
+      "seconds": 2.487089831382036
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000061",
+      "seconds": 2.520871209912002
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000062",
+      "seconds": 2.5492468453012407
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000063",
+      "seconds": 2.60219389712438
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000064",
+      "seconds": 2.5722624487243593
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000065",
+      "seconds": 2.544807964004576
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000066",
+      "seconds": 2.5215660077519715
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000067",
+      "seconds": 2.535090198740363
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000068",
+      "seconds": 2.524741747882217
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000069",
+      "seconds": 2.574363266117871
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000070",
+      "seconds": 2.5323154758661985
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000071",
+      "seconds": 2.523493940010667
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000072",
+      "seconds": 2.542912836186588
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000073",
+      "seconds": 2.5746109490282834
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000074",
+      "seconds": 2.533256656024605
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000075",
+      "seconds": 2.519302987959236
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000076",
+      "seconds": 2.5232515381649137
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000077",
+      "seconds": 2.5267584761604667
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000078",
+      "seconds": 2.5230285520665348
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000079",
+      "seconds": 2.534413140732795
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000080",
+      "seconds": 2.5599972628988326
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000081",
+      "seconds": 2.548293682280928
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000082",
+      "seconds": 2.5336159570142627
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000083",
+      "seconds": 3.1007080101408064
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000084",
+      "seconds": 2.989486226812005
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000085",
+      "seconds": 3.0017103110440075
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000086",
+      "seconds": 2.6410514349117875
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000087",
+      "seconds": 2.5344170490279794
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000088",
+      "seconds": 2.527061521075666
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000089",
+      "seconds": 2.5303700482472777
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000090",
+      "seconds": 2.5252291783690453
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000091",
+      "seconds": 2.5148943969979882
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000092",
+      "seconds": 2.5890265931375325
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000093",
+      "seconds": 2.525666262023151
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_0/frame_000094",
+      "seconds": 2.479854912031442
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000000",
+      "seconds": 2.515226917807013
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000001",
+      "seconds": 2.4950959431007504
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000002",
+      "seconds": 2.5650511900894344
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000003",
+      "seconds": 2.526851581875235
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000004",
+      "seconds": 2.4970240276306868
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000005",
+      "seconds": 2.528717272914946
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000006",
+      "seconds": 2.4851962039247155
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000007",
+      "seconds": 2.488591243047267
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000008",
+      "seconds": 2.5088206441141665
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000009",
+      "seconds": 2.4952032901346684
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000010",
+      "seconds": 2.5113911228254437
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000011",
+      "seconds": 2.4766595200635493
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000012",
+      "seconds": 2.4813752700574696
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000013",
+      "seconds": 2.496009493712336
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000014",
+      "seconds": 2.485032187309116
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000015",
+      "seconds": 2.533731945324689
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000016",
+      "seconds": 2.515338957309723
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000017",
+      "seconds": 2.5190903367474675
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000018",
+      "seconds": 2.5020126048475504
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000019",
+      "seconds": 2.608207073993981
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000020",
+      "seconds": 2.5373645429499447
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000021",
+      "seconds": 2.518863799981773
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000022",
+      "seconds": 2.5122544639743865
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000023",
+      "seconds": 2.5224045109935105
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000024",
+      "seconds": 2.4964814549311996
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000025",
+      "seconds": 2.4978594882413745
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000026",
+      "seconds": 2.5067096897400916
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000027",
+      "seconds": 2.5794517509639263
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000028",
+      "seconds": 2.4875487317331135
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000029",
+      "seconds": 2.4882884989492595
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000030",
+      "seconds": 2.5011478839442134
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000031",
+      "seconds": 2.4861719612963498
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000032",
+      "seconds": 2.484710722696036
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000033",
+      "seconds": 2.541384695097804
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000034",
+      "seconds": 2.5107280863448977
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000035",
+      "seconds": 2.5066549899056554
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000036",
+      "seconds": 2.5080620679073036
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000037",
+      "seconds": 2.5251053567044437
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000038",
+      "seconds": 2.5370453940704465
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000039",
+      "seconds": 2.5137896155938506
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000040",
+      "seconds": 2.5131643316708505
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000041",
+      "seconds": 2.506449484732002
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000042",
+      "seconds": 2.5019842088222504
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000043",
+      "seconds": 2.5114878909662366
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000044",
+      "seconds": 2.512688857037574
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000045",
+      "seconds": 2.511484904680401
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000046",
+      "seconds": 2.5316719519905746
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000047",
+      "seconds": 2.5061343028210104
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000048",
+      "seconds": 2.5224298569373786
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_1/frame_000049",
+      "seconds": 2.5148376901634037
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000000",
+      "seconds": 2.5097849387675524
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000001",
+      "seconds": 2.5076432158239186
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000002",
+      "seconds": 2.5091261086054146
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000003",
+      "seconds": 2.5210783258080482
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000004",
+      "seconds": 2.5229976270347834
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000005",
+      "seconds": 2.51331003010273
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000006",
+      "seconds": 2.519337397068739
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000007",
+      "seconds": 2.5111188092269003
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_2/frame_000008",
+      "seconds": 2.526780736632645
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000000",
+      "seconds": 2.561278976034373
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000001",
+      "seconds": 2.55750797316432
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000002",
+      "seconds": 2.5330206202343106
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000003",
+      "seconds": 2.5175108509138227
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000004",
+      "seconds": 2.5231226896867156
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_3/frame_000005",
+      "seconds": 2.5426851590164006
+    },
+    {
+      "sample_id": "endovis_dataset_8_keyframe_4/frame_000000",
+      "seconds": 2.4883666927926242
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000000",
+      "seconds": 2.5037255198694766
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000001",
+      "seconds": 2.5143848722800612
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000002",
+      "seconds": 2.502399408724159
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000003",
+      "seconds": 2.506402198690921
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000004",
+      "seconds": 3.010940934997052
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000005",
+      "seconds": 2.5763347232714295
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000006",
+      "seconds": 2.587045378051698
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000007",
+      "seconds": 2.5123056289739907
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000008",
+      "seconds": 2.6032990720123053
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000009",
+      "seconds": 2.5577529198490083
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000010",
+      "seconds": 2.4982363237068057
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000011",
+      "seconds": 2.4978323178365827
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000012",
+      "seconds": 2.490506582893431
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000013",
+      "seconds": 2.5367179792374372
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000014",
+      "seconds": 2.5809911154210567
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000015",
+      "seconds": 2.5908230380155146
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000016",
+      "seconds": 2.4858801518566906
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000017",
+      "seconds": 2.485182036180049
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000018",
+      "seconds": 2.498192955274135
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000019",
+      "seconds": 2.5022397190332413
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000020",
+      "seconds": 2.531458448152989
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000021",
+      "seconds": 2.4903072412125766
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000022",
+      "seconds": 2.5065434658899903
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000023",
+      "seconds": 3.0190494917333126
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000024",
+      "seconds": 2.9894753647968173
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000025",
+      "seconds": 3.1214915751479566
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000026",
+      "seconds": 2.9853714420460165
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000027",
+      "seconds": 2.58469297317788
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000028",
+      "seconds": 2.4873978928662837
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000029",
+      "seconds": 2.48638331098482
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000030",
+      "seconds": 2.4827922177501023
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000031",
+      "seconds": 2.483535695821047
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000032",
+      "seconds": 2.4936824669130147
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000033",
+      "seconds": 2.5163550418801606
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000034",
+      "seconds": 2.508724781218916
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000035",
+      "seconds": 2.4872300531715155
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000036",
+      "seconds": 2.5296913399361074
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000037",
+      "seconds": 2.5423539192415774
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000038",
+      "seconds": 2.488789384253323
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000039",
+      "seconds": 2.548318418674171
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000040",
+      "seconds": 2.5094997440464795
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000041",
+      "seconds": 2.4817811492830515
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000042",
+      "seconds": 2.4944583331234753
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000043",
+      "seconds": 2.5141147701069713
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000044",
+      "seconds": 2.5770730897784233
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000045",
+      "seconds": 2.4906228380277753
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000046",
+      "seconds": 2.5272685708478093
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000047",
+      "seconds": 2.5160221070982516
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000048",
+      "seconds": 2.525461240205914
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000049",
+      "seconds": 2.5157631020992994
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000050",
+      "seconds": 2.4984593680128455
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000051",
+      "seconds": 2.5981092490255833
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000052",
+      "seconds": 2.620676918886602
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000053",
+      "seconds": 2.540743532124907
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000054",
+      "seconds": 2.5630242726765573
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000055",
+      "seconds": 2.556348735000938
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000056",
+      "seconds": 2.518277042079717
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000057",
+      "seconds": 2.5801173308864236
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000058",
+      "seconds": 2.516964788082987
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000059",
+      "seconds": 2.519320383667946
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000060",
+      "seconds": 2.523235070053488
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000061",
+      "seconds": 2.5184534192085266
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000062",
+      "seconds": 2.513488348107785
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000063",
+      "seconds": 2.5103801880031824
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000064",
+      "seconds": 2.521000707987696
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000065",
+      "seconds": 2.5194914736784995
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000066",
+      "seconds": 2.5147123392671347
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000067",
+      "seconds": 2.534590751864016
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000068",
+      "seconds": 2.5226788986474276
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000069",
+      "seconds": 2.5385979278944433
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000070",
+      "seconds": 2.5291173406876624
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000071",
+      "seconds": 2.550707066897303
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000072",
+      "seconds": 2.5181249300949275
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000073",
+      "seconds": 2.5065656560473144
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000074",
+      "seconds": 2.514948430005461
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000075",
+      "seconds": 2.5795361078344285
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000076",
+      "seconds": 2.5444856039248407
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000077",
+      "seconds": 2.524683626368642
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000078",
+      "seconds": 2.51587564824149
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000079",
+      "seconds": 2.5528574157506227
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000080",
+      "seconds": 2.547046619001776
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000081",
+      "seconds": 2.5852042729966342
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000082",
+      "seconds": 2.5600911206565797
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000083",
+      "seconds": 2.561659269966185
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000084",
+      "seconds": 2.533584436867386
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000085",
+      "seconds": 2.5547793419100344
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000086",
+      "seconds": 2.685036572627723
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000087",
+      "seconds": 2.6551071242429316
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000088",
+      "seconds": 2.51408248860389
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000089",
+      "seconds": 2.5393022359348834
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_0/frame_000090",
+      "seconds": 2.5537674548104405
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000000",
+      "seconds": 2.564780300948769
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000001",
+      "seconds": 2.6544899428263307
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000002",
+      "seconds": 2.526792438700795
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000003",
+      "seconds": 2.5135272569023073
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000004",
+      "seconds": 2.5586422299966216
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000005",
+      "seconds": 2.5526653937995434
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000006",
+      "seconds": 2.5169474850408733
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000007",
+      "seconds": 2.569983682129532
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000008",
+      "seconds": 2.5370257743634284
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000009",
+      "seconds": 2.5522348037920892
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000010",
+      "seconds": 2.6031016018241644
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000011",
+      "seconds": 2.569119516760111
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000012",
+      "seconds": 2.5609361650422215
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_1/frame_000013",
+      "seconds": 2.6065482553094625
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000000",
+      "seconds": 2.569886752869934
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000001",
+      "seconds": 2.613206408917904
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000002",
+      "seconds": 2.553432130254805
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_2/frame_000003",
+      "seconds": 2.5291304141283035
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000000",
+      "seconds": 2.5174489743076265
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000001",
+      "seconds": 2.5482240011915565
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000002",
+      "seconds": 2.577128505334258
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_3/frame_000003",
+      "seconds": 2.5556722157634795
+    },
+    {
+      "sample_id": "endovis_dataset_9_keyframe_4/frame_000000",
+      "seconds": 2.548619602806866
+    }
+  ]
+}

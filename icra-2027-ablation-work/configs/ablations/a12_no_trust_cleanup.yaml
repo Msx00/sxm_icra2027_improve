@@ -1,0 +1,3 @@
+# Single-factor ablation: retain the original pixel-wise trusted mask.
+model:
+  trust_cleanup_kernel: 1

@@ -1,0 +1,145 @@
+{
+  "dataset": "EndoVis/SCARED 2019 test dataset 8",
+  "protocol": "right-to-left stereo",
+  "split": "train",
+  "keyframe": 0,
+  "frame_stride": 50,
+  "frame_count": 19,
+  "depth": "right-camera XYZ Z channel in millimetres",
+  "pose_convention": "source right camera to target left camera",
+  "frames": [
+    {
+      "output_frame_id": 0,
+      "source_frame_id": 0,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000000.tiff bottom half"
+    },
+    {
+      "output_frame_id": 1,
+      "source_frame_id": 50,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000050.tiff bottom half"
+    },
+    {
+      "output_frame_id": 2,
+      "source_frame_id": 100,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000100.tiff bottom half"
+    },
+    {
+      "output_frame_id": 3,
+      "source_frame_id": 150,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000150.tiff bottom half"
+    },
+    {
+      "output_frame_id": 4,
+      "source_frame_id": 200,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000200.tiff bottom half"
+    },
+    {
+      "output_frame_id": 5,
+      "source_frame_id": 250,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000250.tiff bottom half"
+    },
+    {
+      "output_frame_id": 6,
+      "source_frame_id": 300,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000300.tiff bottom half"
+    },
+    {
+      "output_frame_id": 7,
+      "source_frame_id": 350,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000350.tiff bottom half"
+    },
+    {
+      "output_frame_id": 8,
+      "source_frame_id": 400,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000400.tiff bottom half"
+    },
+    {
+      "output_frame_id": 9,
+      "source_frame_id": 450,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000450.tiff bottom half"
+    },
+    {
+      "output_frame_id": 10,
+      "source_frame_id": 500,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000500.tiff bottom half"
+    },
+    {
+      "output_frame_id": 11,
+      "source_frame_id": 550,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000550.tiff bottom half"
+    },
+    {
+      "output_frame_id": 12,
+      "source_frame_id": 600,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000600.tiff bottom half"
+    },
+    {
+      "output_frame_id": 13,
+      "source_frame_id": 650,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000650.tiff bottom half"
+    },
+    {
+      "output_frame_id": 14,
+      "source_frame_id": 700,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000700.tiff bottom half"
+    },
+    {
+      "output_frame_id": 15,
+      "source_frame_id": 750,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000750.tiff bottom half"
+    },
+    {
+      "output_frame_id": 16,
+      "source_frame_id": 800,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000800.tiff bottom half"
+    },
+    {
+      "output_frame_id": 17,
+      "source_frame_id": 850,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000850.tiff bottom half"
+    },
+    {
+      "output_frame_id": 18,
+      "source_frame_id": 900,
+      "source_rgb": "rgb.mp4 bottom half",
+      "target_rgb": "rgb.mp4 top half",
+      "source_depth_xyz": "/home/data/mashixing/dataset_8tb/endovis/2019-test/dataset_8/keyframe_0/data/scene_points/scene_points000900.tiff bottom half"
+    }
+  ]
+}

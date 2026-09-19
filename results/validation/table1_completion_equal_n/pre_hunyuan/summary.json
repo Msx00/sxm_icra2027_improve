@@ -1,0 +1,755 @@
+{
+  "protocol": {
+    "name": "Table I equal-N image-completion evaluation",
+    "primary_run": "/home/data20tb/shixingma/icra-2027/results/validation/distrisurg",
+    "completion_input_list": "/home/data20tb/shixingma/icra-2027/results/validation/generic_inpainting/comparison_methods/zeroshot_inputs.jsonl",
+    "hunyuan_checkpoint": null,
+    "data_root": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs",
+    "scenes": {
+      "session_004_scene_2_tool_3": 199,
+      "session_004_scene_6_tool_3": 199,
+      "session_005_scene_7_tool_3": 198,
+      "session_006_scene_7_tool_3": 199,
+      "session_007_scene_10_tool_2": 199,
+      "session_007_scene_11_tool_3": 199,
+      "session_007_scene_5_tool_2": 199
+    },
+    "count_per_method": 1392,
+    "prediction_layouts": {
+      "LDM": {
+        "root": "/home/data20tb/shixingma/icra-2027/results/validation/generic_inpainting/comparison_methods/predictions/sd15",
+        "pattern": "*/*.png"
+      },
+      "LaMa": {
+        "root": "/home/data20tb/shixingma/icra-2027/results/validation/generic_inpainting/comparison_methods/predictions/lama",
+        "pattern": "*/*.png"
+      },
+      "LCM-LoRA": {
+        "root": "/home/data20tb/shixingma/icra-2027/results/validation/supervised_lora",
+        "pattern": "*/results/endo1_supervised_rank32_step2500/lcm/final/*.png"
+      }
+    },
+    "aggregation": "frame-wise mean and sample standard deviation (ddof=1)",
+    "inclusion": "all protocol frames retained, including degenerate predictions",
+    "full_mask": "primary-run non-tool tissue mask",
+    "hole_mask": "primary-run non-tool tissue intersected with saved raw-DSS hole mask",
+    "lpips": "AlexNet LPIPS; normalize=False; spatial map averaged for H-LPIPS",
+    "known_region_audit": "Hunyuan only: generic warped_rgb outside its binary inpaint_mask; not used for quality metrics"
+  },
+  "methods": {
+    "LDM": {
+      "method_key": "sd15",
+      "method": "LDM",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 0,
+      "metrics": {
+        "psnr": {
+          "mean": 17.181681937184827,
+          "sample_sd": 2.832328844359595
+        },
+        "ssim": {
+          "mean": 0.3437041449199977,
+          "sample_sd": 0.0613091462054257
+        },
+        "lpips": {
+          "mean": 0.37879098896151303,
+          "sample_sd": 0.06638709995163024
+        },
+        "hole_psnr": {
+          "mean": 14.901782172849808,
+          "sample_sd": 3.48024145150879
+        },
+        "hole_ssim": {
+          "mean": 0.3678792492732748,
+          "sample_sd": 0.10805428407634997
+        },
+        "hole_lpips": {
+          "mean": 0.5349335696912189,
+          "sample_sd": 0.11573719154997716
+        }
+      },
+      "per_scene": {
+        "session_004_scene_2_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 11.805604048110732,
+              "sample_sd": 0.48034165287953434
+            },
+            "ssim": {
+              "mean": 0.4002848313980965,
+              "sample_sd": 0.01745090974933586
+            },
+            "lpips": {
+              "mean": 0.45624620186623616,
+              "sample_sd": 0.025988876161214428
+            },
+            "hole_psnr": {
+              "mean": 9.826609899051226,
+              "sample_sd": 0.4788501069143844
+            },
+            "hole_ssim": {
+              "mean": 0.3114069337820887,
+              "sample_sd": 0.02165510053836293
+            },
+            "hole_lpips": {
+              "mean": 0.6094987994462402,
+              "sample_sd": 0.025648492267122364
+            }
+          }
+        },
+        "session_004_scene_6_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 17.359578928156715,
+              "sample_sd": 0.9139384758432559
+            },
+            "ssim": {
+              "mean": 0.43086388482520327,
+              "sample_sd": 0.02159204706243465
+            },
+            "lpips": {
+              "mean": 0.44605664991254185,
+              "sample_sd": 0.02922698453779288
+            },
+            "hole_psnr": {
+              "mean": 15.150527848670231,
+              "sample_sd": 1.6837567434969283
+            },
+            "hole_ssim": {
+              "mean": 0.39344891606263777,
+              "sample_sd": 0.04715227190714093
+            },
+            "hole_lpips": {
+              "mean": 0.634513516821454,
+              "sample_sd": 0.04763292833867795
+            }
+          }
+        },
+        "session_005_scene_7_tool_3": {
+          "count": 198,
+          "metrics": {
+            "psnr": {
+              "mean": 17.108496386595448,
+              "sample_sd": 0.35961282584984045
+            },
+            "ssim": {
+              "mean": 0.32022519183881354,
+              "sample_sd": 0.014614663772501651
+            },
+            "lpips": {
+              "mean": 0.31791575057337984,
+              "sample_sd": 0.010972268877815267
+            },
+            "hole_psnr": {
+              "mean": 13.753322697649098,
+              "sample_sd": 1.6200021880848388
+            },
+            "hole_ssim": {
+              "mean": 0.30546341527893084,
+              "sample_sd": 0.08055772980869308
+            },
+            "hole_lpips": {
+              "mean": 0.5382473807443272,
+              "sample_sd": 0.06107817048422633
+            }
+          }
+        },
+        "session_006_scene_7_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 20.6011138130073,
+              "sample_sd": 0.5552227886497124
+            },
+            "ssim": {
+              "mean": 0.3680007423288259,
+              "sample_sd": 0.014280785045221102
+            },
+            "lpips": {
+              "mean": 0.39389730697900205,
+              "sample_sd": 0.010902132818543738
+            },
+            "hole_psnr": {
+              "mean": 19.261063403220632,
+              "sample_sd": 1.198091330985081
+            },
+            "hole_ssim": {
+              "mean": 0.4226529382581088,
+              "sample_sd": 0.036964813422581344
+            },
+            "hole_lpips": {
+              "mean": 0.47110660067155735,
+              "sample_sd": 0.024340640628906004
+            }
+          }
+        },
+        "session_007_scene_10_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 20.016863032202025,
+              "sample_sd": 0.37771029354281765
+            },
+            "ssim": {
+              "mean": 0.35702550291416035,
+              "sample_sd": 0.011213583969390008
+            },
+            "lpips": {
+              "mean": 0.29250871071863416,
+              "sample_sd": 0.013779717462325074
+            },
+            "hole_psnr": {
+              "mean": 18.75401589379239,
+              "sample_sd": 1.9390943364351747
+            },
+            "hole_ssim": {
+              "mean": 0.5697524483179927,
+              "sample_sd": 0.033682947591670835
+            },
+            "hole_lpips": {
+              "mean": 0.3056366944582618,
+              "sample_sd": 0.04320932058064803
+            }
+          }
+        },
+        "session_007_scene_11_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 17.887977374857993,
+              "sample_sd": 0.7770978366474477
+            },
+            "ssim": {
+              "mean": 0.26193533912675465,
+              "sample_sd": 0.013429011341617272
+            },
+            "lpips": {
+              "mean": 0.3186528329274163,
+              "sample_sd": 0.015495829618090453
+            },
+            "hole_psnr": {
+              "mean": 14.982756998071718,
+              "sample_sd": 1.0364742492312862
+            },
+            "hole_ssim": {
+              "mean": 0.2943264968580936,
+              "sample_sd": 0.044486208651429666
+            },
+            "hole_lpips": {
+              "mean": 0.585867457353889,
+              "sample_sd": 0.03805208424964935
+            }
+          }
+        },
+        "session_007_scene_5_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 15.491772210777704,
+              "sample_sd": 1.3491966164111633
+            },
+            "ssim": {
+              "mean": 0.2674755373192792,
+              "sample_sd": 0.013326979814308906
+            },
+            "lpips": {
+              "mean": 0.42595356403283735,
+              "sample_sd": 0.02998048521213368
+            },
+            "hole_psnr": {
+              "mean": 12.578407316351656,
+              "sample_sd": 2.5358738527806612
+            },
+            "hole_ssim": {
+              "mean": 0.27778994894806464,
+              "sample_sd": 0.055403319749352725
+            },
+            "hole_lpips": {
+              "mean": 0.5996811906596524,
+              "sample_sd": 0.06507609391607033
+            }
+          }
+        }
+      }
+    },
+    "LaMa": {
+      "method_key": "lama",
+      "method": "LaMa",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 0,
+      "metrics": {
+        "psnr": {
+          "mean": 19.478364562851258,
+          "sample_sd": 1.44370243342661
+        },
+        "ssim": {
+          "mean": 0.4263351246200759,
+          "sample_sd": 0.10651105917679804
+        },
+        "lpips": {
+          "mean": 0.2736636759584834,
+          "sample_sd": 0.04093805583535317
+        },
+        "hole_psnr": {
+          "mean": 21.40405320436105,
+          "sample_sd": 2.318197432102423
+        },
+        "hole_ssim": {
+          "mean": 0.6316335119906513,
+          "sample_sd": 0.04792919563442236
+        },
+        "hole_lpips": {
+          "mean": 0.2790613168978999,
+          "sample_sd": 0.0442296477910544
+        }
+      },
+      "per_scene": {
+        "session_004_scene_2_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 20.18555413059254,
+              "sample_sd": 0.43121342371025384
+            },
+            "ssim": {
+              "mean": 0.6193233279127571,
+              "sample_sd": 0.012713386169452258
+            },
+            "lpips": {
+              "mean": 0.25116450186051315,
+              "sample_sd": 0.007878361252687217
+            },
+            "hole_psnr": {
+              "mean": 20.391920262245677,
+              "sample_sd": 0.524768765767453
+            },
+            "hole_ssim": {
+              "mean": 0.6657428612661123,
+              "sample_sd": 0.016662297138245435
+            },
+            "hole_lpips": {
+              "mean": 0.3083335261548584,
+              "sample_sd": 0.014774168231676234
+            }
+          }
+        },
+        "session_004_scene_6_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 19.36872470798205,
+              "sample_sd": 0.7348789381164839
+            },
+            "ssim": {
+              "mean": 0.5450309119631896,
+              "sample_sd": 0.012301121389720305
+            },
+            "lpips": {
+              "mean": 0.2655893521542525,
+              "sample_sd": 0.010415493007803941
+            },
+            "hole_psnr": {
+              "mean": 19.35875374108703,
+              "sample_sd": 0.6870728622963234
+            },
+            "hole_ssim": {
+              "mean": 0.6805213042839089,
+              "sample_sd": 0.026306290143237362
+            },
+            "hole_lpips": {
+              "mean": 0.2543082029825479,
+              "sample_sd": 0.011271990348279921
+            }
+          }
+        },
+        "session_005_scene_7_tool_3": {
+          "count": 198,
+          "metrics": {
+            "psnr": {
+              "mean": 17.567356735768943,
+              "sample_sd": 0.36543207996515636
+            },
+            "ssim": {
+              "mean": 0.34786794507744334,
+              "sample_sd": 0.01707831786898645
+            },
+            "lpips": {
+              "mean": 0.27003185262884755,
+              "sample_sd": 0.0123132627529242
+            },
+            "hole_psnr": {
+              "mean": 22.966293999643035,
+              "sample_sd": 1.7548387935900274
+            },
+            "hole_ssim": {
+              "mean": 0.6435298070763097,
+              "sample_sd": 0.04091595700016452
+            },
+            "hole_lpips": {
+              "mean": 0.2546190463683822,
+              "sample_sd": 0.03409245270510936
+            }
+          }
+        },
+        "session_006_scene_7_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 21.69564579719275,
+              "sample_sd": 0.1792122774054961
+            },
+            "ssim": {
+              "mean": 0.43076427453127336,
+              "sample_sd": 0.008042714395027607
+            },
+            "lpips": {
+              "mean": 0.34018707979264573,
+              "sample_sd": 0.007066207142018507
+            },
+            "hole_psnr": {
+              "mean": 23.456508684397942,
+              "sample_sd": 0.3597453761983721
+            },
+            "hole_ssim": {
+              "mean": 0.6585028174534515,
+              "sample_sd": 0.008567070278558768
+            },
+            "hole_lpips": {
+              "mean": 0.30598592024352683,
+              "sample_sd": 0.012995330256884367
+            }
+          }
+        },
+        "session_007_scene_10_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 20.663444365688306,
+              "sample_sd": 0.3012842654916524
+            },
+            "ssim": {
+              "mean": 0.37775780956948823,
+              "sample_sd": 0.010050436472125982
+            },
+            "lpips": {
+              "mean": 0.22740323699299414,
+              "sample_sd": 0.011434229865501702
+            },
+            "hole_psnr": {
+              "mean": 24.677027879647873,
+              "sample_sd": 1.0386786262747152
+            },
+            "hole_ssim": {
+              "mean": 0.6343599159513885,
+              "sample_sd": 0.01448726294513678
+            },
+            "hole_lpips": {
+              "mean": 0.20547311037928614,
+              "sample_sd": 0.018686066993275702
+            }
+          }
+        },
+        "session_007_scene_11_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 18.860662589720146,
+              "sample_sd": 0.6906078819536554
+            },
+            "ssim": {
+              "mean": 0.3211868363409186,
+              "sample_sd": 0.008901728943398671
+            },
+            "lpips": {
+              "mean": 0.2366449226386583,
+              "sample_sd": 0.007759384032847657
+            },
+            "hole_psnr": {
+              "mean": 18.47368273902778,
+              "sample_sd": 0.4868862489639189
+            },
+            "hole_ssim": {
+              "mean": 0.5864940357567677,
+              "sample_sd": 0.011934559397688442
+            },
+            "hole_lpips": {
+              "mean": 0.2990361726164219,
+              "sample_sd": 0.011250343488421006
+            }
+          }
+        },
+        "session_007_scene_5_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 17.997560558606633,
+              "sample_sd": 0.27784342848763177
+            },
+            "ssim": {
+              "mean": 0.3420204595105732,
+              "sample_sd": 0.02128115906542962
+            },
+            "lpips": {
+              "mean": 0.32460653527298167,
+              "sample_sd": 0.006315443440756821
+            },
+            "hole_psnr": {
+              "mean": 20.51203558073571,
+              "sample_sd": 0.6263125366739944
+            },
+            "hole_ssim": {
+              "mean": 0.5523436225239357,
+              "sample_sd": 0.01627671282351489
+            },
+            "hole_lpips": {
+              "mean": 0.32555041406022844,
+              "sample_sd": 0.027894434640348756
+            }
+          }
+        }
+      }
+    },
+    "LCM-LoRA": {
+      "method_key": "lcm_lora",
+      "method": "LCM-LoRA",
+      "count": 1392,
+      "scene_count": 7,
+      "degenerate_count": 0,
+      "metrics": {
+        "psnr": {
+          "mean": 19.46599844406391,
+          "sample_sd": 1.7342792516512004
+        },
+        "ssim": {
+          "mean": 0.4247330964125436,
+          "sample_sd": 0.11889203613825203
+        },
+        "lpips": {
+          "mean": 0.32284924522813024,
+          "sample_sd": 0.04080460222548681
+        },
+        "hole_psnr": {
+          "mean": 22.525198103367597,
+          "sample_sd": 2.2321731577909687
+        },
+        "hole_ssim": {
+          "mean": 0.6977244656019169,
+          "sample_sd": 0.058884757893608766
+        },
+        "hole_lpips": {
+          "mean": 0.3064483576400698,
+          "sample_sd": 0.03513809235248523
+        }
+      },
+      "per_scene": {
+        "session_004_scene_2_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 22.08291843548492,
+              "sample_sd": 0.6035559862545448
+            },
+            "ssim": {
+              "mean": 0.6507415382107299,
+              "sample_sd": 0.01678936608183726
+            },
+            "lpips": {
+              "mean": 0.2681605002688403,
+              "sample_sd": 0.012733567412050801
+            },
+            "hole_psnr": {
+              "mean": 25.040889883760233,
+              "sample_sd": 0.8319761746878599
+            },
+            "hole_ssim": {
+              "mean": 0.7368869793474974,
+              "sample_sd": 0.019146735070462148
+            },
+            "hole_lpips": {
+              "mean": 0.2858389984423192,
+              "sample_sd": 0.018242692878553207
+            }
+          }
+        },
+        "session_004_scene_6_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 19.632113221901744,
+              "sample_sd": 0.9794711783963983
+            },
+            "ssim": {
+              "mean": 0.5463847468546288,
+              "sample_sd": 0.017621435189262548
+            },
+            "lpips": {
+              "mean": 0.3212510232050814,
+              "sample_sd": 0.020905448053548718
+            },
+            "hole_psnr": {
+              "mean": 22.39261304194005,
+              "sample_sd": 1.3955531458543906
+            },
+            "hole_ssim": {
+              "mean": 0.7760985712310178,
+              "sample_sd": 0.026181169030439058
+            },
+            "hole_lpips": {
+              "mean": 0.3023201651010082,
+              "sample_sd": 0.020650419670457054
+            }
+          }
+        },
+        "session_005_scene_7_tool_3": {
+          "count": 198,
+          "metrics": {
+            "psnr": {
+              "mean": 17.217790950428356,
+              "sample_sd": 0.32432465530226046
+            },
+            "ssim": {
+              "mean": 0.3290319408130164,
+              "sample_sd": 0.013609155223711668
+            },
+            "lpips": {
+              "mean": 0.3377288599507977,
+              "sample_sd": 0.007867045638842352
+            },
+            "hole_psnr": {
+              "mean": 23.91056370012688,
+              "sample_sd": 2.3998578629592586
+            },
+            "hole_ssim": {
+              "mean": 0.7237578829129537,
+              "sample_sd": 0.05105589185999483
+            },
+            "hole_lpips": {
+              "mean": 0.33088024472347416,
+              "sample_sd": 0.028746854012357534
+            }
+          }
+        },
+        "session_006_scene_7_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 21.139722939112676,
+              "sample_sd": 0.35796927788014143
+            },
+            "ssim": {
+              "mean": 0.42605273073642097,
+              "sample_sd": 0.010166748664795958
+            },
+            "lpips": {
+              "mean": 0.3790173987347876,
+              "sample_sd": 0.009683099509916712
+            },
+            "hole_psnr": {
+              "mean": 23.863914077605436,
+              "sample_sd": 0.8963357636965776
+            },
+            "hole_ssim": {
+              "mean": 0.6843427287873312,
+              "sample_sd": 0.019791110636065225
+            },
+            "hole_lpips": {
+              "mean": 0.3031505720699253,
+              "sample_sd": 0.015272266243332326
+            }
+          }
+        },
+        "session_007_scene_10_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 19.799043473286844,
+              "sample_sd": 0.36145783170083523
+            },
+            "ssim": {
+              "mean": 0.3607437356033517,
+              "sample_sd": 0.011294768746138972
+            },
+            "lpips": {
+              "mean": 0.3015961313067968,
+              "sample_sd": 0.013419925453085561
+            },
+            "hole_psnr": {
+              "mean": 21.824905472185144,
+              "sample_sd": 1.4848694883052167
+            },
+            "hole_ssim": {
+              "mean": 0.6984393425922298,
+              "sample_sd": 0.019308335071743787
+            },
+            "hole_lpips": {
+              "mean": 0.25249259907696114,
+              "sample_sd": 0.020722732200001547
+            }
+          }
+        },
+        "session_007_scene_11_tool_3": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 18.776991638106917,
+              "sample_sd": 0.6307998744925816
+            },
+            "ssim": {
+              "mean": 0.317562107464776,
+              "sample_sd": 0.00822772455115221
+            },
+            "lpips": {
+              "mean": 0.28383157420997046,
+              "sample_sd": 0.012115912289511808
+            },
+            "hole_psnr": {
+              "mean": 20.560632188116486,
+              "sample_sd": 0.8493098074803396
+            },
+            "hole_ssim": {
+              "mean": 0.6427241857327408,
+              "sample_sd": 0.019727015630069806
+            },
+            "hole_lpips": {
+              "mean": 0.33317544876630584,
+              "sample_sd": 0.017111791783184484
+            }
+          }
+        },
+        "session_007_scene_5_tool_2": {
+          "count": 199,
+          "metrics": {
+            "psnr": {
+              "mean": 17.602110925032267,
+              "sample_sd": 0.4292594247532075
+            },
+            "ssim": {
+              "mean": 0.3421339648752356,
+              "sample_sd": 0.018458602731540992
+            },
+            "lpips": {
+              "mean": 0.3684340008539171,
+              "sample_sd": 0.011937569544634702
+            },
+            "hole_psnr": {
+              "mean": 20.089829996003576,
+              "sample_sd": 1.5725076585805344
+            },
+            "hole_ssim": {
+              "mean": 0.6219523898021659,
+              "sample_sd": 0.046650899413244906
+            },
+            "hole_lpips": {
+              "mean": 0.33740324860242144,
+              "sample_sd": 0.021869239344333543
+            }
+          }
+        }
+      }
+    }
+  }
+}

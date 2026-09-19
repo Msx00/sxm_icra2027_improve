@@ -1,0 +1,16 @@
+dss:
+  sigma_samples: [0.0]
+  sigma_weights: [1.0]
+  base_footprint_px: 0.75
+  normal_footprint_px: 0.0
+  max_footprint_px: 0.75
+  radius: 1
+ablation:
+  depth_completion: false
+  distributional_depth: false
+  anisotropic_footprint: false
+  physics_router: false
+  rgbd_cycle: false
+loss:
+  cycle: 0.0
+  router: 0.0

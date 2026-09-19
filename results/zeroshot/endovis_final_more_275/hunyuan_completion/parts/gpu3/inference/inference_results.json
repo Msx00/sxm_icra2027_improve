@@ -1,0 +1,614 @@
+[
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000003",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000003.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000003.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000007",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000007.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000007.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000011",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000011.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000011.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000015",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000015.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000015.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000019",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000019.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000019.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000023",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000023.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000023.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000027",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000027.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000027.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000031",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000031.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000031.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000035",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000035.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000035.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000039",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000039.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000039.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000043",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000043.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000043.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000047",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000047.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000047.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000051",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000051.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000051.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000055",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000055.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000055.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000059",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000059.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000059.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000063",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000063.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000063.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000067",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000067.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000067.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000071",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000071.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000071.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000075",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000075.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000075.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000079",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000079.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000079.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000083",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000083.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000083.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000087",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000087.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000087.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_0",
+    "stem": "frame_000091",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/warped_rgb/frame_000091.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_0/warps/inpaint_mask/frame_000091.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000000",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000000.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000000.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000004",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000004.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000004.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000008",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000008.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000008.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000012",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000012.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000012.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000016",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000016.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000016.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000020",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000020.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000020.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000024",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000024.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000024.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000028",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000028.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000028.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000032",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000032.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000032.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000036",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000036.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000036.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000040",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000040.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000040.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000044",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000044.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000044.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_1",
+    "stem": "frame_000048",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/warped_rgb/frame_000048.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_1/warps/inpaint_mask/frame_000048.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_2",
+    "stem": "frame_000002",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_2/warps/warped_rgb/frame_000002.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_2/warps/inpaint_mask/frame_000002.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_2",
+    "stem": "frame_000006",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_2/warps/warped_rgb/frame_000006.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_2/warps/inpaint_mask/frame_000006.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_3",
+    "stem": "frame_000001",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_3/warps/warped_rgb/frame_000001.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_3/warps/inpaint_mask/frame_000001.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_8_keyframe_3",
+    "stem": "frame_000005",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_3/warps/warped_rgb/frame_000005.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_8_keyframe_3/warps/inpaint_mask/frame_000005.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000002",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000002.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000002.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000006",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000006.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000006.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000010",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000010.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000010.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000014",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000014.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000014.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000018",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000018.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000018.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000022",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000022.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000022.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000026",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000026.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000026.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000030",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000030.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000030.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000034",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000034.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000034.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000038",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000038.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000038.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000042",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000042.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000042.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000046",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000046.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000046.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000050",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000050.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000050.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000054",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000054.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000054.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000058",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000058.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000058.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000062",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000062.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000062.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000066",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000066.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000066.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000070",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000070.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000070.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000074",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000074.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000074.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000078",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000078.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000078.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000082",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000082.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000082.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000086",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000086.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000086.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_0",
+    "stem": "frame_000090",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/warped_rgb/frame_000090.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_0/warps/inpaint_mask/frame_000090.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_1",
+    "stem": "frame_000003",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/warps/warped_rgb/frame_000003.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/warps/inpaint_mask/frame_000003.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_1",
+    "stem": "frame_000007",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/warps/warped_rgb/frame_000007.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/warps/inpaint_mask/frame_000007.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_1",
+    "stem": "frame_000011",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/warps/warped_rgb/frame_000011.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_1/warps/inpaint_mask/frame_000011.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_2",
+    "stem": "frame_000001",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_2/warps/warped_rgb/frame_000001.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_2/warps/inpaint_mask/frame_000001.png",
+    "target": "",
+    "skipped_empty_mask": false
+  },
+  {
+    "scene": "endovis_dataset_9_keyframe_3",
+    "stem": "frame_000001",
+    "metrics": {},
+    "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_3/warps/warped_rgb/frame_000001.png",
+    "mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_3/warps/inpaint_mask/frame_000001.png",
+    "target": "",
+    "skipped_empty_mask": false
+  }
+]

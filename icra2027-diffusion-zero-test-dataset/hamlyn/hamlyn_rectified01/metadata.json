@@ -1,0 +1,170 @@
+{
+  "dataset": "Hamlyn Rectified",
+  "protocol": "right-to-left stereo",
+  "source_sequence": "/home/data20tb/shixingma/hamlyn/train/rectified01",
+  "frame_stride": 50,
+  "frame_count": 22,
+  "depth": "provided uint16 depth02 converted to float32 millimetres",
+  "extrinsics": "calibration extrinsics used as camera2-to-camera1",
+  "zero_shot_rule": "No training, tuning, or checkpoint selection on this dataset",
+  "frames": [
+    {
+      "output_frame_id": 0,
+      "source_rgb": "endoscope2/L/frame_000000.png",
+      "target_rgb": "endoscope1/L/frame_000000.png",
+      "source_depth": "endoscope2/depthL/frame_000000.npy"
+    },
+    {
+      "output_frame_id": 1,
+      "source_rgb": "endoscope2/L/frame_000001.png",
+      "target_rgb": "endoscope1/L/frame_000001.png",
+      "source_depth": "endoscope2/depthL/frame_000001.npy"
+    },
+    {
+      "output_frame_id": 2,
+      "source_rgb": "endoscope2/L/frame_000002.png",
+      "target_rgb": "endoscope1/L/frame_000002.png",
+      "source_depth": "endoscope2/depthL/frame_000002.npy"
+    },
+    {
+      "output_frame_id": 3,
+      "source_rgb": "endoscope2/L/frame_000003.png",
+      "target_rgb": "endoscope1/L/frame_000003.png",
+      "source_depth": "endoscope2/depthL/frame_000003.npy"
+    },
+    {
+      "output_frame_id": 4,
+      "source_rgb": "endoscope2/L/frame_000004.png",
+      "target_rgb": "endoscope1/L/frame_000004.png",
+      "source_depth": "endoscope2/depthL/frame_000004.npy"
+    },
+    {
+      "output_frame_id": 5,
+      "source_rgb": "endoscope2/L/frame_000005.png",
+      "target_rgb": "endoscope1/L/frame_000005.png",
+      "source_depth": "endoscope2/depthL/frame_000005.npy"
+    },
+    {
+      "output_frame_id": 6,
+      "source_rgb": "endoscope2/L/frame_000006.png",
+      "target_rgb": "endoscope1/L/frame_000006.png",
+      "source_depth": "endoscope2/depthL/frame_000006.npy"
+    },
+    {
+      "output_frame_id": 7,
+      "source_rgb": "endoscope2/L/frame_000007.png",
+      "target_rgb": "endoscope1/L/frame_000007.png",
+      "source_depth": "endoscope2/depthL/frame_000007.npy"
+    },
+    {
+      "output_frame_id": 8,
+      "source_rgb": "endoscope2/L/frame_000008.png",
+      "target_rgb": "endoscope1/L/frame_000008.png",
+      "source_depth": "endoscope2/depthL/frame_000008.npy"
+    },
+    {
+      "output_frame_id": 9,
+      "source_rgb": "endoscope2/L/frame_000009.png",
+      "target_rgb": "endoscope1/L/frame_000009.png",
+      "source_depth": "endoscope2/depthL/frame_000009.npy"
+    },
+    {
+      "output_frame_id": 10,
+      "source_rgb": "endoscope2/L/frame_000010.png",
+      "target_rgb": "endoscope1/L/frame_000010.png",
+      "source_depth": "endoscope2/depthL/frame_000010.npy"
+    },
+    {
+      "output_frame_id": 11,
+      "source_rgb": "endoscope2/L/frame_000011.png",
+      "target_rgb": "endoscope1/L/frame_000011.png",
+      "source_depth": "endoscope2/depthL/frame_000011.npy"
+    },
+    {
+      "output_frame_id": 12,
+      "source_rgb": "endoscope2/L/frame_000012.png",
+      "target_rgb": "endoscope1/L/frame_000012.png",
+      "source_depth": "endoscope2/depthL/frame_000012.npy"
+    },
+    {
+      "output_frame_id": 13,
+      "source_rgb": "endoscope2/L/frame_000013.png",
+      "target_rgb": "endoscope1/L/frame_000013.png",
+      "source_depth": "endoscope2/depthL/frame_000013.npy"
+    },
+    {
+      "output_frame_id": 14,
+      "source_rgb": "endoscope2/L/frame_000014.png",
+      "target_rgb": "endoscope1/L/frame_000014.png",
+      "source_depth": "endoscope2/depthL/frame_000014.npy"
+    },
+    {
+      "output_frame_id": 15,
+      "source_rgb": "endoscope2/L/frame_000015.png",
+      "target_rgb": "endoscope1/L/frame_000015.png",
+      "source_depth": "endoscope2/depthL/frame_000015.npy"
+    },
+    {
+      "output_frame_id": 16,
+      "source_rgb": "endoscope2/L/frame_000016.png",
+      "target_rgb": "endoscope1/L/frame_000016.png",
+      "source_depth": "endoscope2/depthL/frame_000016.npy"
+    },
+    {
+      "output_frame_id": 17,
+      "source_rgb": "endoscope2/L/frame_000017.png",
+      "target_rgb": "endoscope1/L/frame_000017.png",
+      "source_depth": "endoscope2/depthL/frame_000017.npy"
+    },
+    {
+      "output_frame_id": 18,
+      "source_rgb": "endoscope2/L/frame_000018.png",
+      "target_rgb": "endoscope1/L/frame_000018.png",
+      "source_depth": "endoscope2/depthL/frame_000018.npy"
+    },
+    {
+      "output_frame_id": 19,
+      "source_rgb": "endoscope2/L/frame_000019.png",
+      "target_rgb": "endoscope1/L/frame_000019.png",
+      "source_depth": "endoscope2/depthL/frame_000019.npy"
+    },
+    {
+      "output_frame_id": 20,
+      "source_rgb": "endoscope2/L/frame_000020.png",
+      "target_rgb": "endoscope1/L/frame_000020.png",
+      "source_depth": "endoscope2/depthL/frame_000020.npy"
+    },
+    {
+      "output_frame_id": 21,
+      "source_rgb": "endoscope2/L/frame_000021.png",
+      "target_rgb": "endoscope1/L/frame_000021.png",
+      "source_depth": "endoscope2/depthL/frame_000021.npy"
+    }
+  ],
+  "preprocessing": {
+    "scene": "hamlyn_rectified01",
+    "original_size": [
+      640,
+      480
+    ],
+    "crop_xyxy": [
+      37,
+      2,
+      600,
+      473
+    ],
+    "cropped_size": [
+      563,
+      471
+    ],
+    "retained_area_fraction": 0.863193359375,
+    "dark_threshold": 12,
+    "stable_fraction": 0.95,
+    "method": "stable border-connected dark-region crop",
+    "source_scene": "/home/data20tb/shixingma/icra2027-diffusion-zero-test-dataset/hamlyn_rectified01",
+    "valid_masks": {
+      "K1_L": "valid_masks/endoscope1_L.png",
+      "K2_L": "valid_masks/endoscope2_L.png"
+    }
+  }
+}

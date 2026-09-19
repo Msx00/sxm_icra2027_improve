@@ -1,0 +1,38 @@
+{
+  "steps": 4,
+  "guidance_scale": 1.5,
+  "prompt": "surgical endoscopy image, realistic tissue",
+  "negative_prompt": "cartoon, illustration, text, watermark",
+  "seed": 6666,
+  "model": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/models/sd15-inpainting",
+  "lcm_lora": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/models/lcm-lora-sdv1-5",
+  "lcm_scale": 1.0,
+  "domain_lora": "/home/data/mashixing/dataset_8tb/iMed/comparison/task2-icra/cross_endo_rendering_surpvised/myTrain/endo1-supervised-rank32/checkpoint-002500",
+  "domain_lora_scale": 0.8,
+  "inpaint_exterior_only": true,
+  "hard_composition": true,
+  "small_hole_repair": {
+    "method": "telea_from_warped_rgb",
+    "max_area_ratio": 0.0,
+    "radius": 3.0
+  },
+  "renders_dir": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_4/results/endo1_supervised_rank32_step2500/renders",
+  "method": "SD1.5 Inpainting + LCM-LoRA",
+  "strict_known_pixel_preservation": true,
+  "E1_RGB_READ": false,
+  "completed": true,
+  "elapsed_seconds": 2.3838347448036075,
+  "frames": [
+    {
+      "frame_id": 0,
+      "output": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_4/results/endo1_supervised_rank32_step2500/lcm/final/frame_000000.png",
+      "render": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_4/results/endo1_supervised_rank32_step2500/renders/frame_000000.png",
+      "raw_diffusion": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_4/results/endo1_supervised_rank32_step2500/lcm/diffusion_raw/frame_000000.png",
+      "effective_inpaint_mask": "/home/data20tb/shixingma/icra-2027/results/zeroshot/endovis_final_more_275/completion/endovis_dataset_9_keyframe_4/results/endo1_supervised_rank32_step2500/lcm/effective_inpaint_mask/frame_000000.png",
+      "seconds_per_frame_batch": 1.904079216066748,
+      "known_ratio": 0.8021453857421875,
+      "excluded_internal_mask_ratio": 0.0996673583984375,
+      "small_hole_repair_ratio": 0.0
+    }
+  ]
+}

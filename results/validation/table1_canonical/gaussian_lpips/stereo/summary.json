@@ -1,0 +1,39 @@
+{
+  "protocol": {
+    "name": "Table I canonical LPIPS-only evaluation",
+    "mapping_csvs": [
+      "/home/data/mashixing/table1_gaussian_canonical/prediction_mapping.csv"
+    ],
+    "methods": [
+      "StereoSurGS (FS)"
+    ],
+    "count_per_method": 1392,
+    "scene_count": 7,
+    "sample_ids_identical_across_methods": true,
+    "aggregation": "frame-wise mean and sample standard deviation (ddof=1)",
+    "prediction_resize": "bilinear to target size only when necessary",
+    "target_resize": "disabled; mismatches are fatal",
+    "mask_resize": "nearest-neighbour to target size when necessary",
+    "full_mask": "inverse binary tool mask; absent tool mask means all tissue",
+    "hole_mask": "non-tool tissue intersected with canonical raw-DSS hole mask",
+    "lpips": "scalar AlexNet LPIPS on tissue-zeroed pairs; [0,1] inputs normalized internally to [-1,1]",
+    "hole_lpips": "spatial AlexNet LPIPS map averaged over the canonical H mask; [0,1] inputs normalized internally to [-1,1]"
+  },
+  "methods": {
+    "StereoSurGS (FS)": {
+      "count": 1392,
+      "scene_count": 7,
+      "missing_tool_mask_count": 199,
+      "metrics": {
+        "lpips": {
+          "mean": 0.4522386907931717,
+          "sample_sd": 0.0804746112563884
+        },
+        "hole_lpips": {
+          "mean": 0.6458056442568014,
+          "sample_sd": 0.0705392348038234
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "scene": "session_004_scene_2_tool_3",
+  "frame_id": 428,
+  "source_path": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_3/endoscope2/L/frame_000428.png",
+  "target_path": "/home/data/mashixing/dataset_8tb/iMed/datasets/task2-nvs/session_004_scene_2_tool_3/endoscope1/L/frame_000428.png",
+  "checkpoint": "/home/data20tb/shixingma/icra-2027/checkpoints/ablations/no_hard_composition/seed_6666/step_0010000.pt",
+  "checkpoint_step": 10000,
+  "hard_composition": false,
+  "post_processing": false,
+  "depth_display_range_mm": [
+    40.519229125976565,
+    171.54818725585943
+  ],
+  "soft_fusion_rgb_max_abs_error": 0.0,
+  "soft_fusion_depth_max_abs_error": 0.0
+}

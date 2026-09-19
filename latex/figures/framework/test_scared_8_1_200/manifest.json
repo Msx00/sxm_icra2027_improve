@@ -1,0 +1,16 @@
+{
+  "scene": "endovis_dataset_8_keyframe_1",
+  "frame_id": 200,
+  "source_path": "/home/data/mashixing/dataset_18tb/icra2027-diffusion-zero-test-dataset/endovis_left_temporal_gap50/endovis_dataset_8_keyframe_1/endoscope2/L/frame_000200.png",
+  "target_path": "/home/data/mashixing/dataset_18tb/icra2027-diffusion-zero-test-dataset/endovis_left_temporal_gap50/endovis_dataset_8_keyframe_1/endoscope1/L/frame_000200.png",
+  "checkpoint": "/home/data20tb/shixingma/icra-2027/checkpoints/ablations/no_hard_composition/seed_6666/step_0010000.pt",
+  "checkpoint_step": 10000,
+  "hard_composition": false,
+  "post_processing": false,
+  "depth_display_range_mm": [
+    43.45527267456055,
+    103.16128273010254
+  ],
+  "soft_fusion_rgb_max_abs_error": 0.0,
+  "soft_fusion_depth_max_abs_error": 0.0
+}
